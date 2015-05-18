@@ -76,5 +76,16 @@
 		android:targetClass="com.bvalosek.cpuspy.ui.HomeActivity"
 		android:icon="@drawable/ic_rrphone"/>
 		
+		
+		<!-- OTA Updates for msm7x30 devices -->
+		
+		<PreferenceScreen
+		
+		android:title="@string/rr_ota" 
+		android:key="ota_updates" >
+        <intent android:targetPackage="com.ota.updates" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="com.ota.updates.activities.MainActivity"
+		android:icon="@drawable/ic_rrbuttons"/>
 
 		</PreferenceScreen>
