@@ -19,5 +19,10 @@
     <string name="cpu_stats">CPU Stats</string>
 	<string name="cpu_control">CPU Control</string>
 	<string name="rr_ota">Check for new ROM version!</string>
+	<string name="msm7x30_settings_title">Device custom configuration</string>
+	<string name="msm7x30_settings_ota">OTA</string>
+	<string name="msm7x30_settings_cpu">CPU Preferences</string>
+	<string name="msm7x30_settings_changelog_title">Custom Changelog</string>
+	<string name="msm7x30_settings_changelog_summary">This ChangeLog is used just for propietary(msm7x30) changes, if you want to see the RR changelog go to Device Info/About ROM</string> 
 
 </resources>
