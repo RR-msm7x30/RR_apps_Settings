@@ -121,6 +121,7 @@ import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.rr.MainSettings;
+import com.android.settings.msm7x30.Main;
 import com.android.settings.vpn2.VpnSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
