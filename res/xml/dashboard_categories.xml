@@ -113,18 +113,8 @@
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
 
-	<!-- msm7x30 Configurations -->		
-			
-	<dashboard-tile
-                android:id="@+id/main_settings"
-                android:title="@string/msm7x30_settings_title"
-                android:fragment="com.android.settings.msm7x30.Main"
-                android:icon="@drawable/ic_rr_tools_tint"
-                />       
-    
-	<!-- ResurrectionRemix -->
-        
-	<dashboard-tile
+        <!-- ResurrectionRemix -->
+        <dashboard-tile
                 android:id="@+id/main_settings"
                 android:title="@string/rrc_settings_title"
                 android:fragment="com.android.settings.rr.MainSettings"
