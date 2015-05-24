@@ -17,7 +17,8 @@
 <resources>
 
     <string name="cpu_stats">CPU Stats</string>
-	<string name="cpu_control">CPU Control</string>
-	<string name="rr_ota">Check for new ROM version!</string>
+    <string name="cpu_control">CPU Control</string>
+    <string name="rr_ota">Check for new ROM version!</string>
+    <string name="msm7x30_maintitle">msm7x30 propietary settings</string>
 
 </resources>
