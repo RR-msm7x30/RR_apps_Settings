@@ -28,7 +28,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.List;
 
-public class MainSettings extends SettingsPreferenceFragment {
+public class CPU extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

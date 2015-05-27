@@ -2371,8 +2371,8 @@
                 android:value="com.android.settings.msm7x30.msmSettings" />
         </activity>
  
-+        <activity
-+             android:name=".msm7x30.msmSettings" />
+        <activity
+             android:name=".msm7x30.msmSettings" />
              
 
         <activity android:name=".sim.SimDialogActivity"
