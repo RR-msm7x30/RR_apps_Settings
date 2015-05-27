@@ -20,7 +20,7 @@
 	<!-- OTA Preferences for msm7x30 devices -->
 	
          <PreferenceScreen
-                android:id="@+id/ota_settings"
+                android:id="@+id/msm7x30_ota_settings"
                 android:title="@string/msm7x30_settings_ota"
                 android:fragment="com.android.settings.msm7x30.OTA"
                 android:icon="@drawable/ic_ota_tint"

@@ -116,9 +116,9 @@
 	<!-- msm7x30 Configurations -->		
 			
 	<dashboard-tile
-                android:id="@+id/main_settings"
+                android:id="@+id/msm_settings"
                 android:title="@string/msm7x30_settings_title"
-                android:fragment="com.android.settings.msm7x30.Main"
+                android:fragment="com.android.settings.msm7x30.msmSettings"
                 android:icon="@drawable/ic_rr_tools_tint"
                 />       
     
