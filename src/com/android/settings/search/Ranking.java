@@ -24,7 +24,6 @@ import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.HomeSettings;
 import com.android.settings.rr.MainSettings;
-import com.android.settings.msm7x30.msmSettings;
 import com.android.settings.ScreenPinningSettings;
 import com.android.settings.PrivacySettings;
 import com.android.settings.SecuritySettings;
@@ -63,21 +62,20 @@ public final class Ranking {
     public static final int RANK_WIRELESS = 5;
     public static final int RANK_HOME = 6;
     public static final int RANK_RR = 7;
-	public static final int RANK_MSM = 8;
-    public static final int RANK_DISPLAY = 9;
-    public static final int RANK_NOTIFICATIONS = 11;
-    public static final int RANK_STORAGE = 12;
-    public static final int RANK_POWER_USAGE = 13;
-    public static final int RANK_USERS = 14;
-    public static final int RANK_LOCATION = 15;
-    public static final int RANK_SECURITY = 16;
-    public static final int RANK_IME = 17;
-    public static final int RANK_PRIVACY = 18;
-    public static final int RANK_DATE_TIME = 19;
-    public static final int RANK_ACCESSIBILITY = 20;
-    public static final int RANK_PRINTING = 21;
-    public static final int RANK_DEVELOPEMENT = 22;
-    public static final int RANK_DEVICE_INFO = 23;
+    public static final int RANK_DISPLAY = 8;
+    public static final int RANK_NOTIFICATIONS = 10;
+    public static final int RANK_STORAGE = 11;
+    public static final int RANK_POWER_USAGE = 12;
+    public static final int RANK_USERS = 13;
+    public static final int RANK_LOCATION = 14;
+    public static final int RANK_SECURITY = 15;
+    public static final int RANK_IME = 16;
+    public static final int RANK_PRIVACY = 17;
+    public static final int RANK_DATE_TIME = 18;
+    public static final int RANK_ACCESSIBILITY = 19;
+    public static final int RANK_PRINTING = 20;
+    public static final int RANK_DEVELOPEMENT = 21;
+    public static final int RANK_DEVICE_INFO = 22;
 
 
     public static final int RANK_UNDEFINED = -1;
@@ -113,9 +111,6 @@ public final class Ranking {
         
         // Resurrection
         sRankMap.put(MainSettings.class.getName(), RANK_RR);
-		
-		// msm7x30
-        sRankMap.put(msmSettings.class.getName(), RANK_MSM);
         
         // Display
         sRankMap.put(DisplaySettings.class.getName(), RANK_DISPLAY);

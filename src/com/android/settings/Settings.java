@@ -41,9 +41,8 @@ public class Settings extends SettingsActivity {
     public static class VoiceInputSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SpellCheckersSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ChangeLog extends SettingsActivity { /* empty */ }
-	public static class OTA extends SettingsActivity { /* empty */ }
-	public static class CPU extends SettingsActivity { /* empty */ }
     public static class About extends SettingsActivity { /* empty */ }
+	public static class msm extends SettingsActivity { /* empty */ }
     public static class LockSettings extends SettingsActivity { /* empty */ }
     public static class LocalePickerActivity extends SettingsActivity { /* empty */ }
     public static class UserDictionarySettingsActivity extends SettingsActivity { /* empty */ }
@@ -105,7 +104,6 @@ public class Settings extends SettingsActivity {
     public static class OtherSoundSettingsActivity extends SettingsActivity { /* empty */ }
     public static class QuickLaunchSettingsActivity extends SettingsActivity { /* empty */ }
     public static class MainSettingsActivity extends SettingsActivity { /* empty */ }
-	public static class msmSettingsActivity extends SettingsActivity { /* empty */ }
     
     public static class TopLevelSettings extends SettingsActivity { /* empty */ }
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
