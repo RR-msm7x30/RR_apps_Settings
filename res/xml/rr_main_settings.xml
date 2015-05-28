@@ -54,13 +54,4 @@
                 android:icon="@drawable/ic_buttons_tint"
                 />
             	</PreferenceCategory>
-		
-		<!--msm custom preferences-->
-		
-		<PreferenceScreen
-                android:id="@+id/msm_settings"
-                android:title="@string/msm7x30_settings_title"
-                android:fragment="com.android.settings.rr.msm"
-                android:icon="@drawable/ic_rr_tools_tint"
-                />  
 		</PreferenceScreen>

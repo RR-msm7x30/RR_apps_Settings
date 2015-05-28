@@ -2358,9 +2358,21 @@
         <activity
         
              android:name=".rr.MainSettings" />
+			 
+		<!-- msm7x30 custom Preference Header -->
+        <activity android:name="Settings$msmSettingsActivity"
+             android:label="@string/msm7x30_settings_title"
+             android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.msm7x30.msmSettings" />
+        </activity>
  
         <activity
-             android:name=".rr.msm" />
+             android:name=".msm7x30.msmSettings" />
              
 
         <activity android:name=".sim.SimDialogActivity"

@@ -19,35 +19,20 @@
         
 	<!-- OTA Preferences for msm7x30 devices -->
 	
-    <PreferenceScreen
-		
-		android:title="@string/rr_ota" 
-		android:key="ota_updates" >
-        <intent android:targetPackage="com.ota.updates" 
-		android:action="android.intent.action.MAIN" 
-		android:targetClass="com.ota.updates.activities.MainActivity"/>
-
-		</PreferenceScreen>
+         <PreferenceScreen
+                android:id="@+id/msm7x30_ota_settings"
+                android:title="@string/msm7x30_settings_ota"
+                android:fragment="com.android.settings.msm7x30.OTA"
+                android:icon="@drawable/ic_ota_tint"
+                />   
 				
 	<!-- CPU Preferences for msm7x30 devices -->
 	
-	<PreferenceScreen
-
-		android:title="@string/cpu_control" 
-		android:key="cpu_control">
-        <intent android:targetPackage="it.sineo.android.noFrillsCPUClassic" 
-		android:action="android.intent.action.MAIN" 
-		android:targetClass="it.sineo.android.noFrillsCPUClassic.activity.MainActivity"/>
-		
-		</PreferenceScreen>
-		
-	<PreferenceScreen
-		
-		android:title="@string/cpu_stats" 
-		android:key="cpu_stats" >
-        <intent android:targetPackage="com.bvalosek.cpuspy" 
-		android:action="android.intent.action.MAIN" 
-		android:targetClass="com.bvalosek.cpuspy.ui.HomeActivity"/>
-		
-		</PreferenceScreen>
+	
+         <PreferenceScreen
+                android:id="@+id/msm7x30_cpu_settings"
+                android:title="@string/msm7x30_settings_cpu"
+                android:fragment="com.android.settings.msm7x30.CPU"
+                android:icon="@drawable/ic_cpu_tint"
+                />
 		</PreferenceScreen>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The LiquidSmooth Project
+ * Copyright (C) 2015 The ResurrectionRemix Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rr;
+package com.android.settings.msm7x30;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -28,12 +28,12 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.List;
 
-public class msm extends SettingsPreferenceFragment {
+public class CPU extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.msm7x30_main_settings);
+        addPreferencesFromResource(R.xml.msm7x30_cpu_settings);
     }
 }

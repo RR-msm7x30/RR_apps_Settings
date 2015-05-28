@@ -27,6 +27,7 @@ import com.android.settings.DisplaySettings;
 import com.android.settings.HomeSettings;
 import com.android.settings.ScreenPinningSettings;
 import com.android.settings.PrivacySettings;
+import com.android.settings.rr.MainSettings;
 import com.android.settings.msm7x30.msmSettings;
 import com.android.settings.R;
 import com.android.settings.SecuritySettings;
@@ -100,6 +101,12 @@ public final class SearchIndexableResources {
                         MainSettings.class.getName(),
                         R.drawable.ic_settings_interface));
 						
+		sResMap.put(msmSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(msmSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        MainSettings.class.getName(),
+                        R.drawable.ic_settings_interface));
                         
         sResMap.put(SimSettings.class.getName(),
                 new SearchIndexableResource(
