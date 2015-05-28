@@ -25,12 +25,14 @@
 		android:targetClass="com.ota.updates.activities.MainActivity"/>
 
 		</PreferenceScreen>
-		
+	
+<!--	
 	<PreferenceScreen 
 		
 		android:key="changelog_msm7x30"
         android:title="@string/msm7x30_settings_changelog_title"
         android:summary="@string/msm7x30_settings_changelog_summary"
-        android:fragment="com.android.settings.msm7x30.ChangeLog-msm7x30" />	
+        android:fragment="com.android.settings.msm7x30.ChangeLog-msm7x30" />
+-->		
              
 </PreferenceScreen>

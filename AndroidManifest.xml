@@ -2373,6 +2373,10 @@
  
         <activity
              android:name=".msm7x30.msmSettings" />
+		<activity
+             android:name=".msm7x30.OTA" />
+		<activity
+             android:name=".msm7x30.CPU" />
              
 
         <activity android:name=".sim.SimDialogActivity"
