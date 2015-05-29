@@ -43,6 +43,7 @@ public class Settings extends SettingsActivity {
     public static class ChangeLog extends SettingsActivity { /* empty */ }
 	public static class OTA extends SettingsActivity { /* empty */ }
 	public static class CPU extends SettingsActivity { /* empty */ }
+	public static class ChangeLogmsm7x30 extends SettingsActivity {/* empty */ }
     public static class About extends SettingsActivity { /* empty */ }
     public static class LockSettings extends SettingsActivity { /* empty */ }
     public static class LocalePickerActivity extends SettingsActivity { /* empty */ }
