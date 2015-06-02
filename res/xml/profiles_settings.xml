@@ -29,3 +29,5 @@
         android:fragment="com.android.settings.slim.PieControl"
         android:title="@string/pie_control_title" />
 
+
+</PreferenceScreen>
