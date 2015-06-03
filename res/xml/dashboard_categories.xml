@@ -92,19 +92,33 @@
 
     </dashboard-category>
 
-    <!-- Personalization -->
-    <dashboard-category
-            android:id="@+id/device_personalization"
-            android:title="@string/header_category_personalization" >
-
 	<!-- msm7x30 Configurations -->		
-			
+	
+	<dashboard-category
+            android:id="@+id/msm7x30_configurations"
+            android:title="@string/header_msm7x30_configurations" >
+	
 	<dashboard-tile
                 android:id="@+id/msm_settings"
                 android:title="@string/msm7x30_settings_title"
                 android:fragment="com.android.settings.msm7x30.msmSettings"
                 android:icon="@drawable/ic_rr_tools_tint"
-                />       
+                />
+				
+	<dashboard-tile
+				android:icon="@drawable/ic_xposed_tint"
+				android:title="@string/xposed_framework" 
+				android:key="xposed" >
+		<intent android:targetPackage="de.robv.android.xposed.installer" 
+				android:action="android.intent.action.MAIN" 
+				android:targetClass="de.robv.android.xposed.installer.OPEN_SECTION"/>
+
+	</dashboard-category>
+	
+    <!-- Personalization -->
+    <dashboard-category
+            android:id="@+id/device_personalization"
+            android:title="@string/header_category_personalization" >
     
 	<!-- ResurrectionRemix -->
         

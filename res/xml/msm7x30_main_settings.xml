@@ -19,20 +19,79 @@
         
 	<!-- OTA Preferences for msm7x30 devices -->
 	
-         <PreferenceScreen
-                android:id="@+id/msm7x30_ota_settings"
-                android:title="@string/msm7x30_settings_ota"
-                android:fragment="com.android.settings.msm7x30.OTA"
-                android:icon="@drawable/ic_ota_tint"
-                />   
+        <PreferenceCategory
+		android:title="@string/msm7x30_settings_ota_pr_title">
+	
+	<PreferenceScreen
+		
+		android:title="@string/rr_ota" 
+		android:key="ota_updates" >
+        <intent android:targetPackage="com.ota.updates" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="com.ota.updates.activities.MainActivity"/>
+
+		</PreferenceScreen>
+	
+	
+	<PreferenceScreen 
+		
+		android:key="changelog_msm7x30"
+        android:title="@string/msm7x30_settings_changelog_title"
+        android:summary="@string/msm7x30_settings_changelog_summary"
+        android:fragment="com.android.settings.msm7x30.ChangeLogmsm7x30" />
+		
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory
+		android:title="@string/msm7x30_settings_ota_dev_title">
+		
+	<!--	 
+        <Preference android:key="build_date"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
+		
+		
+        <Preference android:key="kernel_version" 
+                style="?android:preferenceInformationStyle"
+                android:title="@string/kernel_version"
+                android:summary="@string/device_info_default"/>
+				
+		
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/rr_mod_version"
+                android:summary="@string/mod_version_default" /> -->
+	
+</PreferenceCategory>
 				
 	<!-- CPU Preferences for msm7x30 devices -->
 	
+	<PreferenceCategory
 	
-         <PreferenceScreen
-                android:id="@+id/msm7x30_cpu_settings"
-                android:title="@string/msm7x30_settings_cpu"
-                android:fragment="com.android.settings.msm7x30.CPU"
-                android:icon="@drawable/ic_cpu_tint"
-                />
+		android:title="@string/msm7x30_settings_cpu_main_title">
+	
+        <PreferenceScreen
+
+		android:title="@string/cpu_control" 
+		android:key="cpu_control">
+        <intent android:targetPackage="it.sineo.android.noFrillsCPUClassic" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="it.sineo.android.noFrillsCPUClassic.activity.MainActivity"/>
+		
 		</PreferenceScreen>
+		
+		<PreferenceScreen
+		
+		android:title="@string/cpu_stats" 
+		android:key="cpu_stats" >
+        <intent android:targetPackage="com.bvalosek.cpuspy" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="com.bvalosek.cpuspy.ui.HomeActivity"/>
+		
+		
+		</PreferenceScreen> 
+				
+	</PreferenceCategory>
+</PreferenceScreen>

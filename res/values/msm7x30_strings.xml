@@ -25,6 +25,9 @@
 	<string name="msm7x30_settings_changelog_title">msm7x30 ChangeLog</string>
 	<string name="msm7x30_settings_ota_pr_title">OTA Updater</string>
 	<string name="msm7x30_settings_ota_dev_title">Release Details</string>
+	<string name="msm7x30_settings_cpu_main_title">CPU Preferences</string>
+	<string name="xposed_framework">Xposed Installer Preferences</string>
+	<string name="header_msm7x30_configurations">Custom Configurations</string>
 	<string name="msm7x30_settings_changelog_summary">This ChangeLog is used just for propietary(msm7x30) changes, if you want to see the RR changelog go to Device Info/About ROM</string> 
 
 </resources>
