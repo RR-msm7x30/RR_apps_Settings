@@ -104,15 +104,6 @@
                 android:fragment="com.android.settings.msm7x30.msmSettings"
                 android:icon="@drawable/ic_rr_tools_tint"
                 />
-				
-	<dashboard-tile
-				android:icon="@drawable/ic_xposed_tint"
-				android:title="@string/xposed_framework" 
-				android:key="xposed" >
-		<intent android:targetPackage="de.robv.android.xposed.installer" 
-				android:action="android.intent.action.MAIN" 
-				android:targetClass="de.robv.android.xposed.installer.OPEN_SECTION"/>
-
 	</dashboard-category>
 	
     <!-- Personalization -->
