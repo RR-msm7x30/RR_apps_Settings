@@ -108,13 +108,23 @@
 	
 				android:icon="@drawable/ic_xposed_tint"
 				android:id="@+id/xposed"
-				android:title="@string/addons"
 				android:title="@string/xposed_framework" 
 				android:key="xposed" >
 		<intent android:targetPackage="de.robv.android.xposed.installer" 
 				android:action="android.intent.action.MAIN" 
 				android:targetClass="de.robv.android.xposed.installer.WelcomeActivity"/>
 	
+	</dashboard-tile>
+	
+	<dashboard-tile
+				
+				android:icon="@drawable/ic_ariesve_tint"
+				android:id="@+id/ariesve_pr"
+				android:title="@string/ariesve_settings_title"
+				android:key="ariesve">
+		<intent android:targetPackage="com.cyanogenmod.settings.device" 
+				android:action="android.intent.action.MAIN" 
+				android:targetClass="com.cyanogenmod.settings.device.DeviceSettings"/>
 	</dashboard-tile>
 	</dashboard-category>
 	

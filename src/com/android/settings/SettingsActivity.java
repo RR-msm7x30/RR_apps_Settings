@@ -224,6 +224,8 @@ public class SettingsActivity extends Activity
     private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
 	
 	private static final String XPOSED_PACKAGE_NAME = "de.robv.android.xposed.installer";
+	
+	private static final String ARIESVE_PACKAGE_NAME = "com.cyanogenmod.settings.device";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1302,6 +1304,10 @@ public class SettingsActivity extends Activity
 				
 				else if (id == R.id.xposed) {
                     if (!Utils.isPackageInstalled(this, XPOSED_PACKAGE_NAME, false)) {
+                        removeTile = true;
+                    }
+				else if (id == R.id.ariesve_pr) {
+                    if (!Utils.isPackageInstalled(this, ARIESVE_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
 				//
