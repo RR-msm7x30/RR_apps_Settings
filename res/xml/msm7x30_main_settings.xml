@@ -93,18 +93,4 @@
 		</PreferenceScreen> 
 				
 	</PreferenceCategory>
-	
-		<PreferenceCategory
-		
-		android:title="@string/addons">
-		
-		<PreferenceScreen
-		
-		android:title="@string/xposed_framework" 
-		android:key="xposed" >
-		<intent android:targetPackage="de.robv.android.xposed.installer" 
-				android:action="android.intent.action.MAIN" 
-				android:targetClass="de.robv.android.xposed.installer.OPEN_SECTION"/>
-	</PreferenceScreen>
-</PreferenceCategory>	
 </PreferenceScreen>

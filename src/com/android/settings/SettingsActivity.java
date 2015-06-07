@@ -222,6 +222,8 @@ public class SettingsActivity extends Activity
     private static final String EMPTY_QUERY = "";
 
     private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
+	
+	private static final String XPOSED_PACKAGE_NAME = "de.robv.android.xposed.installer";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1294,7 +1296,17 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-                } else if (id == R.id.voice_wakeup_settings) {
+                }
+
+				//msm7x30
+				
+				else if (id == R.id.xposed) {
+                    if (!Utils.isPackageInstalled(this, XPOSED_PACKAGE_NAME, false)) {
+                        removeTile = true;
+                    }
+				//
+				
+				else if (id == R.id.voice_wakeup_settings) {
                     if (!Utils.isPackageInstalled(this, VOICE_WAKEUP_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
