@@ -28,7 +28,7 @@
 	<string name="msm7x30_settings_cpu_main_title">CPU Preferences</string>
 	<string name="xposed_framework">Xposed Installer Preferences</string>
 	<string name="header_msm7x30_configurations">Custom Configurations</string>
-	<string name="ariesve_settings_title">Ariesve Preferences</string>
+	<string name="ariesve_settings_title">AriesParts</string>
 	<string name="msm7x30_settings_changelog_summary">This ChangeLog is used just for propietary(msm7x30) changes, if you want to see the RR changelog go to Device Info/About ROM</string> 
 
 </resources>
