@@ -113,7 +113,7 @@
 				android:key="xposed" >
 		<intent android:targetPackage="de.robv.android.xposed.installer" 
 				android:action="android.intent.action.MAIN" 
-				android:targetClass="de.robv.android.xposed.installer.OPEN_SECTION"/>
+				android:targetClass="de.robv.android.xposed.installer.WelcomeActivity"/>
 	
 	</dashboard-tile>
 	</dashboard-category>
