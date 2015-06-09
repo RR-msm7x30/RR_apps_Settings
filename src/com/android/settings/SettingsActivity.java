@@ -1306,10 +1306,12 @@ public class SettingsActivity extends Activity
                     if (!Utils.isPackageInstalled(this, XPOSED_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
+				}
 				else if (id == R.id.ariesve_pr) {
                     if (!Utils.isPackageInstalled(this, ARIESVE_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
+				}
 				//
 				
 				else if (id == R.id.voice_wakeup_settings) {

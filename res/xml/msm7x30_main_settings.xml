@@ -61,9 +61,9 @@
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/rr_mod_version"
-                android:summary="@string/mod_version_default" /> -->
+                android:summary="@string/mod_version_default" /> 
 	
-</PreferenceCategory>
+</PreferenceCategory> -->
 				
 	<!-- CPU Preferences for msm7x30 devices -->
 	
