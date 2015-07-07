@@ -860,4 +860,10 @@
   <string name="lock_to_cyanogen_disable_msg">A funkció letiltásával jogosulatlan személyek visszaállíthatják a telefont a gyári beállításokra lopás esetén. Személyes adatai nem lesznek biztonságban. Biztosan letiltja ezt a funkciót?</string>
   <string name="lock_to_cyanogen_master_clear_warning">Eszközvédelem engedélyezve van. Tiltsa le a készülék visszaállításának folytatásához.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Csatlakozási hiba; Engedélyezve van a Bluetooth megosztás a készüléken?</string>
+  <string name="sim_card_status_title">SIM %d állapot</string>
+  <string name="sim_card_lock_settings_title">SIM %d zárolási beállítások</string>
+  <string name="sim_card_summary_empty">SIM nincs behelyezve</string>
+  <string name="sim_mobile_network_settings_category_title">Mobilhálózati beállítások</string>
+  <string name="sim_mobile_network_settings_title">SIM %d beállítások</string>
+  <string name="factory_reset_instructions_title">Személyes adatok &amp; alkalmazások</string>
 </resources>

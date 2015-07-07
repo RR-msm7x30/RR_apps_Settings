@@ -864,4 +864,20 @@
   <string name="lock_to_cyanogen_create_account_msg">Twoje urządzenie korzysta z hasła twojego konta Cyanogen OS, aby chronić twoje urządzenie nawet w przypadku przywrócenia ustawień fabrycznych. Musisz utworzyć konto Cyanogen OS.</string>
   <string name="lock_to_cyanogen_disable_msg">Wyłączenie tej funkcji umożliwi nieautoryzowanym użytkownikom na przywrócenie ustawień fabrycznych jeśli twoje urządzenie zostanie zgubione. Twoje prywatne dane mogą nie być chronione. Czy chcesz wyłączyć tę funkcję?</string>
   <string name="lock_to_cyanogen_master_clear_warning">Ochrona urządzenia jest włączona. Proszę ją wyłączyć, aby kontynuować resetowanie urządzenia.</string>
+  <string name="bluetooth_pan_profile_summary_use_for_error">Błąd połączenia: Czy udostępnianie Bluetooth zostało włączone na tym urządzeniu?</string>
+  <string name="sim_card_status_title">Stan %d karty SIM</string>
+  <string name="sim_card_lock_settings_title">Ustawienia blokady %d karty SIM</string>
+  <string name="sim_card_summary_empty">Karta SIM nie jest włożona</string>
+  <string name="sim_mobile_network_settings_category_title">Ustawienia sieci komórkowej</string>
+  <string name="sim_mobile_network_settings_title">Ustawienia karty SIM %d</string>
+  <string name="factory_reset_instructions_title">Osobiste dane &amp; aplikacje</string>
+  <string name="factory_reset_instructions_summary">Spowoduje to usunięcie wszystkich kont, aplikacji, danych aplikacji i ustawień systemowych na tym urządzeniu</string>
+  <string name="factory_reset_personal_content">Prywatna zawartość</string>
+  <string name="factory_reset_erase_stored_content">Kasuje przechowywaną zawartość</string>
+  <string name="factory_reset_erase_stored_content_summary">Kasuje muzykę, zdjęcia, filmy i inne dane użytkownika przechowywane na tym urządzeniu</string>
+  <string name="factory_reset_erase_stored_content_summary_forced">Kasuje muzykę, zdjęcia, filmy i inne dane użytkownika przechowywane na tym urządzeniu. \n\n<b>Zawartość nie może zostać zapisana ze względu na zaszyfrowane urządzenie.</b></string>
+  <string name="factory_reset_erase_sd_card">Formatuj kartę SD</string>
+  <string name="factory_reset_erase_sd_card_summary">Kasuje wszystkie dane z karty SD, łącznie z muzyką i zdjęciami</string>
+  <string name="factory_reset_warning_text_reset_now">RESETUJ TERAZ</string>
+  <string name="factory_reset_warning_text_message">Wszystkie konta, aplikacje, dane aplikacji i ustawienia systemowe zostaną usunięte z tego urządzenia. Ta czynność jest nieodwracalna.</string>
 </resources>

@@ -865,4 +865,19 @@
   <string name="lock_to_cyanogen_disable_msg">Отключение этой функции позволит другим людям выполнить удаление всех данных на устройстве в случае его кражи. Ваши личные данные могут стать недостаточно защищёнными. Вы действительно хотите отключить эту функцию?</string>
   <string name="lock_to_cyanogen_master_clear_warning">Защита устройства включена. Необходимо отключить её, чтобы выполнить сброс настроек на устройстве.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка подключения. Проверьте, включён ли Bluetooth-модем на указанном устройстве.</string>
+  <string name="sim_card_status_title">Статус SIM %d</string>
+  <string name="sim_card_lock_settings_title">Параметры блокировки SIM %d</string>
+  <string name="sim_card_summary_empty">SIM не вставлена</string>
+  <string name="sim_mobile_network_settings_category_title">Настройки мобильной сети</string>
+  <string name="sim_mobile_network_settings_title">Параметры SIM %d</string>
+  <string name="factory_reset_instructions_title">Личные данные и приложения</string>
+  <string name="factory_reset_instructions_summary">Это действие удалит все добавленные аккаунты, приложения, их данные и настройки с этого устройства</string>
+  <string name="factory_reset_personal_content">Личные данные</string>
+  <string name="factory_reset_erase_stored_content">Очистить сохранённые данные</string>
+  <string name="factory_reset_erase_stored_content_summary">Удалить музыку, фотографии, видео и другие данные, хранящиеся на устройстве</string>
+  <string name="factory_reset_erase_stored_content_summary_forced">Удалить музыку, фотографии, видео и другие данные, хранящиеся на устройстве. \n\n<b>Сохранить данные невозможно, т.к. включено шифрование устройства.</b></string>
+  <string name="factory_reset_erase_sd_card">Отформатировать SD-карту</string>
+  <string name="factory_reset_erase_sd_card_summary">Удалить с SD-карты все данные, включая музыку и фотографии</string>
+  <string name="factory_reset_warning_text_reset_now">УДАЛИТЬ ВСЁ</string>
+  <string name="factory_reset_warning_text_message">Все добавленные аккаунты, приложения, их данные и настройки будут удалены с этого устройства. Отменить это действие будет невозможно.</string>
 </resources>
