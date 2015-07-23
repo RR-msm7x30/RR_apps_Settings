@@ -76,23 +76,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
-    private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
-    private static final String KEY_ENABLE_NAVIGATION_BAR = "enable_nav_bar";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
-    private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_BLUETOOTH_INPUT_SETTINGS = "bluetooth_input_settings";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
-    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
     private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
 
-    private static final String DIM_NAV_BUTTONS = "dim_nav_buttons";
-    private static final String DIM_NAV_BUTTONS_TOUCH_ANYWHERE = "dim_nav_buttons_touch_anywhere";
-    private static final String DIM_NAV_BUTTONS_TIMEOUT = "dim_nav_buttons_timeout";
-    private static final String DIM_NAV_BUTTONS_ALPHA = "dim_nav_buttons_alpha";
-    private static final String DIM_NAV_BUTTONS_ANIMATE = "dim_nav_buttons_animate";
-    private static final String DIM_NAV_BUTTONS_ANIMATE_DURATION = "dim_nav_buttons_animate_duration";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -103,7 +93,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
-    private static final String CATEGORY_NAVBAR = "nav_cat";
     private static final String CATEGORY_HW_KEYS = "hw_keys";
     
     // Available custom actions to perform on a key press.
@@ -144,23 +133,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
     private SwitchPreference mSwapVolumeButtons;
-    private SwitchPreference mEnableNavigationBar;
     private SwitchPreference mEnableHwKeys;
-    private SwitchPreference mNavigationBarLeftPref;
-    private ListPreference mNavigationRecentsLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
-    private ColorPickerPreference mNavbarButtonTint;
     private SwitchPreference mVolumeAnswerCall;
-
-    private PreferenceCategory mNavigationPreferencesCat;
-
-    SwitchPreference mDimNavButtons;
-    SwitchPreference mDimNavButtonsTouchAnywhere;
-    SlimSeekBarPreference mDimNavButtonsTimeout;
-    SlimSeekBarPreference mDimNavButtonsAlpha;
-    SwitchPreference mDimNavButtonsAnimate;
-    SlimSeekBarPreference mDimNavButtonsAnimateDuration;
 
     private Handler mHandler;
 
@@ -183,31 +159,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mVolumeAnswerCall.setOnPreferenceChangeListener(this);
 
         mHandler = new Handler();
-
-        // Navigation bar category
-        final PreferenceCategory navBarCategory = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
-
-        // Navigation bar keys switch
-        mEnableNavigationBar = (SwitchPreference) findPreference(KEY_ENABLE_NAVIGATION_BAR);
-        
-        // Navigation bar left
-        mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
-
-        // Internal bool to check if the device have a navbar by default or not!
-        boolean hasNavBarByDefault = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_SHOW, hasNavBarByDefault ? 1 : 0) == 1;
-        mEnableNavigationBar.setChecked(enableNavigationBar);
-        mEnableNavigationBar.setOnPreferenceChangeListener(this);
-        // Navigation bar button color
-        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
-        mNavbarButtonTint.setOnPreferenceChangeListener(this);
-        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
-        String hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mNavbarButtonTint.setSummary(hexColor);
-        mNavbarButtonTint.setNewPreviewColor(intColor);
         
         // Enable/disable hw keys
         boolean enableHwKeys = Settings.System.getInt(getContentResolver(),
@@ -221,10 +172,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     getPreferenceScreen().findPreference(CATEGORY_HW_KEYS);
             getPreferenceScreen().removePreference(hwKeysPref);
         }
-
-        // Navigation bar recents long press activity needs custom setup
-        mNavigationRecentsLongPressAction =
-                initRecentsLongPressAction(KEY_NAVIGATION_RECENTS_LONG_PRESS);
 
         HashMap<String, String> prefsToRemove = (HashMap<String, String>)
                 getPreferencesToRemove(this, getActivity());
@@ -282,39 +229,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mVolumeWakeScreen.setDisableDependentsState(true);
            }
         }
-
-        mDimNavButtons = (SwitchPreference) findPreference(DIM_NAV_BUTTONS);
-        mDimNavButtons.setOnPreferenceChangeListener(this);
-
-        mDimNavButtonsTouchAnywhere = (SwitchPreference) findPreference(DIM_NAV_BUTTONS_TOUCH_ANYWHERE);
-        mDimNavButtonsTouchAnywhere.setOnPreferenceChangeListener(this);
-
-        mDimNavButtonsTimeout = (SlimSeekBarPreference) findPreference(DIM_NAV_BUTTONS_TIMEOUT);
-        mDimNavButtonsTimeout.setDefault(3000);
-        mDimNavButtonsTimeout.isMilliseconds(true);
-        mDimNavButtonsTimeout.setInterval(1);
-        mDimNavButtonsTimeout.minimumValue(100);
-        mDimNavButtonsTimeout.multiplyValue(100);
-        mDimNavButtonsTimeout.setOnPreferenceChangeListener(this);
-
-        mDimNavButtonsAlpha = (SlimSeekBarPreference) findPreference(DIM_NAV_BUTTONS_ALPHA);
-        mDimNavButtonsAlpha.setDefault(50);
-        mDimNavButtonsAlpha.setInterval(1);
-        mDimNavButtonsAlpha.setOnPreferenceChangeListener(this);
-
-        mDimNavButtonsAnimate = (SwitchPreference) findPreference(DIM_NAV_BUTTONS_ANIMATE);
-        mDimNavButtonsAnimate.setOnPreferenceChangeListener(this);
-
-        mDimNavButtonsAnimateDuration = (SlimSeekBarPreference) findPreference(DIM_NAV_BUTTONS_ANIMATE_DURATION);
-        mDimNavButtonsAnimateDuration.setDefault(2000);
-        mDimNavButtonsAnimateDuration.isMilliseconds(true);
-        mDimNavButtonsAnimateDuration.setInterval(1);
-        mDimNavButtonsAnimateDuration.minimumValue(100);
-        mDimNavButtonsAnimateDuration.multiplyValue(100);
-        mDimNavButtonsAnimateDuration.setOnPreferenceChangeListener(this);
-
-        updateDisableHwKeysOption();
-        updateNavBarSettings();
     }
 
     private static Map<String, String> getPreferencesToRemove(ButtonSettings settings,
@@ -612,71 +526,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
     }
     
-   private void updateNavBarSettings() {
-        boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_SHOW,
-                RRUtils.isNavBarDefault(getActivity()) ? 1 : 0) == 1;
-        mEnableNavigationBar.setChecked(enableNavigationBar);
-
-        if (mDimNavButtons != null) {
-            mDimNavButtons.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS, 0) == 1);
-        }
-
-        if (mDimNavButtonsTouchAnywhere != null) {
-            mDimNavButtonsTouchAnywhere.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS_TOUCH_ANYWHERE, 0) == 1);
-        }
-
-        if (mDimNavButtonsTimeout != null) {
-            final int dimTimeout = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS_TIMEOUT, 3000);
-            // minimum 100 is 1 interval of the 100 multiplier
-            mDimNavButtonsTimeout.setInitValue((dimTimeout / 100) - 1);
-        }
-
-        if (mDimNavButtonsAlpha != null) {
-            int alphaScale = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS_ALPHA, 50);
-            mDimNavButtonsAlpha.setInitValue(alphaScale);
-        }
-
-        if (mDimNavButtonsAnimate != null) {
-            mDimNavButtonsAnimate.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS_ANIMATE, 0) == 1);
-        }
-
-        if (mDimNavButtonsAnimateDuration != null) {
-            final int animateDuration = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DIM_NAV_BUTTONS_ANIMATE_DURATION, 2000);
-            // minimum 100 is 1 interval of the 100 multiplier
-            mDimNavButtonsAnimateDuration.setInitValue((animateDuration / 100) - 1);
-        }
-
-        updateNavbarPreferences(enableNavigationBar);
-    }
-
-    private void updateNavbarPreferences(boolean show) {
-        mDimNavButtons.setEnabled(show);
-        mDimNavButtonsTouchAnywhere.setEnabled(show);
-        mDimNavButtonsTimeout.setEnabled(show);
-        mDimNavButtonsAlpha.setEnabled(show);
-        mDimNavButtonsAnimate.setEnabled(show);
-        mDimNavButtonsAnimateDuration.setEnabled(show);
-    }
-    
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mHomeLongPressAction) {
             handleActionListChange(mHomeLongPressAction, newValue,
                     Settings.System.KEY_HOME_LONG_PRESS_ACTION);
             return true;
-        } else if (preference == mEnableNavigationBar) {
-            mEnableNavigationBar.setEnabled(true);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_SHOW,
-                        ((Boolean) newValue) ? 1 : 0);
-            return true;
+
         } else if (preference == mEnableHwKeys) {
             boolean hWkeysValue = (Boolean) newValue;
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
@@ -716,61 +572,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
-        } else if (preference == mNavigationRecentsLongPressAction) {
-            // RecentsLongPressAction is handled differently because it intentionally uses
-            // Settings.System
-            String putString = (String) newValue;
-            int index = mNavigationRecentsLongPressAction.findIndexOfValue(putString);
-            CharSequence summary = mNavigationRecentsLongPressAction.getEntries()[index];
-            // Update the summary
-            mNavigationRecentsLongPressAction.setSummary(summary);
-            if (putString.length() == 0) {
-                putString = null;
-            }
-            Settings.Secure.putString(getContentResolver(),
-                    Settings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
-            return true;
-        } else if (preference == mNavbarButtonTint) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_TINT, intHex);
-            return true;
         } else if (preference == mVolumeAnswerCall) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(),
                    Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, value ? 1 : 0);
-        } else if (preference == mDimNavButtons) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS,
-                    ((Boolean) newValue) ? 1 : 0);
-            return true;
-        } else if (preference == mDimNavButtonsTouchAnywhere) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS_TOUCH_ANYWHERE,
-                    ((Boolean) newValue) ? 1 : 0);
-            return true;
-        } else if (preference == mDimNavButtonsTimeout) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS_TIMEOUT, Integer.parseInt((String) newValue));
-            return true;
-        } else if (preference == mDimNavButtonsAlpha) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS_ALPHA, Integer.parseInt((String) newValue));
-            return true;
-        } else if (preference == mDimNavButtonsAnimate) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS_ANIMATE,
-                    ((Boolean) newValue) ? 1 : 0);
-            return true;
-        } else if (preference == mDimNavButtonsAnimateDuration) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.DIM_NAV_BUTTONS_ANIMATE_DURATION,
-                Integer.parseInt((String) newValue));
-            return true;
-        }
+	}
         return false;
     }
     @Override
@@ -854,9 +660,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(enabled);
-        }
-        if (mNavigationBarLeftPref != null) {
-            mNavigationBarLeftPref.setEnabled(enabled);
         }
     }
 
