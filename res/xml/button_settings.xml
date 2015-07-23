@@ -15,15 +15,14 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:key="hw_keys"
-        android:title="@string/hw_keys_title" >
+        android:key="nav_cat"
+        android:title="@string/nav_bar_title" >
 
         <SwitchPreference
-            android:key="enable_hw_keys"
-            android:title="@string/hw_keys_title"
-            android:summary="@string/hw_keys_summary" />
-
-    </PreferenceCategory>
+            android:key="enable_nav_bar"
+            android:title="@string/navbar_enable_bar_title"
+            android:summary="@string/navbar_enable_bar_summary"
+            android:defaultValue="false" />
 
     <com.android.settings.cyanogenmod.ButtonBacklightBrightness
         android:key="button_backlight"
