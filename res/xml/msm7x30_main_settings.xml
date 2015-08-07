@@ -16,6 +16,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/msm7x30_settings_title">
+
+	<PreferenceScreen 
+		
+		android:key="msm7x30_image"
+                android:enabled="false"
+                android:selectable="false"
+                android:layout="@layout/msm7x30_image" />
         
 	<!-- OTA Preferences for msm7x30 devices -->
 	
@@ -24,7 +31,8 @@
 	
 	<PreferenceScreen
 		
-		android:title="@string/rr_ota" 
+		android:title="@string/ota_title"
+		android:summary="@string/ota_summary" 
 		android:key="ota_updates" >
         <intent android:targetPackage="com.ota.updates" 
 		android:action="android.intent.action.MAIN" 
@@ -36,34 +44,11 @@
 	<PreferenceScreen 
 		
 		android:key="changelog_msm7x30"
-        android:title="@string/msm7x30_settings_changelog_title"
-        android:summary="@string/msm7x30_settings_changelog_summary"
-        android:fragment="com.android.settings.msm7x30.ChangeLogmsm7x30" />
+        	android:title="@string/msm7x30_settings_changelog_title"
+        	android:summary="@string/msm7x30_settings_changelog_summary"
+        	android:fragment="com.android.settings.msm7x30.ChangeLogmsm7x30" />
 		
 	</PreferenceCategory>
-	
-	
-	<!-- <PreferenceCategory
-		android:title="@string/msm7x30_settings_ota_dev_title">
-	 
-        <Preference android:key="build_date"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/build_date"
-                android:summary="@string/build_date_default" />
-		
-		
-        <Preference android:key="kernel_version" 
-                style="?android:preferenceInformationStyle"
-                android:title="@string/kernel_version"
-                android:summary="@string/device_info_default"/>
-				
-		
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/rr_mod_version"
-                android:summary="@string/mod_version_default" /> 
-	
-</PreferenceCategory> -->
 				
 	<!-- CPU Preferences for msm7x30 devices -->
 	
@@ -73,7 +58,8 @@
 	
         <PreferenceScreen
 
-		android:title="@string/cpu_control" 
+		android:title="@string/cpu_control_title"
+		android:summary="@string/cpu_control_summary" 
 		android:key="cpu_control">
         <intent android:targetPackage="it.sineo.android.noFrillsCPUClassic" 
 		android:action="android.intent.action.MAIN" 
@@ -83,7 +69,8 @@
 		
 		<PreferenceScreen
 		
-		android:title="@string/cpu_stats" 
+		android:title="@string/cpu_stats_title"
+		android:summary="@string/cpu_stats_summary" 
 		android:key="cpu_stats" >
         <intent android:targetPackage="com.bvalosek.cpuspy" 
 		android:action="android.intent.action.MAIN" 
@@ -93,4 +80,17 @@
 		</PreferenceScreen> 
 				
 	</PreferenceCategory>
+
+	<PreferenceCategory
+
+		android:title="RR-msm7x30">
+
+	<PreferenceScreen 
+		
+		android:key="about_msm7x30"
+        	android:title="About"
+        	android:summary="About RR-msm7x30"
+        	android:fragment="com.android.settings.msm7x30.msmAbout" />
+
+</PreferenceCategory>
 </PreferenceScreen>

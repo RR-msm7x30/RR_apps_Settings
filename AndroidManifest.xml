@@ -2443,6 +2443,8 @@
              android:name=".msm7x30.msmSettings" />
 		<activity
              android:name=".msm7x30.ChangeLogmsm7x30" />
+		<activity
+             android:name=".msm7x30.msmAbout" />
              
 
         <activity android:name=".sim.SimDialogActivity"

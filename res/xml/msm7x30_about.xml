@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:title="@string/about_rr_settings_title"
+	xmlns:resurrection="http://schemas.android.com/apk/res/com.android.settings">
+                
+<PreferenceCategory 
+
+	android:title="Main Developers">
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Călin Neamţu aka nilac8991"
+        android:summary="@string/msm7x30_nilac_summary"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Oğuzhan Yiğit aka sirmordred"
+        android:summary="@string/msm7x30_sirmordred_summary"
+        android:selectable="false" />
+
+</PreferenceCategory>
+
+
+<PreferenceCategory
+	
+	android:title="Contributors"> 
+		
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Christopher83"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="CyanogenMod"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Omni and Slim team"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="DevConnection_Team"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="JustArchi"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Kryten2k35"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="androidexpert35"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="TobiJo"
+        android:selectable="false" />
+
+</PreferenceCategory>
+
+<PreferenceCategory
+	
+	android:title="Infos">
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="ROM source"
+        android:summary="https://github.com/RR-msm7x30"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Donations"
+        android:summary="Are you enjoying the ROM? Then check up my XDA threads and buy me a cup of coffee"
+        android:selectable="false" />
+
+</PreferenceCategory>
+</PreferenceScreen>

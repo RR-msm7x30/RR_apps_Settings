@@ -16,19 +16,24 @@
 
 <resources>
 
-    <string name="cpu_stats">CPU Stats</string>
-	<string name="cpu_control">CPU Control</string>
-	<string name="rr_ota">Check for new ROM version!</string>
-	<string name="msm7x30_settings_title">MSM7x30 Propietary Preferences</string>
-	<string name="msm7x30_settings_ota">OTA Configurations</string>
-	<string name="msm7x30_settings_cpu">CPU Preferences</string>
-	<string name="msm7x30_settings_changelog_title">msm7x30 ChangeLog</string>
-	<string name="msm7x30_settings_ota_pr_title">OTA Updater</string>
+    	<string name="cpu_stats_title">CPU Stats</string>
+	<string name="cpu_stats_summary">Check CPU frequencies used,time when they were used and check informations regarding Kernel version</string>
+	<string name="cpu_control_title">CPU Control</string>
+	<string name="cpu_control_summary">Change CPU frequencies and Governor</string>
+	<string name="ota_summary">Check for new ROM version!</string>
+	<string name="ota_title">OTA Updater</string>
+	<string name="header_msm7x30_configurations">Custom Configurations</string>
+	<string name="msm7x30_settings_title">RR-msm7x30</string>
+	<string name="msm7x30_settings_changelog_title">ChangeLog</string>
+	<string name="msm7x30_settings_changelog_summary">Just system changes,for RR changes go to Device Info/About ROM</string> 
+	<string name="msm7x30_settings_ota_pr_title">Updates</string>
 	<string name="msm7x30_settings_ota_dev_title">Release Details</string>
 	<string name="msm7x30_settings_cpu_main_title">CPU Preferences</string>
 	<string name="xposed_framework">Xposed Installer Preferences</string>
-	<string name="header_msm7x30_configurations">Custom Configurations</string>
 	<string name="ariesve_settings_title">AriesParts</string>
-	<string name="msm7x30_settings_changelog_summary">This ChangeLog is used just for propietary(msm7x30) changes, if you want to see the RR changelog go to Device Info/About ROM</string> 
-
+	<string name="msm7x30_nilac_summary">He is the one who brought Resurrection Remix to Ariesve and Ancora devices, at a certain point he created a custom ROM source just for these two devices and the main purpose of it was to make the ROM even better for these devices by including fixes for only those devices and  custom features coming from the user side . The ROM became to be very popular and many users continued to use it since January when it was released for the first time.</string>
+	<string name="msm7x30_sirmordred_summary">He is the Author of the many commits applied to the Kernel sources and also for the ancora device tree.
+He is not very active on XDA as per posts count but he is very active on Github as per public activity log.
+After Arco left the ancora community for good he remained the only one to work for the ancora community.
+Along with nilac sirmordred continue to make new changes for the new coming RR builds and also for the new CM 12.1 builds for ancora. </string>
 </resources>

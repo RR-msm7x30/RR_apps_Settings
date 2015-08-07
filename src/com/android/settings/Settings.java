@@ -41,7 +41,8 @@ public class Settings extends SettingsActivity {
     public static class VoiceInputSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SpellCheckersSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ChangeLog extends SettingsActivity { /* empty */ }
-	public static class ChangeLogmsm7x30 extends SettingsActivity {/* empty */ }
+    public static class ChangeLogmsm7x30 extends SettingsActivity {/* empty */ }
+    public static class msmAbout extends SettingsActivity {/* empty */ }
     public static class About extends SettingsActivity { /* empty */ }
     public static class LockSettings extends SettingsActivity { /* empty */ }
     public static class LocalePickerActivity extends SettingsActivity { /* empty */ }
