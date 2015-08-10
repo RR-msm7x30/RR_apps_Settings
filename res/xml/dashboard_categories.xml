@@ -104,27 +104,16 @@
                 android:fragment="com.android.settings.msm7x30.msmSettings"
                 android:icon="@drawable/ic_rr_tools_tint"
                 />
-	<dashboard-tile
-	
-				android:icon="@drawable/ic_xposed_tint"
-				android:id="@+id/xposed"
-				android:title="@string/xposed_framework" 
-				android:key="xposed" >
-		<intent android:targetPackage="de.robv.android.xposed.installer" 
-				android:action="android.intent.action.MAIN" 
-				android:targetClass="de.robv.android.xposed.installer.WelcomeActivity"/>
-	
-	</dashboard-tile>
 	
 	<dashboard-tile
 				
-				android:icon="@drawable/ic_ariesve_tint"
-				android:id="@+id/ariesve_pr"
-				android:title="@string/ariesve_settings_title"
-				android:key="ariesve">
+		android:icon="@drawable/ic_ariesve_tint"
+		android:id="@+id/ariesora_pr"
+		android:title="Aries/Ora Parts"
+		android:key="ariesora">
 		<intent android:targetPackage="com.cyanogenmod.settings.device" 
-				android:action="android.intent.action.MAIN" 
-				android:targetClass="com.cyanogenmod.settings.device.DeviceSettings"/>
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="com.cyanogenmod.settings.device.DeviceSettings"/>
 	</dashboard-tile>
 	</dashboard-category>
 	

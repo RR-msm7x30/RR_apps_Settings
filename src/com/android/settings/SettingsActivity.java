@@ -224,9 +224,7 @@ public class SettingsActivity extends Activity
 
     private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
 	
-	private static final String XPOSED_PACKAGE_NAME = "de.robv.android.xposed.installer";
-	
-	private static final String ARIESVE_PACKAGE_NAME = "com.cyanogenmod.settings.device";
+    private static final String ARIESORA_PACKAGE_NAME = "com.cyanogenmod.settings.device";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -266,7 +264,7 @@ public class SettingsActivity extends Activity
             R.id.nfc_payment_settings,
             R.id.home_settings,
             R.id.main_settings,
-			R.id.msm_settings,
+	    R.id.msm_settings,
             R.id.status_bar_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod
@@ -291,7 +289,7 @@ public class SettingsActivity extends Activity
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
             MainSettings.class.getName(),
-			msmSettings.class.getName(),
+	    msmSettings.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
             ManageApplications.class.getName(),
@@ -1304,19 +1302,14 @@ public class SettingsActivity extends Activity
 
 				//msm7x30
 				
-				else if (id == R.id.xposed) {
-                    if (!Utils.isPackageInstalled(this, XPOSED_PACKAGE_NAME, false)) {
-                        removeTile = true;
-                    }
-				}
-				else if (id == R.id.ariesve_pr) {
-                    if (!Utils.isPackageInstalled(this, ARIESVE_PACKAGE_NAME, false)) {
+		   else if (id == R.id.ariesora_pr) {
+                    if (!Utils.isPackageInstalled(this, ARIESORA_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
 				}
 				//
 				
-				else if (id == R.id.voice_wakeup_settings) {
+		   else if (id == R.id.voice_wakeup_settings) {
                     if (!Utils.isPackageInstalled(this, VOICE_WAKEUP_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }

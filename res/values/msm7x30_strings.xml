@@ -29,8 +29,6 @@
 	<string name="msm7x30_settings_ota_pr_title">Updates</string>
 	<string name="msm7x30_settings_ota_dev_title">Release Details</string>
 	<string name="msm7x30_settings_cpu_main_title">CPU Preferences</string>
-	<string name="xposed_framework">Xposed Installer Preferences</string>
-	<string name="ariesve_settings_title">AriesParts</string>
 	<string name="msm7x30_nilac_summary">He is the one who brought Resurrection Remix to Ariesve and Ancora devices, at a certain point he created a custom ROM source just for these two devices and the main purpose of it was to make the ROM even better for these devices by including fixes for only those devices and  custom features coming from the user side . The ROM became to be very popular and many users continued to use it since January when it was released for the first time.</string>
 	<string name="msm7x30_sirmordred_summary">He is the Author of the many commits applied to the Kernel sources and also for the ancora device tree.
 He is not very active on XDA as per posts count but he is very active on Github as per public activity log.
