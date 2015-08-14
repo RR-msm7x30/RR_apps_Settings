@@ -39,13 +39,7 @@
 <Preference
         
 	style="?android:preferenceInformationStyle"
-        android:title="CyanogenMod"
-        android:selectable="false" />
-
-<Preference
-        
-	style="?android:preferenceInformationStyle"
-        android:title="Omni and Slim team"
+        android:title="Arco"
         android:selectable="false" />
 
 <Preference
@@ -57,7 +51,13 @@
 <Preference
         
 	style="?android:preferenceInformationStyle"
-        android:title="JustArchi"
+        android:title="CyanogenMod"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
+        android:title="Omni and Slim team"
         android:selectable="false" />
 
 <Preference
@@ -95,7 +95,7 @@
         
 	style="?android:preferenceInformationStyle"
         android:title="Donations"
-        android:summary="Are you enjoying the ROM? Then check up my XDA threads and buy me a cup of coffee"
+        android:summary="Are you enjoying the ROM? Then check up my XDA threads and buy me a cup of coffee!"
         android:selectable="false" />
 
 </PreferenceCategory>

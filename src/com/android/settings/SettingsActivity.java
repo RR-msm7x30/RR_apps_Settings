@@ -224,7 +224,7 @@ public class SettingsActivity extends Activity
 
     private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
 	
-    private static final String ARIESORA_PACKAGE_NAME = "com.cyanogenmod.settings.device";
+    private static final String ARIORA_PACKAGE_NAME = "com.cyanogenmod.settings.device";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1302,8 +1302,8 @@ public class SettingsActivity extends Activity
 
 				//msm7x30
 				
-		   else if (id == R.id.ariesora_pr) {
-                    if (!Utils.isPackageInstalled(this, ARIESORA_PACKAGE_NAME, false)) {
+		   else if (id == R.id.ariora_pr) {
+                    if (!Utils.isPackageInstalled(this, ARIORA_PACKAGE_NAME, false)) {
                         removeTile = true;
                     }
 				}
