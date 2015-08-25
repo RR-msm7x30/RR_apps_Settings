@@ -36,6 +36,7 @@
     <string name="device_category_oneplus_title">ONEPLUS</string>
     <string name="device_category_yureka_title">YU</string>
     <string name="device_category_xiaomi_title">XIAOMI</string>
+     <string name="device_category_huawei_title">Huawei</string>	
     
     <string name="maintainers_note_title">Note</string>
     <string name="maintainers_note_title_summary">Send a PM to \'Varun Date\' at Hangouts containing the link to your ROM thread if you want your name to be added in Device Maintainers list.</string>
@@ -48,6 +49,9 @@
 
     <string name="device_peregrine">Moto G LTE</string>
     <string name="device_peregrine_summary">Peregrine \nMaintainer - DC07</string>
+
+    <string name="device_condor">Moto E </string>
+    <string name="device_condor_summary">Condor \nMaintainer - Vatsal</string>
         
     <string name="device_oneplus">OnePlus One</string>
     <string name="device_oneplus_summary">Bacon \nMaintainer - varund7726</string>
@@ -76,8 +80,11 @@
     <string name="device_n7100">Galaxy Note II int</string>
     <string name="device_n7100_summary">N7100 \nMaintainer - varund7726</string>
     
-    <string name="device_hlte">Galaxy Note III int</string>
+    <string name="device_hlte">Galaxy Note III Qcom</string>
     <string name="device_hlte_summary">hlte \nMaintainer - Lord Eko</string>
+ 
+    <string name="device_ha3g">Galaxy Note 3 Exynos</string>
+    <string name="device_ha3g_summary">SM-N900 \nMaintainer - varund7726</string>
 	
     <string name="device_tblte">Galaxy Note Edge</string>
     <string name="device_tblte_summary">NoteEdge \nMaintainer - micky387</string>
@@ -211,6 +218,9 @@
     <string name="device_att_g3">LG G3 AT&amp;T</string>
     <string name="device_att_g3_summary">D850 \nMaintainer - oadam11 </string> 
     
+    <string name="device_g3_kr">LG G3 Korea</string>
+    <string name="device_g3_kr_summary">F400 \nMaintainer - TheNoFace</string> 
+
     <string name="device_honami">Xperia Z1</string>
     <string name="device_honami_summary">Honami \nMaintainer - OmarEinea</string>
     
@@ -266,11 +276,21 @@
     <string name="device_cancro_summary">Cancro\nMaintainer - Matoxxi</string>
     
     <string name="device_sprout4">Android One -4GB variants</string>
-    <string name="device_sprout4_summary">Sprout4\nMaintainer - akhilnarang</string>   
+    <string name="device_sprout4_summary">Sprout\nMaintainer - akhilnarang</string>   
     
     <string name="device_sprout8">Android One -8GB variants</string>
-    <string name="device_sprout8_summary">Sprout8\nMaintainer - akhilnarang</string> 
+    <string name="device_sprout8_summary">Sprout_b\nMaintainer - akhilnarang</string> 
 
     <string name="device_alpha">Samsung Galaxy Alpha</string>
     <string name="device_alpha_summary">G850F\nMaintainer - sunsettrack4</string> 
+    
+    <string name="device_t0ltexx">Samsung Galaxy Note II LTE International, ATT, Tmobile</string>
+    <string name="device_t0ltexx_summary">T0ltexx\nMaintainer-mr.nthh.na.vn</string>
+
+    <string name="device_u9500">Huawei Ascend D1</string>
+    <string name="device_u9500_summary">U9500\nMaintainer- ShevT</string>
+
+    <string name="device_smp601">Samsung Galaxy Note 10.1 3G</string>
+    <string name="device_smp601_summary">SM-P601\nMaintainer- ShevT</string>
+
    </resources>

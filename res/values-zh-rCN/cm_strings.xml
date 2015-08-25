@@ -82,6 +82,7 @@
   <string name="profile_choose_app">选择应用</string>
   <string name="profile_system_settings_title">系统设置</string>
   <string name="profile_lockmode_title">锁屏模式</string>
+  <string name="profile_lockmode_policy_disabled_summary">此配置文件选项已由设备管理员策略禁用</string>
   <string name="profile_lockmode_insecure_summary">不请求 PIN 码或密码</string>
   <string name="profile_lockmode_disabled_summary">禁用锁屏</string>
   <string name="profile_airplanemode_title">飞行模式</string>
@@ -213,7 +214,9 @@
   <string name="display_rotation_270_title">270 度</string>
   <string name="app_security_title">应用安全</string>
   <string name="sms_security_check_limit_title">短信限制</string>
-  <string name="sms_security_check_limit_summary">应用在 30 分钟内发送 %d 条信息后需要用户认可才能继续</string>
+  <string name="sms_security_check_limit_summary">应用在 1 分钟内发送 %d 条信息后需要用户认可才能继续</string>
+  <string name="sms_security_check_limit_summary_none">未经确认时应用不允许发送任何短信</string>
+  <string name="sms_security_check_limit_none">无</string>
   <string name="spam_added_title">已添加 %1$s</string>
   <string name="spam_last_blocked_title">最后一次被阻止： %1$s</string>
   <string name="block_notifications_title">通知过滤</string>
@@ -229,7 +232,6 @@
   <string name="device_model">设备型号</string>
   <string name="device_name">设备名称</string>
   <string name="build_date">编译日期</string>
-  <string name="contributor_cloud_title">贡献者</string>
   <string name="phone_service_state">语音： <xliff:g id="voice_state">%1$s</xliff:g>，数据： <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">双击唤醒</string>
   <string name="double_tap_to_wake_summary">双击屏幕来开启屏幕显示</string>
@@ -308,9 +310,6 @@
   <string name="status_bar_battery_percentage_default">隐藏</string>
   <string name="status_bar_battery_percentage_text_inside">图标内</string>
   <string name="status_bar_battery_percentage_text_next">图标旁</string>
-  <string name="status_bar_show_unused_sims_title">显示空 SIM 卡图标</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">隐藏未使用的 SIM 卡槽图标</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">显示未使用的 SIM 卡槽</string>
   <string name="edit_light_settings">编辑指示灯设置</string>
   <string name="pulse_speed_title">呼吸长度与速度</string>
   <string name="default_time">正常</string>
@@ -482,6 +481,7 @@
   <string name="ok">确定</string>
   <string name="profile_menu_delete_title">删除</string>
   <string name="profile_action_none">保持不变</string>
+  <string name="profile_action_system">系统默认</string>
   <string name="profile_action_disable">关闭</string>
   <string name="profile_action_enable">打开</string>
   <string name="profile_trigger_a2dp_connect">A2DP 连接时</string>
@@ -901,7 +901,7 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">已达到最大指纹数量</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">您只能登记 <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> 个指纹。删除一个现有指纹。</string>
   <string name="fingerprint_title_manage_fingerprints">管理指纹  <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">指纹将允许您快速解锁您的手机，确认购买和拍摄照片。</string>
+  <string name="manage_fingerprints_description">使用指纹将可以快速解锁您的手机和拍照。</string>
   <string name="fingerprint_enrollment_introduction_title">找到您的传感器</string>
   <string name="fingerprint_enrollment_introduction_instructions">指纹传感器位于您手机的正面或背面。</string>
   <string name="fingerprint_enrollment_scan_title">保持 3 秒</string>
@@ -934,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">嗯，出错了</string>
   <string name="fingerprint_enrollment_error_title_4">啊哦，请再试一次</string>
   <string name="fingerprint_enrollment_error_title_5">糟糕，发生了一个错误</string>
+  <string name="lockscreen_settings_and_fingerprint">锁屏 &amp; 指纹</string>
   <string name="menu_stats_reset">重置统计数据</string>
   <string name="reset_stats_msg">即将重置电池使用数据</string>
   <string name="dock_battery_not_present">基座电池不存在</string>
@@ -941,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">正在通过基座 USB 充电</string>
   <string name="setup_lock_pattern_size_title">图案复杂程度</string>
   <string name="setup_lock_pattern_size_details">您希望使用多少个节点的图案？节点越多，图案就可以越复杂。</string>
+  <string name="lto_download_data_wifi_only">辅助 GPS 数据下载</string>
+  <string name="lto_download_data_wifi_only_on">经由任何网络</string>
+  <string name="lto_download_data_wifi_only_off">仅经由 Wi\u2011Fi 网络</string>
 </resources>

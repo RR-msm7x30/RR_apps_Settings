@@ -215,7 +215,7 @@
   <string name="display_rotation_270_title">270 graus</string>
   <string name="app_security_title">Segurança dos aplicativos</string>
   <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
-  <string name="sms_security_check_limit_summary">Aplicativos podem enviar %d mensagens durante 30 minutos antes de exigir confirmação</string>
+  <string name="sms_security_check_limit_summary">Aplicativos podem enviar %d mensagens durante 1 minuto antes de exigir confirmação</string>
   <string name="sms_security_check_limit_summary_none">Apps não são permitidos enviar qualquer mensagem sem confirmação</string>
   <string name="sms_security_check_limit_none">Nenhum</string>
   <string name="spam_added_title">Adicionado %1$s</string>
@@ -233,7 +233,6 @@
   <string name="device_model">Modelo do dispositivo</string>
   <string name="device_name">Nome do dispositivo</string>
   <string name="build_date">Data de compilação</string>
-  <string name="contributor_cloud_title">Colaboradores</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, dados: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Toque duplo para acordar</string>
   <string name="double_tap_to_wake_summary">Dê um duplo toque na tela para ligar a tela</string>
@@ -312,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
-  <string name="status_bar_show_unused_sims_title">Mostrar ícones de SIM vazios</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Ocultar ícones dos slots de SIM não utilizados</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Indica os slots não utilizados do SIM</string>
   <string name="edit_light_settings">Editar configurações de luz</string>
   <string name="pulse_speed_title">Duração e velocidade da pulsação</string>
   <string name="default_time">Normal</string>
@@ -486,6 +482,7 @@
   <string name="ok">OK</string>
   <string name="profile_menu_delete_title">Apagar</string>
   <string name="profile_action_none">Deixar inalterado</string>
+  <string name="profile_action_system">Padrão do sistema</string>
   <string name="profile_action_disable">Desativar</string>
   <string name="profile_action_enable">Ativar</string>
   <string name="profile_trigger_a2dp_connect">Ao ligar A2DP</string>
@@ -904,7 +901,7 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Número máximo de impressões digitais atingido</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Você só pode registrar <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> impressões digitais. Exclua uma impressão digital existente.</string>
   <string name="fingerprint_title_manage_fingerprints">Gerenciar impressões digitais</string>
-  <string name="manage_fingerprints_description">Impressões digitais permitem que você desbloqueie rapidamente seu telefone, confirme compras e tire fotos.</string>
+  <string name="manage_fingerprints_description">Impressões digitais permitem que você desbloqueie rapidamente o seu telefone e tire fotos.</string>
   <string name="fingerprint_enrollment_introduction_title">Encontrar seu sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">O sensor de impressão digital está localizado na parte da frente ou para trás de seu telefone.</string>
   <string name="fingerprint_enrollment_scan_title">Segure  por 3 segundos</string>
@@ -937,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">Hmm, algo deu errado</string>
   <string name="fingerprint_enrollment_error_title_4">Eita, tente novamente</string>
   <string name="fingerprint_enrollment_error_title_5">Ops, ocorreu um erro</string>
+  <string name="lockscreen_settings_and_fingerprint">Tela de bloqueio e impressão digital</string>
   <string name="menu_stats_reset">Redefinir estatísticas</string>
   <string name="reset_stats_msg">Estatísticas do histórico da bateria será redefinida</string>
   <string name="dock_battery_not_present">Bateria do dock não está disponível</string>
@@ -944,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">Carregamento via dock USB</string>
   <string name="setup_lock_pattern_size_title">Complexidade do padrão</string>
   <string name="setup_lock_pattern_size_details">Quantos nós você gostaria de usar com o seu padrão? Mais nós, mais complexo o padrão pode ser.</string>
+  <string name="lto_download_data_wifi_only">Transferência de dados assistidos de GPS</string>
+  <string name="lto_download_data_wifi_only_on">Qualquer rede</string>
+  <string name="lto_download_data_wifi_only_off">Somente através de redes Wi\u2011Fi</string>
 </resources>

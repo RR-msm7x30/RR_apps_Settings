@@ -23,12 +23,18 @@
         android:summary="@string/device_g3_tmo_summary"
         android:selectable="false" 
         android:title="@string/device_g3_tmo" />
-   <Preference
+    <Preference
         android:id="@+id/device_att_g3"
         android:icon="@drawable/phone_tint"
         android:summary="@string/device_att_g3_summary"
         android:selectable="false" 
-        android:title="@string/device_att_g3" />    
+        android:title="@string/device_att_g3" />
+    <Preference
+        android:id="@+id/device_g3_kr"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_g3_kr_summary"
+        android:selectable="false" 
+        android:title="@string/device_g3_kr" />
     <Preference
         android:id="@+id/device_g2"
         android:icon="@drawable/phone_tint"
@@ -47,12 +53,6 @@
         android:summary="@string/device_n4_summary"
         android:selectable="false" 
         android:title="@string/device_n4" />
-     <Preference
-        android:id="@+id/device_maguro"
-        android:icon="@drawable/phone_tint"
-        android:summary="@string/device_maguro_summary"
-        android:selectable="false" 
-        android:title="@string/device_maguro" /> 
     <Preference
         android:id="@+id/device_l9"
         android:icon="@drawable/phone_tint"
@@ -92,6 +92,13 @@
         android:title="@string/device_falcon" />
 
     <Preference
+        android:id="@+id/device_condor"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_condor_summary"
+        android:selectable="false" 
+        android:title="@string/device_condor" />
+
+    <Preference
         android:id="@+id/device_peregrine"
         android:icon="@drawable/phone_tint"
         android:summary="@string/device_peregrine_summary"
@@ -122,7 +129,13 @@
     <PreferenceCategory
         android:id="@+id/device_category_samsung"
         android:title="@string/device_category_samsung_title" >
-        
+
+     <Preference
+        android:id="@+id/device_maguro"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_maguro_summary"
+        android:selectable="false" 
+        android:title="@string/device_maguro" />        
     <Preference
         android:id="@+id/device_i9300"
         android:icon="@drawable/phone_tint"
@@ -190,6 +203,18 @@
         android:selectable="false" 
         android:title="@string/device_n7100" />
     <Preference
+        android:id="@+id/device_ha3g"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_ha3g_summary"
+        android:selectable="false" 
+        android:title="@string/device_ha3g" />
+    <Preference
+        android:id="@+id/device_t0ltexx"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_t0ltexx_summary"
+        android:selectable="false" 
+        android:title="@string/device_t0ltexx" />
+    <Preference
         android:id="@+id/device_n7000"
         android:icon="@drawable/phone_tint"
         android:summary="@string/device_n7000_summary"
@@ -230,7 +255,13 @@
         android:icon="@drawable/phone_tint"
         android:summary="@string/device_trltexx_summary"
         android:selectable="false" 
-        android:title="@string/device_trltexx" />             
+        android:title="@string/device_trltexx" />        
+    <Preference
+        android:id="@+id/device_smp601"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_smp601_summary"
+        android:selectable="false" 
+        android:title="@string/device_smp601" />        
        </PreferenceCategory>
        
      <PreferenceCategory
@@ -448,6 +479,18 @@
         android:summary="@string/device_sprout8_summary"
         android:selectable="false"
         android:title="@string/device_sprout8" />
-	
-</PreferenceCategory>
+	</PreferenceCategory>
+
+<PreferenceCategory
+       android:id="@+id/device_category_huawei "
+       android:title="@string/device_category_huawei_title" >
+        
+    <Preference
+        android:id="@+id/device_u9500"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_u9500_summary"
+        android:selectable="false"
+        android:title="@string/device_u9500" />
+	</PreferenceCategory>
+
 </PreferenceScreen> 

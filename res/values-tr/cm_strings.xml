@@ -83,6 +83,7 @@
   <string name="profile_choose_app">Uygulama seç</string>
   <string name="profile_system_settings_title">Sistem ayarları</string>
   <string name="profile_lockmode_title">Kilit ekranı modu</string>
+  <string name="profile_lockmode_policy_disabled_summary">Bu profil, bir cihaz yönetici politikası tarafından devre dışı bırakıldı</string>
   <string name="profile_lockmode_insecure_summary">PIN veya şifre sorma</string>
   <string name="profile_lockmode_disabled_summary">Kilit ekranını devre dışı bırak</string>
   <string name="profile_airplanemode_title">Uçak modu</string>
@@ -214,7 +215,9 @@
   <string name="display_rotation_270_title">270 derece</string>
   <string name="app_security_title">Uygulama güvenliği</string>
   <string name="sms_security_check_limit_title">SMS mesaj sınırı</string>
-  <string name="sms_security_check_limit_summary">Uygulamalar onay almadan 30 dakikada en fazla %d mesaj gönderebilir</string>
+  <string name="sms_security_check_limit_summary">Uygulamalar onay almadan 1 dakikada en fazla %d mesaj gönderebilir</string>
+  <string name="sms_security_check_limit_summary_none">Uygulamaların onaysız mesaj göndermesine izin verilmiyor</string>
+  <string name="sms_security_check_limit_none">Yok</string>
   <string name="spam_added_title">%1$s eklendi</string>
   <string name="spam_last_blocked_title">En son %1$s engellendi</string>
   <string name="block_notifications_title">Bildirimleri filtrele</string>
@@ -230,7 +233,6 @@
   <string name="device_model">Cihaz modeli</string>
   <string name="device_name">Cihaz ismi</string>
   <string name="build_date">İnşa tarihi</string>
-  <string name="contributor_cloud_title">Katkıda bulunanlar</string>
   <string name="phone_service_state">Ses: <xliff:g id="voice_state">%1$s</xliff:g>, veri: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Uyanmak için çift dokun</string>
   <string name="double_tap_to_wake_summary">Ekranı açmak için ekrana iki defa dokunun</string>
@@ -309,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Gizli</string>
   <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
   <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
-  <string name="status_bar_show_unused_sims_title">Boş SIM simgelerini göster</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Kullanılmayan SIM yuvalarının simgelerini gizle</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Kullanılmayan SIM yuvalarını göster</string>
   <string name="edit_light_settings">Işık ayarlarını düzenle</string>
   <string name="pulse_speed_title">Yanma hızı ve süresi</string>
   <string name="default_time">Normal</string>
@@ -483,6 +482,7 @@
   <string name="ok">Tamam</string>
   <string name="profile_menu_delete_title">Sil</string>
   <string name="profile_action_none">Değiştirme</string>
+  <string name="profile_action_system">Sistem varsayılanı</string>
   <string name="profile_action_disable">Kapat</string>
   <string name="profile_action_enable">Aç</string>
   <string name="profile_trigger_a2dp_connect">A2DP bağlantısında</string>
@@ -849,7 +849,7 @@
   <string name="preview_country_title">Ülke</string>
   <string name="preview_carrier_title">Operatör</string>
   <string name="heads_up_notifications">Bildirim Pencereleri</string>
-  <string name="summary_heads_up_enabled">Açılabilir bildirimler etkinleştirildi</string>
+  <string name="summary_heads_up_enabled">Açılır bildirimler etkinleştirildi</string>
   <string name="summary_heads_up_disabled">Açılır bildirimler devre dışı bırakıldı</string>
   <string name="master_clear_desc_cm" product="tablet">Bu işlem tabletinizin <b>dahili belleğinde</b> bulunan tüm verileri silecek, \n\n<li>Cihazdaki hesaplar</li>\n<li>Sistem ve uygulama veri ve ayarları</li>\n<li>İndirilen uygulamalar</li> dahil.</string>
   <string name="master_clear_desc_cm" product="default">Bu işlem telefonunuzun<b>dahili belleğinde</b> bulunan tüm verileri silecek, \n\n<li>Cihazdaki hesaplar</li>\n<li>Sistem ve uygulama veri ve ayarları</li>\n<li>İndirilen uygulamalar</li> dahil.</string>
@@ -901,7 +901,7 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Parmak izi sınırına ulaşıldı</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Sadece <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> tane parmak izi kaydedebilirsiniz. Eskilerden birini silin.</string>
   <string name="fingerprint_title_manage_fingerprints">Parmak izlerini yönet <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Parmak izleri hızlıca telefon kilidinizi açmaya, alışverişleri onaylamaya ve fotoğraf çekmeye izin verir.</string>
+  <string name="manage_fingerprints_description">Parmak izleri telefon kilidinizi hızlıca açıp fotoğraf çekmenizi sağlar.</string>
   <string name="fingerprint_enrollment_introduction_title">Sensörünüzü bulun</string>
   <string name="fingerprint_enrollment_introduction_instructions">Parmak izi sensörü Telefonunuzun önünde ya da arkasında yer alır.</string>
   <string name="fingerprint_enrollment_scan_title">3 saniye tutun</string>
@@ -934,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">Bir şeyler ters gidiyor</string>
   <string name="fingerprint_enrollment_error_title_4">Bir daha deneyin</string>
   <string name="fingerprint_enrollment_error_title_5">Offf, hata oluştu</string>
+  <string name="lockscreen_settings_and_fingerprint">Kilit ekranı &amp; parmak izi</string>
   <string name="menu_stats_reset">İstatistikleri sıfırla</string>
   <string name="reset_stats_msg">Pil kullanım istatistikleri sıfırlanacak</string>
   <string name="dock_battery_not_present">Ünite pili mevcut değil</string>
@@ -941,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">Ünite USB\'si ile şarj oluyor</string>
   <string name="setup_lock_pattern_size_title">Desen zorluğu</string>
   <string name="setup_lock_pattern_size_details">Deseninizde kaç nokta kullanmak istersiniz? Ne kadar çok nokta kullanırsanız deseniniz o kadar zor olur.</string>
+  <string name="lto_download_data_wifi_only">GPS destekli veri indirimi</string>
+  <string name="lto_download_data_wifi_only_on">Herhangi bir ağ üzerinden</string>
+  <string name="lto_download_data_wifi_only_off">Sadece Wi\u2011Fi ağları üzerinden</string>
 </resources>

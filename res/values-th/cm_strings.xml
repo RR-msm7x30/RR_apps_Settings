@@ -227,7 +227,6 @@
   <string name="device_model">รุ่นอุปกรณ์</string>
   <string name="device_name">ชื่ออุปกรณ์</string>
   <string name="build_date">วันที่บิวด์</string>
-  <string name="contributor_cloud_title">ผู้ร่วมพัฒนา</string>
   <string name="phone_service_state">เสียง: <xliff:g id="voice_state">%1$s</xliff:g>, ข้อมูล: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">แตะสองครั้งเพื่อเปิดจอ</string>
   <string name="double_tap_to_wake_summary">แตะสองครั้งเพื่อเปิดหน้าจอ</string>
@@ -306,9 +305,6 @@
   <string name="status_bar_battery_percentage_default">ซ่อน</string>
   <string name="status_bar_battery_percentage_text_inside">อยู่ในไอคอน</string>
   <string name="status_bar_battery_percentage_text_next">ถัดจากไอคอน</string>
-  <string name="status_bar_show_unused_sims_title">แสดงไอคอนซิมการ์ดเปล่า</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">ซ่อนไอคอนของซิมที่ไม่ได้ใช้งาน</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">แสดงซิมที่ไม่ได้ใช้งาน</string>
   <string name="edit_light_settings">แก้ไขการตั้งค่าแสง</string>
   <string name="pulse_speed_title">ระยะเวลาและความยาวการกระพริบ</string>
   <string name="default_time">ปกติ</string>

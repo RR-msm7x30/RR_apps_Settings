@@ -16,6 +16,8 @@
 
 package com.android.settings.livedisplay;
 
+import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,7 +37,7 @@ import android.widget.TextView;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
-import static android.hardware.CmHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+import cyanogenmod.hardware.CMHardwareManager;
 
 /**
  * Special preference type that allows configuration of Color settings
@@ -73,13 +75,12 @@ public class DisplayColor extends DialogPreference {
 
         mContext = context;
 
-        final CmHardwareManager mCmHardwareManager =
-                (CmHardwareManager) mContext.getSystemService(Context.CMHW_SERVICE);
-        useCMHW = mCmHardwareManager.isSupported(FEATURE_DISPLAY_COLOR_CALIBRATION);
+        final CMHardwareManager mHardware = CMHardwareManager.getInstance(context);
+        useCMHW = mHardware.isSupported(FEATURE_DISPLAY_COLOR_CALIBRATION);
         if (useCMHW) {
-            minRGB = mCmHardwareManager.getDisplayColorCalibrationMin();
-            maxRGB = mCmHardwareManager.getDisplayColorCalibrationMax();
-            defaultRGB = (float) mCmHardwareManager.getDisplayColorCalibrationDefault() / maxRGB;
+            minRGB = mHardware.getDisplayColorCalibrationMin();
+            maxRGB = mHardware.getDisplayColorCalibrationMax();
+            defaultRGB = (float) mHardware.getDisplayColorCalibrationDefault() / maxRGB;
         } else {
             // Initialize these just to avoid compiler errors.
             minRGB = 20;

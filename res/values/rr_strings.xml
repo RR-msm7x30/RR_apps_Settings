@@ -63,10 +63,6 @@
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
-    <string name="color_default">Default</string>
-    <!-- Superuser indicator-->
-    <string name="su_indicator">Superuser indicator</string>
-    <string name="su_indicator_summary">Show superuser indicator when a session is active</string>
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="device_settings_title">Device</string>
     <string name="rr_mod_version">Resurrection version</string>
@@ -183,6 +179,8 @@
     <string name="show_network_traffic_frequency">Update interval</string>
     <string name="show_network_traffic_disable">Disabled</string>
     <string name="show_network_traffic_up">Outgoing</string>
+    <string name="network_traffic_hide_arrow">Hide arrows</string>
+    <string name="network_traffic_hide_arrow_summary">Hide the traffic arrow indicator</string>
     <string name="show_network_traffic_down">Incoming</string>
     <string name="show_network_traffic_all">Outgoing and incoming</string>
     <string name="show_network_traffic_bit">Bits per second</string>
@@ -1162,5 +1160,21 @@
     <!-- Headphones icon switch -->
     <string name="show_headset_icon_title">Headset icon</string>
     <string name="show_headset_icon_summary">Shows icon when headsets are connected.</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
+    <!--User preferences settings-->
+    <string name="personalization">Personalization</string>
+    <string name="reset_user_preferences_title">Reset preferences</string>
+    <string name="reset_user_preferences_summary">Restores user interface preferences to default values</string>
+    <string name="reset_user_preferences_dialog">Are you sure you want to reset your preferences?</string>
+ 
+    <!--Shake To Clear Recents Settings -->
+    <string name="shake_clean_recent">Clean recents</string>
+    <string name="shake_clean_recent_summary">Clean recent task by shake</string>
+    <string name="shake_clean_notification">Clean notifications</string>
+    <string name="shake_clean_notification_summary">Clean notification by shake</string>
 
 </resources>

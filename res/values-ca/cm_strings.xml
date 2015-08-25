@@ -83,6 +83,7 @@
   <string name="profile_choose_app">Escull aplicació</string>
   <string name="profile_system_settings_title">Configuració del sistema</string>
   <string name="profile_lockmode_title">Mode del bloqueig de pantalla</string>
+  <string name="profile_lockmode_policy_disabled_summary">Aquesta opció de perfil està deshabilitada per una política d\'administració de dispositiu</string>
   <string name="profile_lockmode_insecure_summary">No preguntis el PIN o la contrasenya</string>
   <string name="profile_lockmode_disabled_summary">Deshabilita la pantalla de bloqueig</string>
   <string name="profile_airplanemode_title">Mode avió</string>
@@ -111,10 +112,10 @@
   <string name="hardware_keys_double_tap_title">Acció amb doble pulsació</string>
   <string name="hardware_keys_action_nothing">Cap acció</string>
   <string name="hardware_keys_action_menu">Obre/tanca el menú</string>
-  <string name="hardware_keys_action_app_switch">Intercanviador d\'apps recents</string>
+  <string name="hardware_keys_action_app_switch">Intercanviador d\'aplicacions recents</string>
   <string name="hardware_keys_action_search">Assistent de cerca</string>
   <string name="hardware_keys_action_voice_search">Cerca per veu</string>
-  <string name="hardware_keys_action_in_app_search">Cerca dins l\'app</string>
+  <string name="hardware_keys_action_in_app_search">Cerca dins l\'aplicació</string>
   <string name="hardware_keys_action_launch_camera">Obre la càmera</string>
   <string name="hardware_keys_action_sleep">Apaga la pantalla</string>
   <string name="hardware_keys_action_last_app">Darrera aplicació</string>
@@ -212,9 +213,11 @@
   <string name="display_rotation_90_title">90 graus</string>
   <string name="display_rotation_180_title">180 graus</string>
   <string name="display_rotation_270_title">270 graus</string>
-  <string name="app_security_title">Seguretat d\'app</string>
+  <string name="app_security_title">Seguretat de les aplicacions</string>
   <string name="sms_security_check_limit_title">Límit de missatges SMS</string>
-  <string name="sms_security_check_limit_summary">Les apps poden enviar %d missatges en 30 minuts abans de necessitar una confirmació</string>
+  <string name="sms_security_check_limit_summary">Les aplicacions poden enviar %d missatges en 1 minut abans de necessitar una confirmació</string>
+  <string name="sms_security_check_limit_summary_none">Les aplicacions no tenen permès enviar cap missatge sense confirmar-ho</string>
+  <string name="sms_security_check_limit_none">Cap</string>
   <string name="spam_added_title">Afegit %1$s</string>
   <string name="spam_last_blocked_title">Darrera vegada bloquejat %1$s</string>
   <string name="block_notifications_title">Filtra les notificacions</string>
@@ -230,7 +233,6 @@
   <string name="device_model">Model del dispositiu</string>
   <string name="device_name">Nom del dispositiu</string>
   <string name="build_date">Data d\'elaboració</string>
-  <string name="contributor_cloud_title">Contribuïdors</string>
   <string name="phone_service_state">Veu: <xliff:g id="voice_state">%1$s</xliff:g>, dades: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Pica doblement per encendre</string>
   <string name="double_tap_to_wake_summary">Pica dues vegades a la pantalla per encendre la pantalla</string>
@@ -267,8 +269,8 @@
   <string name="double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>
   <string name="wake_when_plugged_or_unplugged_title">Encén en endollar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encén la pantalla en connectar o desconnectar d\'una font d\'energia</string>
-  <string name="kill_app_longpress_back">Mata amb la tecla enrera l\'app</string>
-  <string name="kill_app_longpress_back_summary">Mata l\'app en primer pla fent una pulsació llarga del botó enrera</string>
+  <string name="kill_app_longpress_back">Mata l\'aplicació amb la tecla enrera</string>
+  <string name="kill_app_longpress_back_summary">Mata l\'aplicació en primer pla fent una pulsació llarga del botó enrera</string>
   <string name="disable_navkeys_title">Habilita bar nav en pantalla</string>
   <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla y deshabilitar els botons físics</string>
   <string name="navigation_bar_category">Barra de navegació</string>
@@ -309,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Amagat</string>
   <string name="status_bar_battery_percentage_text_inside">Dins la icona</string>
   <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
-  <string name="status_bar_show_unused_sims_title">Mostra les icones de SIMs buides</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Amaga les icones de ranures SIM no utilitzades</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Indica les ranures SIM no utilitzades</string>
   <string name="edit_light_settings">Edita els ajustos de llum</string>
   <string name="pulse_speed_title">Durada i velocitat del parpalleig</string>
   <string name="default_time">Normal</string>
@@ -349,9 +348,9 @@
   <string name="ime_switcher_notify">Selector d\'icona</string>
   <string name="ime_switcher_notify_summary">Mostra la icona del selector de mètode d\'entrada</string>
   <string name="app_notification_show_on_keyguard_title">Mostra a la pantalla de bloqueig</string>
-  <string name="app_notification_show_on_keyguard_summary">Mostra les notificacions d\'aquesta app a la pantalla de bloqueig</string>
+  <string name="app_notification_show_on_keyguard_summary">Mostra les notificacions d\'aquesta aplicació a la pantalla de bloqueig</string>
   <string name="app_notification_no_ongoing_on_keyguard_title">Deshabilita les notificacions persistents a la pantalla de bloqueig</string>
-  <string name="app_notification_no_ongoing_on_keyguard_summary">No mostris mai notificacions persistents d\'aquesta app a la pantalla de bloqueig</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">No mostris mai notificacions persistents d\'aquesta aplicació a la pantalla de bloqueig</string>
   <string name="high_touch_sensitivity_title">Sensibilitat al tacte alta</string>
   <string name="high_touch_sensitivity_summary">Incrementa la sensibilitat de la pantalla tàctil de manera que pugui utilitzar-se si es porten guants</string>
   <string name="touchscreen_hovering_title">Sura per sobre la pantalla tàctil</string>
@@ -399,7 +398,7 @@
   <string name="app_ops_summaries_keep_awake">mantenir encès</string>
   <string name="app_ops_summaries_monitor_location">monitoritzar ubicació</string>
   <string name="app_ops_summaries_monitor_high_power_location">monitoritzar ubicació en alta precisió</string>
-  <string name="app_ops_summaries_get_usage_stats">obtenir estadístiques d\'ús d\'apps</string>
+  <string name="app_ops_summaries_get_usage_stats">obtenir estadístiques d\'ús d\'aplicacions</string>
   <string name="app_ops_summaries_mute_unmute_microphone">silenciar/encrendre el micròfon</string>
   <string name="app_ops_summaries_toast_window">mostrar missatges emergents</string>
   <string name="app_ops_summaries_project_media">projectar contingut multimèdia</string>
@@ -901,13 +900,13 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">S\'ha assolit el màxim d\'empremtes digitals</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Només pots enregistrar <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> empremtes digitals. Esborra una empremta digital existent.</string>
   <string name="fingerprint_title_manage_fingerprints">Gestiona les empremtes digitals <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Les empremtes digitals et permeten desbloquejar ràpidament el telèfon, confirmar compres i fer fotos.</string>
+  <string name="manage_fingerprints_description">Les empremtes digitals et permetran desbloquejar el telèfon ràpidament i fer fotos.</string>
   <string name="fingerprint_enrollment_introduction_title">Troba el teu sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">El sensor d\'empremtes digitals està situat a la part davantera o posterior del teu telèfon.</string>
   <string name="fingerprint_enrollment_scan_title">Aguanta durant 3 segons</string>
   <string name="fingerprint_enrollment_scan_instructions">Situa el dit índex al sensor d\'empremtes digitals per començar la configuració. Aixeca el teu dit quan sentis una vibració.</string>
   <string name="fingerprint_enrollment_error_title_wrong_sensor">Si us plau intenta-ho un altre cop</string>
-  <string name="fingerprint_enrollment_error_message">Situa el teu dit fermament sobre el sensor d\'empremtes digitals per assegurar una lectura precisa. També assegura\'t que estàs utilitzant el mateix dit que abans. Aixeca el teu dit quan sentis una vibració.</string>
+  <string name="fingerprint_enrollment_error_message">Situa el teu dit sobre el sensor d\'empremtes digitals per assegurar una lectura precisa. També assegura\'t que estàs utilitzant el mateix dit que abans. Aixeca el teu dit quan sentis una vibració.</string>
   <string name="fingerprint_enrollment_scan_instructions">Situa el dit índex al sensor d\'empremtes digitals per començar la configuració. Aixeca el teu dit quan sentis una vibració.</string>
   <string name="fingerprint_enrollment_break_title">Continua amb la lectura actual</string>
   <string name="fingerprint_enrollment_break_instructions">Continua per capturar les vores de la teva empremta. Aixeca el teu dit quan sentis una vibració.</string>
@@ -941,4 +940,7 @@
   <string name="battery_info_status_charging_dock_usb">S\'està carregant sobre l\'acoblament USB</string>
   <string name="setup_lock_pattern_size_title">Complexitat del patró</string>
   <string name="setup_lock_pattern_size_details">Quants nodes vols utilitzar en el teu patró? Com més nodes, més complex pot ser el patró.</string>
+  <string name="lto_download_data_wifi_only">Descàrrega de dades assistides de GPS</string>
+  <string name="lto_download_data_wifi_only_on">Sobre qualsevol xarxa</string>
+  <string name="lto_download_data_wifi_only_off">Només sobre xarxes Wi\u2011Fi</string>
 </resources>

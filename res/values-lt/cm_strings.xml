@@ -84,6 +84,7 @@
   <string name="profile_choose_app">Pasirinkti programą</string>
   <string name="profile_system_settings_title">Sistemos nustatymai</string>
   <string name="profile_lockmode_title">Ekrano užrakto režimas</string>
+  <string name="profile_lockmode_policy_disabled_summary">Šio profilio parinktis yra neleidžiama pagal įrenginio administratoriaus politikos</string>
   <string name="profile_lockmode_insecure_summary">Neklausti PIN arba slaptažodžio</string>
   <string name="profile_lockmode_disabled_summary">Neleisti ekrano užrakto</string>
   <string name="profile_airplanemode_title">Lėktuvo režimas</string>
@@ -233,7 +234,6 @@
   <string name="device_model">Įrenginio modelis</string>
   <string name="device_name">Įrenginio pavadinimas</string>
   <string name="build_date">Surinkimo data</string>
-  <string name="contributor_cloud_title">Pagalbininkai</string>
   <string name="phone_service_state">Balsas: <xliff:g id="voice_state">%1$s</xliff:g>, duomenys: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Dukart bakstelėti, kad pažadinti</string>
   <string name="double_tap_to_wake_summary">Dukart bakstelėti ekraną, kad jį ijungti</string>
@@ -312,9 +312,6 @@
   <string name="status_bar_battery_percentage_default">Paslėpti</string>
   <string name="status_bar_battery_percentage_text_inside">Piktogramos viduje</string>
   <string name="status_bar_battery_percentage_text_next">Šalia piktogramos</string>
-  <string name="status_bar_show_unused_sims_title">Rodyti tuščias SIM piktogramas</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Slėpti nepanaudotų SIM lizdų piktogramas</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Nurodyti nepanaudotų SIM lizdus</string>
   <string name="edit_light_settings">Redaguoti šviesos nustatymus</string>
   <string name="pulse_speed_title">Pulsavimo trukmė ir greitis</string>
   <string name="default_time">Normalus</string>
@@ -657,6 +654,7 @@
   <string name="usb_charging_summary">Neleidžia visų duomenų perdavimų su kompiuteriu ir įkrauna įrenginį per USB prievadą</string>
   <string name="usb_sdcard_title">Didelės talpos atmintis (UMS)</string>
   <string name="usb_sdcard_summary">Leidžia perduoti failus tarp jūsų kompiuterio ir SD kortelės prijungiant ją kaip „Flash“ įrenginį</string>
+  <string name="usb_not_connected">USB dabar atjungtas</string>
   <string name="external_storage_turn_on">Išorinė saugykla buvo įjungta</string>
   <string name="external_storage_turn_off">Išorinė saugykla buvo išjungta</string>
   <string name="stats_collection_title">Statistikos kolekcija</string>
@@ -809,6 +807,7 @@
   <string name="category_interface">Sąsaja</string>
   <string name="category_calibration">Kalibravimas</string>
   <string name="display_and_lights">Ekranas ir šviesos</string>
+  <string name="notification_manager">Pranešimai</string>
   <string name="lockscreen_settings">Ekrano užraktas</string>
   <string name="category_lights">Šviesos</string>
   <string name="power_usage_history_title">Akumuliatoriaus naudojimas</string>
@@ -852,6 +851,8 @@
   <string name="heads_up_notifications">Iššokantys pranešimai</string>
   <string name="summary_heads_up_enabled">Iššokantys pranešimai yra įgalinti</string>
   <string name="summary_heads_up_disabled">Iššokantys pranešimai yra neleidžiami</string>
+  <string name="master_clear_desc_cm" product="tablet">Tai ištrins visus duomenis iš jūsų planšetinio kompiuterio <b>vidinės saugyklos</b>, įskaitant:\n\n<li>Jūsų įrenginio paskyras</li>\n<li>Sistemos ir programų duomenis, nustatymus</li>\n<li>Atsisiųstas programas</li></string>
+  <string name="master_clear_desc_cm" product="default">Tai ištrins visus duomenis iš jūsų telefono <b>vidinės saugyklos</b>, įskaitant:\n\n<li>Jūsų įrenginio paskyras</li>\n<li>Sistemos ir programų duomenis, nustatymus</li>\n<li>Atsisiųstas programas</li></string>
   <string name="lock_to_cyanogen_title">Įrenginio apsauga</string>
   <string name="lock_to_cyanogen_summary">Reikalauti „Cyanogen“ OS paskyros slaptažodžio net ir po gamyklinių nustatymų iš naujo</string>
   <string name="lock_to_cyanogen_create_account_msg">Jūsų įrenginys naudoja „Cyanogen“ OS paskyros slaptažodį, kad apsaugotų įrenginį net ir po gamyklinių nustatymų iš naujo. Jums reikės sukurti „Cyanogen“ OS paskyrą.</string>
@@ -899,13 +900,11 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Pasiektas maksimalus pirštų atspaudų kiekis</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Galite tik įtraukti <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> pirštų atspaudus. Ištrinkite esamą pirštų atspaudą.</string>
   <string name="fingerprint_title_manage_fingerprints">Tvarkyti pirštų atspaudus <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Pirštų atspaudai leidžia jums greitai atrakinti savo telefoną, patvirtinti pirkimus ir fotografuoti.</string>
   <string name="fingerprint_enrollment_introduction_title">Ieškoti savo jutiklio</string>
   <string name="fingerprint_enrollment_introduction_instructions">Pirštų atspaudų jutiklis yra priekinėje arba užpakalinėje telefono pusėje.</string>
   <string name="fingerprint_enrollment_scan_title">Palaikykite 3 sekundes</string>
   <string name="fingerprint_enrollment_scan_instructions">Padėkite smilių ant pirštų atspaudų jutiklio, kad pradėtumėte sąranką. Pakelkite pirštą, kai pajusite vibraciją.</string>
   <string name="fingerprint_enrollment_error_title_wrong_sensor">Bandykite dar kartą</string>
-  <string name="fingerprint_enrollment_error_message">Padėkite pirštą tvirtai ant pirštų atspaudų jutiklio, kad užtikrintumėte tikslų skenavimą. Taip pat įsitikinkite, kad jūs naudojate tą patį pirštą, kaip ir anksčiau. Pakelkite pirštą, kai pajusite vibraciją.</string>
   <string name="fingerprint_enrollment_scan_instructions">Padėkite smilių ant pirštų atspaudų jutiklio, kad pradėtumėte sąranką. Pakelkite pirštą, kai pajusite vibraciją.</string>
   <string name="fingerprint_enrollment_break_title">Tęsti su dabartiniu suspaudimu</string>
   <string name="fingerprint_enrollment_break_instructions">Laikykite, kad užfiksuotumėte piršto kraštus. Pakelkite pirštą, kai pajusite vibraciją.</string>

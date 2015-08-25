@@ -83,6 +83,7 @@
   <string name="profile_choose_app">בחר יישום</string>
   <string name="profile_system_settings_title">הגדרות מערכת</string>
   <string name="profile_lockmode_title">מצב מסך הנעילה</string>
+  <string name="profile_lockmode_policy_disabled_summary">אפשרות פרופיל זאת מושבתת עקב מדיניות מנהל ההתקן</string>
   <string name="profile_lockmode_insecure_summary">אל תבקש PIN או סיסמה</string>
   <string name="profile_lockmode_disabled_summary">ביטול מסך הנעילה</string>
   <string name="profile_airplanemode_title">מצב טיסה</string>
@@ -99,7 +100,7 @@
   <string name="toggleNfc">NFC</string>
   <string name="button_pref_title">מקשים</string>
   <string name="hardware_keys_power_key_title">לחצן הפעלה</string>
-  <string name="hardware_keys_home_key_title">כפתור הבית</string>
+  <string name="hardware_keys_home_key_title">לחצן הבית</string>
   <string name="hardware_keys_back_key_title">לחצן \"הקודם\"</string>
   <string name="hardware_keys_menu_key_title">לחצן התפריט</string>
   <string name="hardware_keys_assist_key_title">לחצן חיפוש</string>
@@ -123,7 +124,7 @@
   <string name="camera_launch_title">הפעלת מצלמה</string>
   <string name="camera_launch_summary">לחיצה ארוכה ושחרור תפעיל את המצלמה</string>
   <string name="volbtn_music_controls_title">מעביר מוזיקה</string>
-  <string name="volbtn_music_controls_summary">כאשר המסך כבוי, הקשה ארוכה על מקשי עוצמת הקול תחליף את רצועת המוזיקה</string>
+  <string name="volbtn_music_controls_summary">כאשר המסך כבוי, לחיצה ארוכה על לחצני עוצמת הקול תחליף את רצועת המוזיקה</string>
   <string name="volbtn_cursor_control_title">שליטה בסמן עם מקלדת</string>
   <string name="volbtn_cursor_control_off">מושבת</string>
   <string name="volbtn_cursor_control_on">עוצמה למעלה/למטה מעבירה את הסמן שמאלה/ימינה</string>
@@ -136,7 +137,7 @@
   <string name="power_end_call_summary">לחיצה על לחצן ההפעלה תסיים את השיחה הנוכחית</string>
   <string name="button_wake_title">הער את המכשיר</string>
   <string name="button_wake_summary">עקיפת שליטה על ניגון</string>
-  <string name="home_answer_call_title">ענה לשיחה</string>
+  <string name="home_answer_call_title">מענה לשיחה</string>
   <string name="home_answer_call_summary">לחיצה על כפתור הבית תענה לשיחה הנכנסת הנוכחית</string>
   <string name="button_backlight_title">תאורה אחורית</string>
   <string name="button_backlight_enabled">האר לחצנים</string>
@@ -146,9 +147,9 @@
   <string name="backlight_timeout_title">משך זמן תאורה</string>
   <string name="backlight_timeout_unlimited">אל תכבה</string>
   <string name="backlight_summary_disabled">מושבת</string>
-  <string name="backlight_summary_enabled_with_timeout">זמין עבור <xliff:g id="timeout">%s</xliff:g></string>
-  <string name="backlight_summary_enabled">מאופשר</string>
-  <string name="power_menu_title">תפריט כיבוי</string>
+  <string name="backlight_summary_enabled_with_timeout">פעיל למשך <xliff:g id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled">פעיל</string>
+  <string name="power_menu_title">תפריט הפעלה</string>
   <string name="power_menu_reboot_title">תפריט אתחול</string>
   <string name="power_menu_screenshot_title">צילום מסך</string>
   <string name="power_menu_profiles_title">מחליף פרופילים</string>
@@ -170,14 +171,14 @@
   <string name="blacklist_edit_dialog_title">ערוך מספר טלפון חסום</string>
   <string name="blacklist_prefs">הגדרות</string>
   <string name="blacklist_button_delete">מחק</string>
-  <string name="blacklist_empty_text">אין לך מספרים חסומים כלשהם. הוסף ערך על-ידי לחיצה על (+).</string>
-  <string name="blacklist_disabled_empty_text">כדי למנוע ממספרי טלפון להתקשר אליך, או לשלוח הודעות, הפעל את רשימת המתקשרים החסומים.</string>
-  <string name="blacklist_summary_disabled">כבוי</string>
+  <string name="blacklist_empty_text">אין לך מספרים חסומים כלשהם. הוסיפו ערך על-ידי לחיצה על (+).</string>
+  <string name="blacklist_disabled_empty_text">כדי למנוע ממספרי טלפון להתקשר אליך, או לשלוח הודעות, הפעילו את רשימת המתקשרים החסומים.</string>
+  <string name="blacklist_summary_disabled">מושבת</string>
   <string name="blacklist_summary">לא יתקבלו שיחות נכנסות או הודעות ממספרי הטלפון הנמצאים ברשימת המתקשרים החסומים</string>
   <string name="blacklist_notify">הצג התראות</string>
-  <string name="blacklist_private_numbers_title">מספרים פרטיים</string>
-  <string name="blacklist_private_numbers_summary_disabled">אל תחסום שיחות ממספרים פרטיים</string>
-  <string name="blacklist_private_numbers_summary">חסום <xliff:g id="type">%s</xliff:g> נכנסות ממספרים פרטיים</string>
+  <string name="blacklist_private_numbers_title">מספרים חסויים</string>
+  <string name="blacklist_private_numbers_summary_disabled">אל תחסום שיחות ממספרים חסויים</string>
+  <string name="blacklist_private_numbers_summary">חסום <xliff:g id="type">%s</xliff:g> נכנסות ממספרים חסויים</string>
   <string name="blacklist_unknown_numbers_title">מספרים לא ידועים</string>
   <string name="blacklist_unknown_numbers_summary_disabled">אל תחסום שיחות או הודעות ממספרים שאינם ברשימת אנשי קשר</string>
   <string name="blacklist_unknown_numbers_summary">חסום <xliff:g id="type">%s</xliff:g> נכנסות ממספרים שלא ברשימת אנשי קשר</string>
@@ -200,13 +201,13 @@
   <string name="saving_protected_components">שמירת מצב רכיב\u2026</string>
   <string name="pa_login_username_hint">שם משתמש (דוא\"ל)</string>
   <string name="pa_login_password_hint">סיסמה</string>
-  <string name="pa_login_submit_button">התחבר</string>
+  <string name="pa_login_submit_button">התחברות</string>
   <string name="pa_login_checking_password">בודק חשבון\u2026</string>
   <string name="pa_login_incorrect_login">התחברות נכשלה</string>
   <string name="display_rotation_title">סיבוב</string>
-  <string name="display_rotation_disabled">לא מאופשר</string>
+  <string name="display_rotation_disabled">מושבת</string>
   <string name="display_rotation_unit">מעלות</string>
-  <string name="display_lockscreen_rotation_title">סובב מסך נעילה</string>
+  <string name="display_lockscreen_rotation_title">סובב את המסך נעילה</string>
   <string name="display_rotation_category_title">מצבי סיבוב</string>
   <string name="display_rotation_0_title">0 מעלות</string>
   <string name="display_rotation_90_title">90 מעלות</string>
@@ -217,9 +218,9 @@
   <string name="sms_security_check_limit_summary">יישומים יכולים לשלוח %d הודעות בדקה לפני שידרשו לבקש אישור</string>
   <string name="sms_security_check_limit_summary_none">יישומים אינם מורשים לשלוח הודעות ללא אישור</string>
   <string name="sms_security_check_limit_none">ללא</string>
-  <string name="spam_added_title">נוסף %1$s</string>
+  <string name="spam_added_title">%1$s נוסף</string>
   <string name="spam_last_blocked_title">נחסם לאחרונה %1$s</string>
-  <string name="block_notifications_title">סנן הודעות</string>
+  <string name="block_notifications_title">סנן התראות</string>
   <string name="block_notifications_summary">נהל התראות מהן התעלמת ומסננים</string>
   <string name="no_filters_title">לא הוגדרו מסננים</string>
   <string name="cmupdate_settings_title">עדכוני CyanogenMod</string>
@@ -232,9 +233,8 @@
   <string name="device_model">דגם המכשיר</string>
   <string name="device_name">שם המכשיר</string>
   <string name="build_date">תאריך בנייה</string>
-  <string name="contributor_cloud_title">תורמים</string>
   <string name="phone_service_state">קול: <xliff:g id="voice_state">%1$s</xliff:g>, נתונים: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="double_tap_to_wake_title">הקשה כפולה כדי להעיר</string>
+  <string name="double_tap_to_wake_title">הקשה כפולה להעיר</string>
   <string name="double_tap_to_wake_summary">הקש פעמיים כדי להדליק את המסך</string>
   <string name="proximity_wake_title">מנע התעוררות מקרית</string>
   <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
@@ -258,7 +258,7 @@
   <string name="enable_adb_cm">איתור באגים של אנדרואיד</string>
   <string name="enable_adb_summary_cm">הפעל ממשק adb</string>
   <string name="adb_over_network">ADB דרך הרשת</string>
-  <string name="adb_over_network_summary">אפשר איתור באגים (Debugging) של TCP/IP דרך ממשקי רשת (Wi-Fi, רשתות USB). אפשרות זו תתאפס בעת הפעלה מחדש של המכשיר</string>
+  <string name="adb_over_network_summary">אפשר איתור באגים (Debugging) של TCP/IP דרך ממשקי רשת (Wi\u2011Fi, רשתות USB). אפשרות זו תתאפס בעת הפעלה מחדש של המכשיר</string>
   <string name="adb_over_network_warning">אזהרה: כאשר ADB דרך הרשת פעיל, הטלפון שלך חדיר מכל הרשתות המחוברות!\n\nיש להשתמש באפשרות זו רק כשאתה מחובר לרשת שניתן לסמוך עליה.\n\nהאם ברצונך להפעיל את אפשרות זו?</string>
   <string name="adb_notify">התראה על איתור באגים (Debugging)</string>
   <string name="adb_notify_summary">הצג התראה כשאיתור באגים דרך הרשת\USB פעיל</string>
@@ -268,7 +268,7 @@
   <string name="double_tap_to_sleep_title">הקשה כפולה לכיבוי מסך</string>
   <string name="double_tap_to_sleep_summary">הקש פעמיים על שורת המצב כדי לכבות את המסך</string>
   <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
-  <string name="wake_when_plugged_or_unplugged_summary">הדלק את המסך כאשר מקור חשמל מחובר או מנותק מהמכשיר</string>
+  <string name="wake_when_plugged_or_unplugged_summary">הדלק את המסך כאשר מקור חשמל מתחבר או מתנתק מהמכשיר</string>
   <string name="kill_app_longpress_back">הרוג יישום עם לחצן חזור</string>
   <string name="kill_app_longpress_back_summary">הרוג יישום נראה על ידי לחיצה ארוכה על כפתור החזרה</string>
   <string name="disable_navkeys_title">אפשר לחצני ניווט על המסך</string>
@@ -301,9 +301,9 @@
   <string name="status_bar_am_pm_normal">רגיל</string>
   <string name="status_bar_am_pm_small">קטן</string>
   <string name="status_bar_am_pm_hidden">מוסתר</string>
-  <string name="status_bar_battery_style_title">סגנון מצב סוללה</string>
-  <string name="status_bar_battery_style_icon_portrait">סמל אופקי</string>
-  <string name="status_bar_battery_style_icon_landscape">סמל אנכי</string>
+  <string name="status_bar_battery_style_title">סגנון הצגת מצב סוללה</string>
+  <string name="status_bar_battery_style_icon_portrait">סמל עומד</string>
+  <string name="status_bar_battery_style_icon_landscape">סמל שוכב</string>
   <string name="status_bar_battery_style_circle">עיגול</string>
   <string name="status_bar_battery_style_text">טקסט</string>
   <string name="status_bar_battery_style_hidden">מוסתר</string>
@@ -311,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">מוסתר</string>
   <string name="status_bar_battery_percentage_text_inside">בתוך הסמל</string>
   <string name="status_bar_battery_percentage_text_next">ליד הסמל</string>
-  <string name="status_bar_show_unused_sims_title">הצגת סמלי SIM ריקים</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">החבא סמלים של חריצי SIM ריקים</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">סמן כאשר ישנם חריצי SIM שאינם בשימוש</string>
   <string name="edit_light_settings">עריכת הגדרות אור</string>
   <string name="pulse_speed_title">אורך הבהוב ומהירות</string>
   <string name="default_time">רגיל</string>
@@ -335,9 +332,9 @@
   <string name="battery_low_pulse_title">הבהב כאשר הסוללה חלשה</string>
   <string name="battery_light_list_title">צבעים</string>
   <string name="battery_light_low_color_title">סוללה חלשה</string>
-  <string name="battery_light_medium_color_title">טוען</string>
+  <string name="battery_light_medium_color_title">בטעינה</string>
   <string name="battery_light_full_color_title">טעון</string>
-  <string name="notification_light_title">אור להתראה</string>
+  <string name="notification_light_title">נורית התראה</string>
   <string name="notification_light_general_title">כללי</string>
   <string name="notification_light_applist_title">יישומים</string>
   <string name="notification_light_phonelist_title">טלפון</string>
@@ -407,7 +404,7 @@
   <string name="app_ops_summaries_project_media">הקרן מדיה</string>
   <string name="app_ops_summaries_activate_vpn">הפעל VPN</string>
   <string name="app_ops_summaries_wifi_change">שינוי Wi\u2011Fi</string>
-  <string name="app_ops_summaries_bluetooth_change">שנה Bluetooth</string>
+  <string name="app_ops_summaries_bluetooth_change">שינוי Bluetooth</string>
   <string name="app_ops_summaries_send_mms">שלח MMS</string>
   <string name="app_ops_summaries_read_mms">קרא MMS</string>
   <string name="app_ops_summaries_write_mms">כתוב MMS</string>
@@ -422,53 +419,53 @@
   <string name="app_ops_summaries_su">גישת שורש (Root)</string>
   <string name="app_ops_labels_location">מיקום</string>
   <string name="app_ops_labels_vibrate">רטט</string>
-  <string name="app_ops_labels_read_contacts">קרא אנשי קשר</string>
-  <string name="app_ops_labels_modify_contacts">שנה אנשי קשר</string>
-  <string name="app_ops_labels_read_call_log">קרא יומן שיחות</string>
-  <string name="app_ops_labels_modify_call_log">שנה יומן שיחות</string>
-  <string name="app_ops_labels_read_calendar">קרא יומן</string>
-  <string name="app_ops_labels_modify_calendar">שנה לוח שנה</string>
-  <string name="app_ops_labels_notification_toast">פרסם התראה</string>
+  <string name="app_ops_labels_read_contacts">קריאת אנשי קשר</string>
+  <string name="app_ops_labels_modify_contacts">שינוי אנשי קשר</string>
+  <string name="app_ops_labels_read_call_log">קריאת יומן שיחות</string>
+  <string name="app_ops_labels_modify_call_log">שינוי יומן שיחות</string>
+  <string name="app_ops_labels_read_calendar">קריאת לוח שנה</string>
+  <string name="app_ops_labels_modify_calendar">שינוי לוח שנה</string>
+  <string name="app_ops_labels_notification_toast">התראות/התראות קופצות</string>
   <string name="app_ops_labels_call_phone">חיוג למכשיר הטלפון</string>
-  <string name="app_ops_labels_read_sms_db">קרא מסד נתונים של SMS</string>
-  <string name="app_ops_labels_write_sms_db">כתוב מסד נתונים של SMS</string>
-  <string name="app_ops_labels_receive_sms">‏קבל SMS</string>
-  <string name="app_ops_labels_receive_mms">‏קבל MMS</string>
-  <string name="app_ops_labels_send_sms">‏שלח SMS</string>
-  <string name="app_ops_labels_modify_settings">שנה הגדרות</string>
+  <string name="app_ops_labels_read_sms_db">קריאת מסד נתוני SMS</string>
+  <string name="app_ops_labels_write_sms_db">כתיבת מסד נתוני SMS</string>
+  <string name="app_ops_labels_receive_sms">‏קבלת SMS</string>
+  <string name="app_ops_labels_receive_mms">‏קבלת MMS</string>
+  <string name="app_ops_labels_send_sms">‏שליחת SMS</string>
+  <string name="app_ops_labels_modify_settings">שינוי הגדרות</string>
   <string name="app_ops_labels_draw_on_top">צייר מעל</string>
   <string name="app_ops_labels_access_notifications">גישה להתראות</string>
   <string name="app_ops_labels_camera">מצלמה</string>
-  <string name="app_ops_labels_record_audio">הקלטת קול</string>
-  <string name="app_ops_labels_play_audio">הפעל את האודיו</string>
-  <string name="app_ops_labels_read_clipboard">קרא לוח</string>
-  <string name="app_ops_labels_modify_clipboard">שנה לוח</string>
+  <string name="app_ops_labels_record_audio">הקלטת שמע</string>
+  <string name="app_ops_labels_play_audio">ניגון שמע</string>
+  <string name="app_ops_labels_read_clipboard">קריאת לוח העתקה</string>
+  <string name="app_ops_labels_modify_clipboard">שינוי לוח העתקה</string>
   <string name="app_ops_labels_media_buttons">לחצני מדיה</string>
-  <string name="app_ops_labels_audio_focus">מיקוד אודיו</string>
-  <string name="app_ops_labels_master_volume">שליטה ראשית בעוצמת קול</string>
-  <string name="app_ops_labels_voice_volume">עוצמת קול של דיבור</string>
-  <string name="app_ops_labels_ring_volume">עוצמת קול של צלצול</string>
-  <string name="app_ops_labels_media_volume">עוצמת קול של מדיה</string>
-  <string name="app_ops_labels_alarm_volume">עוצמת קול של שעון מעורר</string>
-  <string name="app_ops_labels_notification_volume">עוצמת קול של התראה</string>
-  <string name="app_ops_labels_bluetooth_volume">עוצמת קול של Bluetooth</string>
-  <string name="app_ops_labels_keep_awake">שמור במצב פעיל</string>
+  <string name="app_ops_labels_audio_focus">מיקוד שמע</string>
+  <string name="app_ops_labels_master_volume">עוצמת השמע הראשית</string>
+  <string name="app_ops_labels_voice_volume">עוצמת השיחה</string>
+  <string name="app_ops_labels_ring_volume">עוצמת הצלצול</string>
+  <string name="app_ops_labels_media_volume">עוצמת המדיה</string>
+  <string name="app_ops_labels_alarm_volume">עוצמת השעון המעורר</string>
+  <string name="app_ops_labels_notification_volume">עוצמת ההתראה</string>
+  <string name="app_ops_labels_bluetooth_volume">עוצמת השמע של ה-Bluetooth</string>
+  <string name="app_ops_labels_keep_awake">שמירה במצב פעיל</string>
   <string name="app_ops_labels_get_usage_stats">קבלת סטטיסטיקות שימוש ביישום</string>
-  <string name="app_ops_labels_mute_unmute_microphone">השתק/הפעל מיקרופון</string>
-  <string name="app_ops_labels_toast_window">הצג התראות קופצות</string>
-  <string name="app_ops_labels_project_media">הקרן מדיה</string>
-  <string name="app_ops_labels_activate_vpn">הפעל VPN</string>
+  <string name="app_ops_labels_mute_unmute_microphone">השתקת/הפעלת מיקרופון</string>
+  <string name="app_ops_labels_toast_window">הצגת התראות קופצות</string>
+  <string name="app_ops_labels_project_media">הקרנת מדיה</string>
+  <string name="app_ops_labels_activate_vpn">הפעלת VPN</string>
   <string name="app_ops_labels_wifi_change">שינוי Wi\u2011Fi</string>
-  <string name="app_ops_labels_bluetooth_change">שינוי bluetooth</string>
-  <string name="app_ops_labels_send_mms">שלח MMS</string>
-  <string name="app_ops_labels_read_mms">קרא MMS</string>
-  <string name="app_ops_labels_write_mms">כתוב MMS</string>
+  <string name="app_ops_labels_bluetooth_change">שינוי Bluetooth</string>
+  <string name="app_ops_labels_send_mms">שליחת MMS</string>
+  <string name="app_ops_labels_read_mms">קריאת MMS</string>
+  <string name="app_ops_labels_write_mms">כתיבת MMS</string>
   <string name="app_ops_labels_auto_start">הפעלה אוטומטית</string>
-  <string name="app_ops_labels_nfc_change">שנה NFC</string>
-  <string name="app_ops_labels_delete_sms">מחק SMS</string>
-  <string name="app_ops_labels_delete_mms">מחק MMS</string>
-  <string name="app_ops_labels_delete_contacts">מחק אנשי קשר</string>
-  <string name="app_ops_labels_delete_call_log">מחק רישומי שיחות</string>
+  <string name="app_ops_labels_nfc_change">שינוי NFC</string>
+  <string name="app_ops_labels_delete_sms">מחיקת SMS</string>
+  <string name="app_ops_labels_delete_mms">מחיקת MMS</string>
+  <string name="app_ops_labels_delete_contacts">מחיקת אנשי קשר</string>
+  <string name="app_ops_labels_delete_call_log">מחיקת רישומי שיחות</string>
   <string name="app_ops_labels_data_change">שינוי נתונים</string>
   <string name="app_ops_labels_wake_up">הער את המכשיר</string>
   <string name="app_ops_labels_su">גישת שורש (Root)</string>
@@ -485,6 +482,7 @@
   <string name="ok">אישור</string>
   <string name="profile_menu_delete_title">מחק</string>
   <string name="profile_action_none">השאר ללא שינוי</string>
+  <string name="profile_action_system">ברירת המחדל של המערכת</string>
   <string name="profile_action_disable">כבה</string>
   <string name="profile_action_enable">הפעל</string>
   <string name="profile_trigger_a2dp_connect">בחיבור A2DP</string>
@@ -537,13 +535,13 @@
   <string name="color_red_title">אדום</string>
   <string name="color_green_title">ירוק</string>
   <string name="color_blue_title">כחול</string>
-  <string name="gamma_tuning_title_head">כיול גאמה</string>
-  <string name="gamma_tuning_summary_head">שנה ערכי גאמה</string>
+  <string name="gamma_tuning_title_head">כיול גאמא</string>
+  <string name="gamma_tuning_summary_head">שנה ערכי גאמא</string>
   <string name="gamma_tuning_control_set_header">קבוצה <xliff:g id="index">%d</xliff:g></string>
   <string name="gamma_tuning_contrast">ניגודיות</string>
   <string name="gamma_tuning_brightness">בהירות</string>
   <string name="gamma_tuning_saturation">רוויה</string>
-  <string name="screencolor">צבע המסך</string>
+  <string name="screencolor">צבע מסך</string>
   <string name="screencolor_summary">שנה את הגדרות התצוגה: גוון, רוויה, ניגודיות או עוצמה</string>
   <string name="custom_screencolor">צבע מסך מותאם אישית</string>
   <string name="screencolor_save">שמור</string>
@@ -566,7 +564,7 @@
   <string name="bluetooth_dun_profile_summary_connected">מחובר לשרת DUN</string>
   <string name="bluetooth_pbap_profile_summary_connected">מחובר לשרת pbap</string>
   <string name="bluetooth_sap_profile_summary_connected">מחובר לשרת גישת SIM</string>
-  <string name="bluetooth_dun_profile_summary_use_for">השתמש לחיוג רשת</string>
+  <string name="bluetooth_dun_profile_summary_use_for">השתמש לגישה לחיוג רשת</string>
   <string name="bluetooth_pbap_profile_summary_use_for">השתמש עבור שיתוף אנשי קשר</string>
   <string name="bluetooth_sap_profile_summary_use_for">השתמש לגישת SIM</string>
   <string name="bluetooth_accept_all_files">התר את כל סוגי הקבצים</string>
@@ -728,7 +726,7 @@
   <string name="qs_tile_screen_timeout">פרק הזמן לכיבוי מסך</string>
   <string name="qs_tile_usb_tether">קשירת USB</string>
   <string name="qs_tile_heads_up">התראות קופצות</string>
-  <string name="qs_tile_ambient_display">תצוגת התראות ברקע</string>
+  <string name="qs_tile_ambient_display">התראות ברקע</string>
   <string name="qs_tile_sync">סנכרון</string>
   <string name="qs_dynamic_tile_next_alarm">ההתראה הבאה</string>
   <string name="qs_dynamic_tile_ime_selector">בורר שיטות קלט</string>
@@ -777,6 +775,7 @@
   <string name="dialog_title_lcd_density">צפיפות LCD</string>
   <string name="lcd_density_value_format">%d DPI</string>
   <string name="lcd_density_default_value_format">%d DPI (ברירת מחדל)</string>
+  <string name="restarting_ui">מאתחל מערכת\u2026</string>
   <string name="stylus_icon_enabled_title">הצג סמל בעת שימוש בעט אלקטרוני</string>
   <string name="stylus_icon_enabled_summary">הצג את סמל העט בעת ריחוף או ציור עם העט</string>
   <string name="gestures_settings_title">מחוות עט</string>
@@ -808,6 +807,7 @@
   <string name="category_interface">ממשק</string>
   <string name="category_calibration">כיול</string>
   <string name="display_and_lights">תצוגה ואורות</string>
+  <string name="notification_manager">התראות</string>
   <string name="lockscreen_settings">מסך נעילה</string>
   <string name="category_lights">אורות</string>
   <string name="power_usage_history_title">צריכת סוללה</string>
@@ -817,6 +817,7 @@
   <string name="interruptions_ignore_while_media_title">מנע שינוי עוצמת שמע</string>
   <string name="interruptions_ignore_while_media_summary">אל תנמיך את עוצמת המוזיקה כאשר התראה מגיעה</string>
   <string name="none_is_silent_title">לעולם אל תשתיק שעונים מעוררים</string>
+  <string name="none_is_silent_summary">מצב שקט תמיד משמיע שעונים מעוררים</string>
   <string name="allow_lights_title">אפשר אורות התראה</string>
   <string name="live_display_summary">התאם את מסך מכשירך בהתאם לשעה ולתנאי הסביבה על מנת לשפר את נוחות הקריאה ולהפחית את עייפות העין</string>
   <string name="live_display_mode">מצב תצוגה</string>
@@ -847,6 +848,7 @@
   <string name="preview_version_title">גרסה</string>
   <string name="preview_country_title">מדינה</string>
   <string name="preview_carrier_title">חברת סלולר</string>
+  <string name="heads_up_notifications">התראות קופצות</string>
   <string name="summary_heads_up_enabled">התראות קופצות פעילות</string>
   <string name="summary_heads_up_disabled">התראות קופצות כבויות</string>
   <string name="master_clear_desc_cm" product="tablet">פעולה זו תביא למחיקת כל התוכן מ<b>האחסון הפנימי</b> של הטאבלט שלך, כולל:\n\n<li>החשבונות המוגדרים במכשירך</li>\n<li>נתונים והגדרות של המערכת והיישומים הקיימים</li>\n<li>יישומים שהורדו</li></string>
@@ -899,13 +901,13 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">הגעת למספר טביעות האצבע המרבי</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">אתה יכול להכניס לרשימה רק עד <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> טביעות אצבע. מחק טביעת אצבע קיימת.</string>
   <string name="fingerprint_title_manage_fingerprints">נהל טביעות אצבעות <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">טביעות אצבע מאפשרות לך לפתוח את המכשיר, לאשר רכישות ולצלם תמונות במהירות.</string>
+  <string name="manage_fingerprints_description">טביעת אצבע מאפשרת לשחרר את נעילת המכשיר ולצלם תמונות במהירות.</string>
   <string name="fingerprint_enrollment_introduction_title">מצא את החיישן שלך</string>
   <string name="fingerprint_enrollment_introduction_instructions">חיישן טביעות האצבע ממוקם בחלק הקדמי, או האחורי, של המכשיר שלך.</string>
   <string name="fingerprint_enrollment_scan_title">החזק למשך 3 שניות</string>
   <string name="fingerprint_enrollment_scan_instructions">הניחו את האצבע המורה על חיישן טביעות האצבע כדי להתחיל בהגדרה. הרימו את האצבע ברגע שאתם מרגישים רטט.</string>
   <string name="fingerprint_enrollment_error_title_wrong_sensor">אנא נסה שנית</string>
-  <string name="fingerprint_enrollment_error_message">הניחו את האצבע בחוזקה על חיישן טביעות האצבע כדי להבטיח סריקה מדויקת. בנוסף, וודאו שימוש באותה האצבע כמו בעבר. הרימו את האצבע ברגע שאתם מרגישים רטט.</string>
+  <string name="fingerprint_enrollment_error_message">הניחו את האצבע על חיישן טביעות האצבע כדי להבטיח סריקה מדויקת. בנוסף, וודאו שימוש באותה האצבע כמו בעבר. הרימו את האצבע ברגע שאתם מרגישים רטט.</string>
   <string name="fingerprint_enrollment_scan_instructions">הניחו את האצבע המורה על חיישן טביעות האצבע כדי להתחיל בהגדרה. הרימו את האצבע ברגע שאתם מרגישים רטט.</string>
   <string name="fingerprint_enrollment_break_title">המשך עם האחיזה הנוכחית</string>
   <string name="fingerprint_enrollment_break_instructions">המשיכו ללחוץ ללכידת הקצוות של הטביעה. הרימו את האצבע ברגע שאתם מרגישים רטט.</string>
@@ -932,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">הממ... משהו השתבש</string>
   <string name="fingerprint_enrollment_error_title_4">הו לא, נסו שנית</string>
   <string name="fingerprint_enrollment_error_title_5">אופס, אירעה שגיאה</string>
+  <string name="lockscreen_settings_and_fingerprint">מסך נעילה וטביעות אצבע</string>
   <string name="menu_stats_reset">איפוס סטטיסטיקות</string>
   <string name="reset_stats_msg">היסטוריית הסוללה שלך הולכת להתאפס</string>
   <string name="dock_battery_not_present">סוללה חיצונית לא נוכחת</string>
@@ -939,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">מטעין דרך חיבור USB</string>
   <string name="setup_lock_pattern_size_title">סיבוכיות הדפוס</string>
   <string name="setup_lock_pattern_size_details">בכמה צמתים ברצונכם להשתמש בדפוס שלכם? ככל שיהיו יותר צמתים, כך הדפוס יוכל להיות יותר מורכב.</string>
+  <string name="lto_download_data_wifi_only">הורדת נתוני סיוע ל-GPS</string>
+  <string name="lto_download_data_wifi_only_on">דרך כל סוגי הרשתות</string>
+  <string name="lto_download_data_wifi_only_off">דרך רשתות Wi\u2011Fi בלבד</string>
 </resources>

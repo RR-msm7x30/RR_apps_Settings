@@ -83,6 +83,7 @@
   <string name="profile_choose_app">App auswählen</string>
   <string name="profile_system_settings_title">Systemeinstellungen</string>
   <string name="profile_lockmode_title">Bildschirmsperre</string>
+  <string name="profile_lockmode_policy_disabled_summary">Diese Option ist durch den Geräteadministrator gesperrt</string>
   <string name="profile_lockmode_insecure_summary">Nicht nach PIN oder Passwort fragen</string>
   <string name="profile_lockmode_disabled_summary">Bildschirmsperre deaktivieren</string>
   <string name="profile_airplanemode_title">Flugmodus</string>
@@ -104,6 +105,7 @@
   <string name="hardware_keys_menu_key_title">Menü-Taste</string>
   <string name="hardware_keys_assist_key_title">Suche-Taste</string>
   <string name="hardware_keys_appswitch_key_title">Anwendungs-Umschalttaste</string>
+  <string name="hardware_keys_camera_key_title">Kamera-Taste</string>
   <string name="hardware_keys_volume_keys_title">Lautstärketasten</string>
   <string name="hardware_keys_short_press_title">Kurzes Drücken</string>
   <string name="hardware_keys_long_press_title">Langes Drücken</string>
@@ -117,6 +119,8 @@
   <string name="hardware_keys_action_launch_camera">Kamera öffnen</string>
   <string name="hardware_keys_action_sleep">Bildschirm ausschalten</string>
   <string name="hardware_keys_action_last_app">Vorherige App</string>
+  <string name="camera_sleep_on_release_title">Kurzer Blick</string>
+  <string name="camera_sleep_on_release_summary">Der Bildschirm wird aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird</string>
   <string name="camera_launch_title">Kamera starten</string>
   <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
   <string name="volbtn_music_controls_title">Musiksteuerung</string>
@@ -211,7 +215,9 @@
   <string name="display_rotation_270_title">270 Grad</string>
   <string name="app_security_title">App-Sicherheit</string>
   <string name="sms_security_check_limit_title">SMS-Begrenzung</string>
-  <string name="sms_security_check_limit_summary">Apps können %d Nachrichten in 30 Minuten senden, bevor eine Bestätigung erforderlich ist</string>
+  <string name="sms_security_check_limit_summary">Apps können %d Nachrichten in 1 Minute ohne zusätzliche Bestätigung versenden</string>
+  <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>
+  <string name="sms_security_check_limit_none">Keine</string>
   <string name="spam_added_title">%1$s hinzugefügt</string>
   <string name="spam_last_blocked_title">Zuletzt blockiert %1$s</string>
   <string name="block_notifications_title">Benachrichtigungen filtern</string>
@@ -227,7 +233,6 @@
   <string name="device_model">Gerätemodell</string>
   <string name="device_name">Gerätename</string>
   <string name="build_date">Build-Datum</string>
-  <string name="contributor_cloud_title">Mitwirkende</string>
   <string name="phone_service_state">Anrufe: <xliff:g id="voice_state">%1$s</xliff:g>, Daten: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Aufwecken durch doppeltes Tippen</string>
   <string name="double_tap_to_wake_summary">Doppelt auf den Bildschirm tippen, um das Display anzuschalten</string>
@@ -258,8 +263,8 @@
   <string name="adb_notify">Debugging-Benachrichtigung</string>
   <string name="adb_notify_summary">Zeigt eine Benachrichtigung, wenn USB- oder Netzwerkdebugging aktiviert ist</string>
   <string name="device_hostname">Hostname des Geräts</string>
-  <string name="development_shortcut_title">Entwickler-Abkürzungen</string>
-  <string name="development_shortcut_summary">Aktiviere Verknüpfungen zur App-Verwaltung in der Liste kürzlich verwendeter Apps</string>
+  <string name="development_shortcut_title">Entwickler-Verknüpfungen</string>
+  <string name="development_shortcut_summary">Aktiviert Verknüpfungen zur App-Verwaltung in der Liste kürzlich verwendeter Apps</string>
   <string name="double_tap_to_sleep_title">Standby durch doppeltes Tippen</string>
   <string name="double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auzuschalten</string>
   <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
@@ -306,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
   <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
   <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
-  <string name="status_bar_show_unused_sims_title">Zeige leere SIM-Symbole</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Symbole ungenutzter SIM-Slots ausblenden</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Unbenutzte SIM-Slots zeigen</string>
   <string name="edit_light_settings">Farbeinstellungen ändern</string>
   <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
   <string name="default_time">Normal</string>
@@ -480,6 +482,7 @@
   <string name="ok">OK</string>
   <string name="profile_menu_delete_title">Löschen</string>
   <string name="profile_action_none">Unverändert lassen</string>
+  <string name="profile_action_system">Systemstandard</string>
   <string name="profile_action_disable">Ausschalten</string>
   <string name="profile_action_enable">Einschalten</string>
   <string name="profile_trigger_a2dp_connect">Beim Verbinden von A2DP</string>
@@ -670,6 +673,7 @@
   <string name="select_custom_app_title">Anwendung wählen</string>
   <string name="select_custom_activity_title">Aktivität wählen</string>
   <string name="autoperf_title">App-Profile aktivieren</string>
+  <string name="autoperf_summary">Wählt für manche Apps automatisch einen passenden Akkumodus aus</string>
   <string name="perf_profile_title">Akkumodus</string>
   <string name="pref_force_highend_gfx_title">Verbesserte Grafikeffekte</string>
   <string name="pref_force_highend_gfx_summary">Verbesserte Transparenz- und Animationseffekte wie z.B. Status- und Navigationsleistentransparenz verwenden (Neustart erforderlich)</string>
@@ -832,7 +836,7 @@
   <string name="battery_saver_summary">Leistung und Hintergrunddaten verringern</string>
   <string name="battery_saver_summary_unavailable">Während des Ladevorgangs nicht verfügbar</string>
   <string name="anonymous_statistics_title">CyanogenMod-Statistiken</string>
-  <string name="anonymous_statistics_summary">Helfen Sie CyanogenMod zu verbessern, indem SIe dem Sammeln anonymer Gerätestatistiken zustimmen</string>
+  <string name="anonymous_statistics_summary">Helfen Sie CyanogenMod zu verbessern, indem Sie dem Sammeln anonymer Gerätestatistiken zustimmen</string>
   <string name="anonymous_statistics_warning_title">Über</string>
   <string name="anonymous_statistics_warning">Aktivieren der Cyanogenmod-Statistiken ermöglicht es nicht-personenbezogene Daten an die Entwickler von CyanogenMod zu senden. Die bei jedem Neustart des Gerätes übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf \"Vorschau\" klicken.</string>
   <string name="enable_reporting_title">Berichte einschalten</string>
@@ -885,6 +889,7 @@
   <string name="wifi_countrycode_entries_sg">Israel, Singapur</string>
   <string name="wifi_countrycode_entries_br">Brasilien</string>
   <string name="wifi_countrycode_entries_in">Indien</string>
+  <string name="unlock_set_unlock_launch_picker_title_with_fingerprint">Bildschirm entsperren &amp; Fingerabdruck</string>
   <string name="unlock_set_unlock_mode_fingerprint">Fingerabdruck</string>
   <string name="unlock_set_unlock_fingerprint_title">Fingerabdruck</string>
   <string name="fingerprint_item_add_new_fingerprint">Neuen Fingerabdruck hinzufügen</string>
@@ -896,14 +901,15 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Max. Fingerabdrücke erreicht</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Sie können nur <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> Fingerabdrücke registrieren. Löschen Sie einen vorhandenen Fingerabdruck.</string>
   <string name="fingerprint_title_manage_fingerprints">Verwalten der Fingerabdrücke <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Mit Fingerabdrücken können Sie Ihr Telefon schnell entsperren, Einkäufe bestätigen und Fotos aufnehmen.</string>
+  <string name="manage_fingerprints_description">Mit Fingerabdrücken können Sie Ihr Telefon schnell entsperren oder Fotos aufnehmen.</string>
   <string name="fingerprint_enrollment_introduction_title">Finden Sie Ihren Sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">Der Fingerabdruck-Sensor befindet sich an der Vorder- oder Rückseite Ihres Telefons.</string>
   <string name="fingerprint_enrollment_scan_title">Drei Sekunden halten</string>
   <string name="fingerprint_enrollment_scan_instructions">Legen Sie Ihren Zeigefinger auf den Fingerabdruck-Sensor, um die Einrichtung zu starten. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
   <string name="fingerprint_enrollment_error_title_wrong_sensor">Bitte versuchen Sie es erneut</string>
-  <string name="fingerprint_enrollment_error_message">Legen Sie Ihren Finger fest auf den Fingerabdruck-Sensor, um einen genauen Scan sicherzustellen. Stellen Sie auch sicher, dass Sie den gleichen Finger wie zuvor benutzen. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
+  <string name="fingerprint_enrollment_error_message">Legen Sie Ihren Finger auf den Fingerabdruck-Sensor, um einen genauen Scan sicherzustellen. Stellen Sie auch sicher, dass Sie den gleichen Finger wie zuvor benutzen. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
   <string name="fingerprint_enrollment_scan_instructions">Legen Sie Ihren Zeigefinger auf den Fingerabdruck-Sensor, um die Einrichtung zu starten. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
+  <string name="fingerprint_enrollment_break_title">Mit dem aktuellen Abdruck fortfahren</string>
   <string name="fingerprint_enrollment_break_instructions">Machen Sie mit der Erfassung der Ränder Ihres Abdrucks weiter. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
   <string name="fingerprint_enrollment_finished_title">Fingerabdruck hinzugefügt!</string>
   <string name="fingerprint_enrollment_finished_message">Ihr Fingerabdruck kann jetzt zum Entsperren des Bildschirms oder zum Aufnehmen von Selfies mit Ihrer Kamera verwendet werden.</string>
@@ -928,10 +934,15 @@
   <string name="fingerprint_enrollment_error_title_3">Hmm, etwas ging schief</string>
   <string name="fingerprint_enrollment_error_title_4">Oh oh, versuchen Sie es erneut</string>
   <string name="fingerprint_enrollment_error_title_5">Hoppla, es ist ein Fehler aufgetreten</string>
+  <string name="lockscreen_settings_and_fingerprint">Bildschirmsperre &amp; Fingerabdruck</string>
   <string name="menu_stats_reset">Statistik zurücksetzen</string>
   <string name="reset_stats_msg">Statistik über den Akkuverlauf wird zurückgesetzt</string>
   <string name="dock_battery_not_present">Dock-Akku nicht vorhanden</string>
   <string name="battery_info_status_charging_dock_ac">Laden über Ladedock</string>
   <string name="battery_info_status_charging_dock_usb">Laden über USB-Dock</string>
+  <string name="setup_lock_pattern_size_title">Muster-Komplexität</string>
   <string name="setup_lock_pattern_size_details">Wie viele Knotenpunkte möchten Sie in Ihrem Muster verwenden? Je mehr Knoten, desto komplexer kann das Muster sein.</string>
+  <string name="lto_download_data_wifi_only">Herunterladen von A-GPS-Daten</string>
+  <string name="lto_download_data_wifi_only_on">Über alle Netzwerke</string>
+  <string name="lto_download_data_wifi_only_off">Nur über WLAN</string>
 </resources>

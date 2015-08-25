@@ -83,6 +83,7 @@
   <string name="profile_choose_app">Valitse sovellus</string>
   <string name="profile_system_settings_title">Järjestelmän asetukset</string>
   <string name="profile_lockmode_title">Lukitusnäytön tyyppi</string>
+  <string name="profile_lockmode_policy_disabled_summary">Laitteen järjestelmänvalvoja on poistanut tämän asetuksen käytöstä</string>
   <string name="profile_lockmode_insecure_summary">Älä pyydä PIN-koodia tai salasanaa</string>
   <string name="profile_lockmode_disabled_summary">Poista lukitusnäyttö käytöstä</string>
   <string name="profile_airplanemode_title">Lentokonetila</string>
@@ -214,7 +215,9 @@
   <string name="display_rotation_270_title">270 astetta</string>
   <string name="app_security_title">Sovellusten turvallisuus</string>
   <string name="sms_security_check_limit_title">Tekstiviestiraja</string>
-  <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %d viestiä 30 minuutissa ennenkuin vahvistus vaaditaan</string>
+  <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %d viestiä 1 minuutissa ennenkuin vahvistus vaaditaan</string>
+  <string name="sms_security_check_limit_summary_none">Sovellukset eivät saa lähettää tekstiviestiä ilman vahvistusta</string>
+  <string name="sms_security_check_limit_none">Ei mitään</string>
   <string name="spam_added_title">Lisätty %1$s</string>
   <string name="spam_last_blocked_title">Viimeksi torjuttu %1$s</string>
   <string name="block_notifications_title">Suodata ilmoitukset</string>
@@ -230,7 +233,6 @@
   <string name="device_model">Laitteen malli</string>
   <string name="device_name">Laitteen nimi</string>
   <string name="build_date">Luontipäivä</string>
-  <string name="contributor_cloud_title">Kehittäjät ja avustajat</string>
   <string name="phone_service_state">Puhelut: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Herätys kaksoisnapautuksella</string>
   <string name="double_tap_to_wake_summary">Herätä laitteen näyttö kaksoisnapautuksella</string>
@@ -309,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Piilotettu</string>
   <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
   <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
-  <string name="status_bar_show_unused_sims_title">Näytä tyhjät SIM-kuvakkeet</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Piilota käyttämättömättömien SIM-korttipaikkojen kuvakkeet</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Osoita käyttämättömät SIM-korttipaikat</string>
   <string name="edit_light_settings">Säädä valon asetuksia</string>
   <string name="pulse_speed_title">Vilkunnan kesto ja nopeus</string>
   <string name="default_time">Normaali</string>
@@ -483,6 +482,7 @@
   <string name="ok">OK</string>
   <string name="profile_menu_delete_title">Poista</string>
   <string name="profile_action_none">Ei muutoksia</string>
+  <string name="profile_action_system">Järjestelmän oletus</string>
   <string name="profile_action_disable">Kytke pois</string>
   <string name="profile_action_enable">Kytke päälle</string>
   <string name="profile_trigger_a2dp_connect">Muodostaessa A2DP-yhteys</string>
@@ -901,7 +901,7 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Sormenjälkien enimmäismäärä saavutettu</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Voit rekisteröidä vain <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> sormenjälkeä. Poista joku nykyisistä sormenjäljistä.</string>
   <string name="fingerprint_title_manage_fingerprints">Hallitse sormenjälkiä <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Sormenjäljet sallii sinun avata puhelimesi nopeasti, vahvistaa ostoja tai ottaa kuvia.</string>
+  <string name="manage_fingerprints_description">Sormenjäljillä voit avata puhelimesi nopeasti ja ottaa kuvia.</string>
   <string name="fingerprint_enrollment_introduction_title">Etsi tunnistin</string>
   <string name="fingerprint_enrollment_introduction_instructions">Sormenjälkitunnistin sijaitsee puhelimesi etu- tai takapuolella.</string>
   <string name="fingerprint_enrollment_scan_title">Pidä sormea 3 sekuntia tunnistimessa</string>
@@ -934,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">Hmm, jotain meni pieleen</string>
   <string name="fingerprint_enrollment_error_title_4">Huh, yritä uudelleen</string>
   <string name="fingerprint_enrollment_error_title_5">Hups, tapahtui virhe</string>
+  <string name="lockscreen_settings_and_fingerprint">Lukitusnäyttö &amp; sormenjälki</string>
   <string name="menu_stats_reset">Nollaa tilastot</string>
   <string name="reset_stats_msg">Akun historiatilastot nollataan</string>
   <string name="dock_battery_not_present">Telakan akku puuttuu</string>
@@ -941,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">Ladataan telakan USB:n kautta</string>
   <string name="setup_lock_pattern_size_title">Kuvion monimutkaisuus</string>
   <string name="setup_lock_pattern_size_details">Kuinka montaa solmua haluat käyttää kuviossasi? Mitä enemmän solmuja, sitä monimutkaisempi kuvio voi olla.</string>
+  <string name="lto_download_data_wifi_only">GPS-avusteinen tiedon lataus</string>
+  <string name="lto_download_data_wifi_only_on">Kaikissa verkoissa</string>
+  <string name="lto_download_data_wifi_only_off">Vain Wi\u2011Fi\u2011verkoissa</string>
 </resources>

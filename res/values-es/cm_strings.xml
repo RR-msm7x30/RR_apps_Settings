@@ -233,7 +233,6 @@
   <string name="device_model">Modelo del dispositivo</string>
   <string name="device_name">Nombre del terminal</string>
   <string name="build_date">Fecha de compilación</string>
-  <string name="contributor_cloud_title">Colaboradores</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, datos: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Doble toque para despertar</string>
   <string name="double_tap_to_wake_summary">Encender la pantalla realizando un doble toque sobre ella</string>
@@ -312,9 +311,6 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
   <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
-  <string name="status_bar_show_unused_sims_title">Mostrar iconos vacíos de SIM</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Ocultar los iconos de ranuras de tarjetas SIM no utilizadas</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Indicar ranuras de tarjeta SIM no utilizadas</string>
   <string name="edit_light_settings">Editar notificación</string>
   <string name="pulse_speed_title">Duración y velocidad</string>
   <string name="default_time">Normal</string>
@@ -486,6 +482,7 @@
   <string name="ok">Aceptar</string>
   <string name="profile_menu_delete_title">Eliminar</string>
   <string name="profile_action_none">Dejar sin cambios</string>
+  <string name="profile_action_system">Predeterminada del sistema</string>
   <string name="profile_action_disable">Apagar</string>
   <string name="profile_action_enable">Encender</string>
   <string name="profile_trigger_a2dp_connect">Al conectar A2DP</string>
@@ -892,6 +889,7 @@
   <string name="wifi_countrycode_entries_sg">Israel, Singapur</string>
   <string name="wifi_countrycode_entries_br">Brasil</string>
   <string name="wifi_countrycode_entries_in">India</string>
+  <string name="unlock_set_unlock_launch_picker_title_with_fingerprint">Pantalla de desbloqueo y huella digital</string>
   <string name="unlock_set_unlock_mode_fingerprint">Huella digital</string>
   <string name="unlock_set_unlock_fingerprint_title">Huella digital</string>
   <string name="fingerprint_item_add_new_fingerprint">Añadir nueva huella digital</string>
@@ -903,13 +901,13 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">Máximo de huellas digitales alcanzado</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Sólo pueden guardarse <xliff:g id="finger" example="5 fingerprints">%d </xliff:g> huellas digitales. Borra una huella digital existente.</string>
   <string name="fingerprint_title_manage_fingerprints">Gestionando <xliff:g id="finger">%d </xliff:g> / <xliff:g id="max"> %d </xliff:g> huellas digitales</string>
-  <string name="manage_fingerprints_description">Las huellas dactilares le permiten desbloquear rápidamente el teléfono, confirmar compras y sacar fotos.</string>
+  <string name="manage_fingerprints_description">El uso de huellas digitales te permitirá desbloquear tu teléfono y tomar fotos rápidamente.</string>
   <string name="fingerprint_enrollment_introduction_title">Localiza el sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">El sensor de huella dactilar se encuentra en la parte delantera o trasera del teléfono.</string>
   <string name="fingerprint_enrollment_scan_title">Mantén presionado durante 3 segundos</string>
   <string name="fingerprint_enrollment_scan_instructions">Coloca tu dedo índice en el sensor de huella dactilar para iniciar la configuración. Levanta el dedo cuando sienta una vibración.</string>
   <string name="fingerprint_enrollment_error_title_wrong_sensor">Por favor, inténtelo de nuevo</string>
-  <string name="fingerprint_enrollment_error_message">Coloca tu dedo firmemente en el sensor de huella digital para asegurar una lectura precisa. Asegúrate de estar usando el mismo dedo que antes. Levanta el dedo cuando sienta una vibración.</string>
+  <string name="fingerprint_enrollment_error_message">Coloca tu dedo firmemente en el sensor de huella digital para asegurar una lectura precisa. Asegúrate de estar usando el mismo dedo que antes. Levanta el dedo cuando sientas una vibración.</string>
   <string name="fingerprint_enrollment_scan_instructions">Coloca tu dedo índice en el sensor de huella dactilar para iniciar la configuración. Levanta el dedo cuando sienta una vibración.</string>
   <string name="fingerprint_enrollment_break_title">Continua con la pulsación actual</string>
   <string name="fingerprint_enrollment_break_instructions">Manténte así para capturar los bordes de su huella. Levanta el dedo cuando sienta una vibración.</string>
@@ -936,6 +934,7 @@
   <string name="fingerprint_enrollment_error_title_3">¡Vaya!, algo salió mal</string>
   <string name="fingerprint_enrollment_error_title_4">¡Vaya!, vuelve a intentarlo</string>
   <string name="fingerprint_enrollment_error_title_5">¡Vaya!, ocurrió un error</string>
+  <string name="lockscreen_settings_and_fingerprint">Pantalla de bloqueo &amp; huella dactilar</string>
   <string name="menu_stats_reset">Borrar estadísticas</string>
   <string name="reset_stats_msg">Las estadísticas de la batería van a ser borradas</string>
   <string name="dock_battery_not_present">Batería de la base no encontrada</string>
@@ -943,4 +942,7 @@
   <string name="battery_info_status_charging_dock_usb">Cargando en base por USB</string>
   <string name="setup_lock_pattern_size_title">Complejidad del patrón</string>
   <string name="setup_lock_pattern_size_details">¿Cuántos nodos va a utilizar con su patrón? Cuantos más nodos, mas complejo podrá ser el patrón.</string>
+  <string name="lto_download_data_wifi_only">Descarga de datos por GPS</string>
+  <string name="lto_download_data_wifi_only_on">En ninguna red</string>
+  <string name="lto_download_data_wifi_only_off">Sólo en redes Wi\u2011Fi</string>
 </resources>

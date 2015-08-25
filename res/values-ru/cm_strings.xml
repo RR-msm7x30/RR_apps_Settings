@@ -56,8 +56,8 @@
   <string name="profile_app_group_category_title">Уведомления</string>
   <string name="profile_app_group_item_instructions">Добавить или удалить группы</string>
   <string name="profile_app_group_item_instructions_summary">Изменение настроек уведомлений для групп приложений в этом профиле</string>
-  <string name="profile_entries_on">Включить</string>
-  <string name="profile_entries_off">Выключить</string>
+  <string name="profile_entries_on">Вкл.</string>
+  <string name="profile_entries_off">Выкл.</string>
   <string name="profile_entries_no_override">Оставить без изменения</string>
   <string name="profile_name_title">Название профиля</string>
   <string name="new_profile_name">&lt;новый профиль&gt;</string>
@@ -84,6 +84,7 @@
   <string name="profile_choose_app">Выбор приложения</string>
   <string name="profile_system_settings_title">Настройки системы</string>
   <string name="profile_lockmode_title">Блокировка экрана</string>
+  <string name="profile_lockmode_policy_disabled_summary">Этот параметр профиля отключен администратором устройства</string>
   <string name="profile_lockmode_insecure_summary">Не запрашивать PIN-код или пароль</string>
   <string name="profile_lockmode_disabled_summary">Отключить экран блокировки</string>
   <string name="profile_airplanemode_title">Режим полета</string>
@@ -152,8 +153,10 @@
   <string name="power_menu_title">Меню при долгом нажатии</string>
   <string name="power_menu_reboot_title">Перезагрузка</string>
   <string name="power_menu_screenshot_title">Скриншот</string>
+  <string name="power_menu_screenrecord_title">Запись экрана</string>
   <string name="power_menu_profiles_title">Выбор профиля</string>
   <string name="power_menu_airplane_title">Режим полета</string>
+  <string name="power_menu_torch_title">Фонарик</string>
   <string name="power_menu_users_title">Пользователи</string>
   <string name="power_menu_settings_title">Ярлык настроек</string>
   <string name="power_menu_lockdown_title">Блокировка устройства</string>
@@ -215,7 +218,9 @@
   <string name="display_rotation_270_title">270 градусов</string>
   <string name="app_security_title">Безопасность приложений</string>
   <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
-  <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке больше %d сообщений в течение 30 минут</string>
+  <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке больше %d сообщений в минуту</string>
+  <string name="sms_security_check_limit_summary_none">Приложения могут отправлять неограниченное количество сообщений</string>
+  <string name="sms_security_check_limit_none">Нет</string>
   <string name="spam_added_title">Добавлено %1$s</string>
   <string name="spam_last_blocked_title">Последняя блокировка %1$s</string>
   <string name="block_notifications_title">Фильтр уведомлений</string>
@@ -231,7 +236,7 @@
   <string name="device_model">Модель устройства</string>
   <string name="device_name">Имя устройства</string>
   <string name="build_date">Дата сборки</string>
-  <string name="contributor_cloud_title">Имена разработчиков</string>
+  <string name="contributor_cloud_title">Авторы</string>
   <string name="phone_service_state">Голосовая связь: <xliff:g id="voice_state">%1$s</xliff:g>\nПередача данных: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">Включение при двойном нажатии</string>
   <string name="double_tap_to_wake_summary">Дважды коснитесь экрана, чтобы вывести устройство из спящего режима</string>
@@ -248,6 +253,7 @@
   <string name="privacy_guard_reset_text">Сбросить разрешения?</string>
   <string name="privacy_guard_help_text">В этом разделе вы можете выбрать приложения, которые будут работать в защищенном режиме, нажав на них. Такие приложения не будут иметь доступа к персональным данным, таким как контакты, сообщения или журнал вызовов. Долгое нажатие откроет подробные сведения о разрешениях данного приложения.\n\nПо умолчанию системные приложения скрыты. Для их отображения или для перехода к расширенным настройкам выберите соответствующий пункт в меню.</string>
   <string name="privacy_guard_manager_show_system_apps">Системные приложения</string>
+  <string name="privacy_guard_advanced_settings_title">Дополнительно</string>
   <string name="app_ops_btn_text">Изменить</string>
   <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
   <string name="increasing_ring_min_volume_title">Начальная громкость</string>
@@ -311,9 +317,6 @@
   <string name="status_bar_battery_percentage_default">Не показывать</string>
   <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
   <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
-  <string name="status_bar_show_unused_sims_title">Значки отсутствующих SIM-карт</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Скрывать значки SIM-карт, если они не установлены</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Показывать значки пустых SIM-карт в соответствующих слотах</string>
   <string name="edit_light_settings">Изменение настроек индикатора</string>
   <string name="pulse_speed_title">Длительность и скорость мигания</string>
   <string name="default_time">Средне</string>
@@ -474,7 +477,7 @@
   <string name="app_ops_labels_su">Суперпользователь</string>
   <string name="app_ops_categories_location">Местоположение</string>
   <string name="app_ops_categories_personal">Личные данные</string>
-  <string name="app_ops_categories_messaging">Сообщения</string>
+  <string name="app_ops_categories_messaging">SMS/MMS</string>
   <string name="app_ops_categories_media">Мультимедиа</string>
   <string name="app_ops_categories_device">Устройство</string>
   <string name="app_ops_categories_bootup">Загрузка</string>
@@ -485,6 +488,7 @@
   <string name="ok">OK</string>
   <string name="profile_menu_delete_title">Удалить</string>
   <string name="profile_action_none">Оставить без изменения</string>
+  <string name="profile_action_system">По умолчанию (системн.)</string>
   <string name="profile_action_disable">Отключить</string>
   <string name="profile_action_enable">Включить</string>
   <string name="profile_trigger_a2dp_connect">При подключении A2DP</string>
@@ -675,6 +679,7 @@
   <string name="select_custom_app_title">Выбор приложения</string>
   <string name="select_custom_activity_title">Выбор действия</string>
   <string name="autoperf_title">Профили приложений</string>
+  <string name="autoperf_summary">Автоматически выбирать соответствующий режим батареи для приложений</string>
   <string name="perf_profile_title">Энергопотребление</string>
   <string name="pref_force_highend_gfx_title">Высококачественная графика</string>
   <string name="pref_force_highend_gfx_summary">Использовать эффекты, отключенные для устройств с низкой производительностью, например, прозрачность строки состояния и панели навигации (требуется перезагрузка)</string>
@@ -695,7 +700,7 @@
   <string name="quick_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
   <string name="quick_pulldown_summary_left">Левый</string>
   <string name="quick_pulldown_summary_right">Правый</string>
-  <string name="quick_pulldown_off">Выключить</string>
+  <string name="quick_pulldown_off">Выкл.</string>
   <string name="quick_pulldown_left">Левый</string>
   <string name="quick_pulldown_right">Правый</string>
   <string name="status_bar_show_weather_title">Сведения о погоде</string>
@@ -807,7 +812,7 @@
   <string name="category_sounds">Звуки</string>
   <string name="category_interface">Интерфейс</string>
   <string name="category_calibration">Калибровка</string>
-  <string name="display_and_lights">Экран и индикация</string>
+  <string name="display_and_lights">Дисплей</string>
   <string name="notification_manager">Уведомления</string>
   <string name="lockscreen_settings">Экран блокировки</string>
   <string name="category_lights">Индикация</string>
@@ -895,10 +900,55 @@
   <string name="unlock_set_unlock_fingerprint_title">Отпечаток пальца</string>
   <string name="fingerprint_item_add_new_fingerprint">Добавить отпечаток пальца</string>
   <string name="fingerprint_manage_fingerprints">Управление отпечатками</string>
+  <string name="fingerprint_manage_fingerprints_summary">Добавление или удаление зарегистрированных отпечатков</string>
   <string name="unlock_backup_fingerprint_info_summary">Каким методом следует разблокировать устройство при невозможности использовать отпечаток?</string>
   <string name="fingerprint_dialog_title_rename">Переименовать отпечаток</string>
   <string name="fingerprint_dialog_name_label">Название отпечатка</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Добавлено максимальное количество отпечатков</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Можно зарегистрировать только <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> отпечатков пальцев. Удалите какой-нибудь из добавленных.</string>
+  <string name="fingerprint_title_manage_fingerprints">Зарегистрировано отпечатков <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="manage_fingerprints_description">Отпечатки пальцев позволяют быстро разблокировать телефон и делать фотоснимки.</string>
+  <string name="fingerprint_enrollment_introduction_title">Определите месторасположение сканера отпечатков</string>
+  <string name="fingerprint_enrollment_introduction_instructions">Сканер отпечатков располагается на передней или задней панели вашего телефона.</string>
+  <string name="fingerprint_enrollment_scan_title">Удерживайте в течение 3 секунд</string>
+  <string name="fingerprint_enrollment_scan_instructions">Приложите указательный палец к сканеру для начала настройки. Уберите палец после вибросигнала.</string>
+  <string name="fingerprint_enrollment_error_title_wrong_sensor">Повторите попытку</string>
+  <string name="fingerprint_enrollment_error_message">Плотно приложите палец к сканеру, чтобы обеспечить правильное считывание. Убедитесь также, что прикладываете тот же самый палец. Уберите палец после вибросигнала.</string>
+  <string name="fingerprint_enrollment_scan_instructions">Приложите указательный палец к сканеру для начала настройки. Уберите палец после вибросигнала.</string>
+  <string name="fingerprint_enrollment_break_title">Продолжайте с тем же усилием нажатия</string>
+  <string name="fingerprint_enrollment_break_instructions">Продолжайте для сканирования краёв отпечатка. Уберите палец после вибросигнала.</string>
+  <string name="fingerprint_enrollment_finished_title">Отпечаток добавлен!</string>
+  <string name="fingerprint_enrollment_finished_message">Теперь при помощи отпечатка пальца вы можете разблокировать экран или снимать себя на камеру.</string>
+  <string name="fingerprint_enrollment_found_it_label">Сканер найден</string>
+  <string name="fingerprint_enrollment_add_another_label">Добавить ещё</string>
   <string name="fingerprint_enrollment_done_label">Готово</string>
+  <string name="fingerprint_dialog_title_wrong_sensor">Ошибочка! Это не сканер</string>
+  <string name="fingerprint_dialog_msg_wrong_sensor">Используйте сканер отпечатков на передней или задней панели вашего телефона</string>
+  <string name="fingerprint_dialog_title_failed_enrollment">Не удалось считать отпечаток</string>
+  <string name="fingerprint_dialog_msg_failed_enrollment">Попробуйте другой палец. Данный отпечаток не удалось отсканировать.</string>
+  <string name="fingerprint_enrollment_restart_label">Повторить заново</string>
+  <string name="fingerprint_successful_scan_title_first">Отлично! Теперь повторим</string>
+  <string name="fingerprint_successful_scan_final">Ещё раз, пожалуйста</string>
+  <string name="fingerprint_successful_scan_title_1">Получилось! Продолжайте</string>
+  <string name="fingerprint_successful_scan_title_2">Великолепно! И ещё раз</string>
+  <string name="fingerprint_successful_scan_title_3">Отлично! Так держать</string>
+  <string name="fingerprint_successful_scan_title_4">Осталось совсем немного</string>
+  <string name="fingerprint_successful_scan_title_5">Хорошо получается! И ещё разок</string>
+  <string name="fingerprint_successful_scan_title_6">Ещё чуть-чуть</string>
+  <string name="fingerprint_enrollment_error_title_1">Ой! Попробуйте ещё раз</string>
+  <string name="fingerprint_enrollment_error_title_2">Жаль, попытка не удалась</string>
+  <string name="fingerprint_enrollment_error_title_3">Хмм, что-то пошло не так</string>
+  <string name="fingerprint_enrollment_error_title_4">О нет, попробуйте ещё раз</string>
+  <string name="fingerprint_enrollment_error_title_5">Ой-ой-ой! Произошла ошибка</string>
+  <string name="lockscreen_settings_and_fingerprint">Блокировка экрана и отпечатки пальцев</string>
+  <string name="menu_stats_reset">Сброс статистики</string>
+  <string name="reset_stats_msg">История использования батареи будет удалена</string>
+  <string name="dock_battery_not_present">Батарея док-станции отсутствует</string>
+  <string name="battery_info_status_charging_dock_ac">Зарядка от адаптера док-станции</string>
+  <string name="battery_info_status_charging_dock_usb">Зарядка через USB док-станции</string>
+  <string name="setup_lock_pattern_size_title">Сложность узора</string>
+  <string name="setup_lock_pattern_size_details">Сколько узлов будет использовано для вашей схемы? Чем больше узлов, тем сложнее может быть узор графического ключа.</string>
+  <string name="lto_download_data_wifi_only">Вспомогательные данные GPS</string>
+  <string name="lto_download_data_wifi_only_on">Скачивать через любые сети</string>
+  <string name="lto_download_data_wifi_only_off">Скачивать только через Wi-Fi</string>
 </resources>

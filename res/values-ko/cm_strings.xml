@@ -36,7 +36,7 @@
   <string name="profiles_settings_title">시스템 프로필</string>
   <string name="profiles_add">추가</string>
   <string name="profile_settings_title">프로필</string>
-  <string name="profile_empty_list_profiles_off">시스템 프로피을 구성하고 사용하기 위해 프로필을 켜십시오.</string>
+  <string name="profile_empty_list_profiles_off">시스템 프로필을 구성하고 사용하기 위해 프로필을 켜십시오.</string>
   <string name="profile_trigger_configure">트리거 구성</string>
   <string name="profile_write_nfc_tag">NFC 태그에 쓰기</string>
   <string name="profile_write_touch_tag">태그를 터치해 작성</string>
@@ -82,6 +82,7 @@
   <string name="profile_choose_app">앱 선택</string>
   <string name="profile_system_settings_title">시스템 설정</string>
   <string name="profile_lockmode_title">잠금 화면 모드</string>
+  <string name="profile_lockmode_policy_disabled_summary">이 프로필 옵션은 기기 관리자 정책에 의해 비활성화 되었습니다</string>
   <string name="profile_lockmode_insecure_summary">PIN이나 암호를 요구하지 않음</string>
   <string name="profile_lockmode_disabled_summary">잠금화면 제거</string>
   <string name="profile_airplanemode_title">비행기 모드</string>
@@ -166,13 +167,13 @@
   <string name="color_enhancement_title">색 향상</string>
   <string name="color_enhancement_summary">디스플레이 색상을 동적으로 보정</string>
   <string name="blacklist_title">차단된 발신자 목록</string>
-  <string name="blacklist_edit_dialog_title">차단된 전화 번호 편집</string>
+  <string name="blacklist_edit_dialog_title">차단된 전화번호 편집</string>
   <string name="blacklist_prefs">설정</string>
   <string name="blacklist_button_delete">삭제</string>
   <string name="blacklist_empty_text">블랙리스트에 등록된 번호가 없습니다. 추가 (+) 버튼을 눌러 항목을 추가하십시오.</string>
   <string name="blacklist_disabled_empty_text">원치 않는 번호의 전화나 메세지를 차단하려면 발신자 차단을 활성화 하세요.</string>
   <string name="blacklist_summary_disabled">사용 안 함</string>
-  <string name="blacklist_summary">차단된 발신자 목록에 있는 전화 번호의 통화나 메세지를 받지 않습니다</string>
+  <string name="blacklist_summary">차단된 발신자 목록에 있는 전화번호의 통화나 메세지를 받지 않습니다</string>
   <string name="blacklist_notify">알림 표시</string>
   <string name="blacklist_private_numbers_title">발신번호 표시 제한</string>
   <string name="blacklist_private_numbers_summary_disabled">발신번호 표시 제한된 전화를 차단하지 않음</string>
@@ -213,7 +214,9 @@
   <string name="display_rotation_270_title">270도</string>
   <string name="app_security_title">앱 보안</string>
   <string name="sms_security_check_limit_title">SMS 메시지 발신 제한</string>
-  <string name="sms_security_check_limit_summary">확인을 요청하기 전까지 30분 내에 %d개의 메시지만 보낼 수 있습니다</string>
+  <string name="sms_security_check_limit_summary">확인을 요청하기 전까지 1분 내에 %d개의 메시지만 보낼 수 있습니다</string>
+  <string name="sms_security_check_limit_summary_none">확인 없이는 어떤 메시지도 보내지 않습니다</string>
+  <string name="sms_security_check_limit_none">없음</string>
   <string name="spam_added_title">%1$s 추가됨</string>
   <string name="spam_last_blocked_title">%1$s 최근 차단됨</string>
   <string name="block_notifications_title">알림 필터</string>
@@ -229,7 +232,6 @@
   <string name="device_model">장치 모델</string>
   <string name="device_name">장치 이름</string>
   <string name="build_date">빌드 날짜</string>
-  <string name="contributor_cloud_title">기여자</string>
   <string name="phone_service_state">전화: <xliff:g id="voice_state">%1$s</xliff:g>, 데이터: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="double_tap_to_wake_title">더블 탭하여 화면 켜기</string>
   <string name="double_tap_to_wake_summary">화면에 더블 탭하여 화면 켜기</string>
@@ -308,9 +310,6 @@
   <string name="status_bar_battery_percentage_default">숨김</string>
   <string name="status_bar_battery_percentage_text_inside">아이콘 안에 표시</string>
   <string name="status_bar_battery_percentage_text_next">아이콘 바깥에 표시</string>
-  <string name="status_bar_show_unused_sims_title">빈 SIM 카드 아이콘 표시</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">사용 하지 않는 SIM 카드 슬롯의 아이콘 숨기기</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">사용하지 않는 SIM 카드 슬롯을 표시</string>
   <string name="edit_light_settings">조명 설정 변경</string>
   <string name="pulse_speed_title">깜빡임 시간 및 속도</string>
   <string name="default_time">보통</string>
@@ -482,6 +481,7 @@
   <string name="ok">확인</string>
   <string name="profile_menu_delete_title">삭제</string>
   <string name="profile_action_none">변경하지 않음</string>
+  <string name="profile_action_system">시스템 기본</string>
   <string name="profile_action_disable">끄기</string>
   <string name="profile_action_enable">켜기</string>
   <string name="profile_trigger_a2dp_connect">A2DP 연결 시</string>
@@ -680,7 +680,7 @@
   <string name="edge_gesture_service_summary">내비게이션 바 및 상태 표시줄 제스처의 터치 이벤트를 앱에 전달하지 않기</string>
   <string name="cmlicense_title">CyanogenMod 법적 고지</string>
   <string name="settings_cmlicense_activity_title">CyanogenMod 법적 고지</string>
-  <string name="lockpattern_settings_enable_error_path_title">패턴 오류 ㅍ시</string>
+  <string name="lockpattern_settings_enable_error_path_title">패턴 오류 표시</string>
   <string name="lockpattern_settings_enable_dots_title">패턴 점 표시</string>
   <string name="unlock_quick_unlock_control_title">빠른 잠금 해제</string>
   <string name="unlock_quick_unlock_control_summary">올바른 PIN 넘버나 암호가 입력되면 자동으로 잠금 해제</string>
@@ -708,7 +708,7 @@
   <string name="qs_tile_wifi">Wi\u2011Fi</string>
   <string name="qs_tile_bluetooth">블루투스</string>
   <string name="qs_tile_display_inversion">색 반전</string>
-  <string name="qs_tile_cellular_data">데이터 통신 연결</string>
+  <string name="qs_tile_cellular_data">모바일 데이터 연결</string>
   <string name="qs_tile_airplane_mode">비행기 모드</string>
   <string name="qs_tile_display_rotation">화면 회전</string>
   <string name="qs_tile_flashlight">손전등</string>
@@ -744,7 +744,7 @@
   <string name="wifi_ibss_freq_title">채널 / 주파수</string>
   <string name="wifi_channel">채널</string>
   <string name="wifi_mhz">MHz</string>
-  <string name="wifi_auto_config_priorities">자동 우선 순위</string>
+  <string name="wifi_auto_config_priorities">자동 우선순위</string>
   <string name="maximum_head_level">머리: %1$s W/kg</string>
   <string name="maximum_body_level">몸: %1$s W/kg</string>
   <string name="ic_code_model">모델: %1$s</string>
@@ -888,6 +888,7 @@
   <string name="wifi_countrycode_entries_sg">이스라엘, 싱가포르</string>
   <string name="wifi_countrycode_entries_br">브라질</string>
   <string name="wifi_countrycode_entries_in">인도</string>
+  <string name="unlock_set_unlock_launch_picker_title_with_fingerprint">화면 잠금 해제와 지문</string>
   <string name="unlock_set_unlock_mode_fingerprint">지문</string>
   <string name="unlock_set_unlock_fingerprint_title">지문</string>
   <string name="fingerprint_item_add_new_fingerprint">새 지문 추가</string>
@@ -899,7 +900,7 @@
   <string name="fingerprint_dialog_title_max_fingers_reached">최대 지문 개수에 도달함</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached"><xliff:g id="finger" example="5 fingerprints">%d</xliff:g>개의 지문만 등록할 수 있습니다. 기존 지문을 삭제하세요.</string>
   <string name="fingerprint_title_manage_fingerprints">지문 <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g> 관리</string>
-  <string name="manage_fingerprints_description">지문을 사용하면 휴대폰을 빠르게 잠금 해제하고, 결제를 확인하고, 사진을 찍을 수 있습니다.</string>
+  <string name="manage_fingerprints_description">지문을 통해 빠르게 휴대전화의 잠금을 해제하고 사진을 찍으세요.</string>
   <string name="fingerprint_enrollment_introduction_title">센서 찾기</string>
   <string name="fingerprint_enrollment_introduction_instructions">지문 인식 센서는 휴대폰의 앞 또는 뒤에 있습니다.</string>
   <string name="fingerprint_enrollment_scan_title">3초동안 누르고 있기</string>
@@ -932,6 +933,7 @@
   <string name="fingerprint_enrollment_error_title_3">흠, 뭔가가 잘못된 것 같습니다</string>
   <string name="fingerprint_enrollment_error_title_4">이런, 다시 시도해 주십시오</string>
   <string name="fingerprint_enrollment_error_title_5">이런, 오류가 있었습니다</string>
+  <string name="lockscreen_settings_and_fingerprint">잠금 화면과 지문</string>
   <string name="menu_stats_reset">통계 재설정</string>
   <string name="reset_stats_msg">배터리 사용 데이터가 초기화됩니다</string>
   <string name="dock_battery_not_present">독 베터리 없음</string>
@@ -939,4 +941,7 @@
   <string name="battery_info_status_charging_dock_usb">독 USB로 충전중</string>
   <string name="setup_lock_pattern_size_title">패턴 복합성</string>
   <string name="setup_lock_pattern_size_details">몇 개의 점으로 패턴을 구성하시겠습니까? 점이 많을수록 패턴을 더 복잡하게 만들 수 있습니다.</string>
+  <string name="lto_download_data_wifi_only">GPS 보조 데이터 다운로드</string>
+  <string name="lto_download_data_wifi_only_on">모든 네트워크를 통해</string>
+  <string name="lto_download_data_wifi_only_off">Wi\u2011Fi 네트워크만</string>
 </resources>
