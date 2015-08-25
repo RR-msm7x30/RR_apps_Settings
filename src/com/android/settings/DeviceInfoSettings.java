@@ -176,12 +176,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         }
 
-	 // Remove update settings if it is not present.
-        mUpdateSettings = (PreferenceScreen) findPreference(KEY_UPDATE_SETTINGS);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_UPDATE_SETTINGS_PACKAGE_NAME)) {
-            getPreferenceScreen().removePreference(mUpdateSettings);
-        }
-
         mAdvancedSettings = (SecureSettingSwitchPreference) findPreference(KEY_ADVANCED_MODE);
         // If enabled by default, just remove the setting, because it's confusing.
         removePreferenceIfBoolFalse(KEY_ADVANCED_MODE, !getResources().getBoolean(

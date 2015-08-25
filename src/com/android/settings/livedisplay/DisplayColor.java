@@ -21,7 +21,6 @@ import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIB
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.hardware.CmHardwareManager;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
