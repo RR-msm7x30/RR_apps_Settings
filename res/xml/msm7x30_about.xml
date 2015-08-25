@@ -63,6 +63,12 @@
 <Preference
         
 	style="?android:preferenceInformationStyle"
+        android:title="JustArchi"
+        android:selectable="false" />
+
+<Preference
+        
+	style="?android:preferenceInformationStyle"
         android:title="Kryten2k35"
         android:selectable="false" />
 
