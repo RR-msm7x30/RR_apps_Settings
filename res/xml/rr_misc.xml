@@ -19,7 +19,7 @@
     <PreferenceScreen
         android:key="wakelock_blocker"
         android:fragment="com.android.settings.aicp.WakeLockBlocker"
-        android:title="@string/wakelock_blocker_title" />    
+        android:title="@string/wakelock_blocker_title" />
     <!-- SELinux -->
         <Preference
             android:key="selinux_switch"
@@ -35,19 +35,25 @@
         <!-- animations -->
     <PreferenceCategory
         android:title="@string/rr_animations_title">
-        
+
         <ListPreference
                 android:key="toast_animation"
                 android:title="@string/toast_animation_title"
                 android:entries="@array/toast_animation_entries"
                 android:entryValues="@array/toast_animation_values"
                 android:persistent="false" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:defaultValue="true" />
+
     <PreferenceScreen
         android:id="@+id/listview"
         android:fragment="com.android.settings.rr.Listview"
         android:summary="@string/listview_category_summary"
         android:title="@string/listview_category" />
-        
+
     <PreferenceScreen
         android:key="aokp_animation"
         android:title="@string/aokp_animation_title"
@@ -59,12 +65,12 @@
             android:title="@string/ui_overscroll_title"
             android:summary="@string/overscroll_weight_summary"
             android:fragment="com.android.settings.rr.OverscrollEffects" />
-        
+
 </PreferenceCategory>
         <!-- animations -->
     <PreferenceCategory
         android:title="@string/rr_gesture_title">
-        
+
     <!-- PIE Controls -->
     <PreferenceScreen
         android:key="pie_settings"
@@ -77,20 +83,6 @@
     	android:fragment="com.android.settings.rr.gestureanywhere.GestureAnywhereSettings"
     	android:summary="@string/gesture_anywhere_gestures_summary"
 	    android:title="@string/gesture_anywhere_title" />
- 
-    <!-- Shake To clear -->
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="shake_to_clean_recents"
-        android:title="@string/shake_clean_recent"
-        android:summary="@string/shake_clean_recent_summary"
-       android:defaultValue="false" />
-
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="shake_to_clean_notifications"
-        android:title="@string/shake_clean_notification"
-        android:summary="@string/shake_clean_notification_summary"
-        android:defaultValue="false" />
-
 
     <!-- Three-fingers-swipe to screenshot -->
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
@@ -110,50 +102,14 @@
         android:key="app_circle_bar"
         android:fragment="com.android.settings.rr.AppCircleBar"
         android:title="@string/app_circle_bar_title"/>
-        
+
 </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="recents_panel"
-        android:title="@string/recents_panel_category" >
 
-        <SwitchPreference
-            android:key="show_clear_all_recents"
-            android:title="@string/show_clear_all_recents_button_title"
-            android:summary="@string/show_clear_all_recents_button_summary"
-            android:defaultValue="true" />
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="systemui_recents_mem_display"
-            android:title="@string/recents_show_membar_title"
-            android:summary="@string/recents_show_membar_summary"
-            android:defaultValue="false" />
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="recents_clear_all_dismiss_all"
-            android:title="@string/recents_clear_all_dismiss_all_title"
-            android:summary="@string/recents_clear_all_dismiss_all_summary"
-            android:defaultValue="true"
-            android:dependency="show_clear_all_recents" />
-
-        <PreferenceScreen
-            android:key="recent_panel"
-            android:title="@string/recent_panel_slim"
-            android:summary="@string/recent_panel_slim_summary"
-            android:fragment="com.android.settings.slim.RecentPanel" />
-
-        <ListPreference
-            android:key="recents_clear_all_location"
-            android:title="@string/recents_clear_all_location_title"
-            android:entries="@array/recents_clear_all_location_entries"
-            android:entryValues="@array/recents_clear_all_location_values"
-            android:defaultValue="5"
-            android:dependency="show_clear_all_recents" />
-            
-     </PreferenceCategory>
-     
      <PreferenceCategory
         android:key="widgets"
         android:title="@string/widgets_category" >
-          
+
       <PreferenceScreen
         android:key="lock_clock"
         android:title="@string/lock_clock_title"
@@ -175,5 +131,5 @@
             android:dialogTitle="@string/vibrator_intensity_title"
             android:persistent="false" />
     </PreferenceCategory>
-             
+
 </PreferenceScreen>

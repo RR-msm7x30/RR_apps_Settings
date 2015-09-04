@@ -76,6 +76,7 @@
     <!-- misc -->
     <string name="misc_settings_title"><b>Miscellaneous</b></string>
     <string name="interface_settings_title"><b>Interface</b></string>
+    <string name="recents_settings"><b>Recents</b></string>
     <string name="rr_display_title">Display</string>
     <string name="rr_animations_title">Animations</string>
     <string name="listview_category_summary">Choose list view scroll animations and interpolator</string>
@@ -97,6 +98,10 @@
     <string name="status_bar_logo_title">Show RR logo</string>
     <string name="status_bar_logo_summary">Enable to show RR logo on the left side of statusbar</string>
     <string name="status_bar_logo_color">RR logo color</string>
+    <string name="status_bar_logo_position">RR Logo Location</string>
+    <string name="status_bar_logo_position_summary">Choose which side to display the logo on, left or right</string>
+    <string name="status_bar_logo_position_right">Right</string>
+    <string name="status_bar_logo_position_left">Left</string>
     <!-- Status bar | Clock -->
     <string name="status_bar_clock"><b>Clock and date</b></string>
     <string name="status_bar_show_clock_second_title">Clock seconds</string>
@@ -630,6 +635,10 @@
     <!-- Full screen keyboard -->
     <string name="fullscreen_keyboard_title">Fullscreen keyboard</string>
     <string name="fullscreen_keyboard_summary">Show a fullscreen keyboard in landscape</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+
     <!-- Volume Steps -->
     <string name="volume_steps_title">Volume steps</string>
     <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
@@ -1060,7 +1069,7 @@
     <string name="recent_panel_slim">Slim recents task panel</string>
     <string name="recent_panel_slim_summary">Recents task panel settings</string>
     <string name="recent_panel_category">Slim recents apps panel</string>
-    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="use_slim_recents_title"><b>Slim recents</b></string>
     <string name="show_running_tasks_title">Only show running apps</string>
     <string name="recents_max_apps_title">Max allowed apps</string>
     <string name="recent_panel_scale_title">Size</string>
@@ -1103,7 +1112,7 @@
     <string name="selinux_enforcing_title">Enforcing</string>
 
     <!-- App sidebar -->
-    <string name="app_sidebar_title">App sidebar</string>
+    <string name="app_sidebar_title"><b>App sidebar</b></string>
     <string name="app_sidebar_enable_title">Enable Appbar</string>
     <string name="app_sidebar_enable_summaryOn">Appbar is enabled</string>
     <string name="app_sidebar_enable_summaryOff">Appbar is disabled</string>
@@ -1130,7 +1139,7 @@
     <string name="lock_screen_hide_carrier_summary">SystemUI will be restarted on switch toggle.</string>
 
     <!-- Status bar temperature -->
-    <string name="status_bar_temperature_title">Temperature</string>
+    <string name="status_bar_temperature_title"><b>Temperature</b></string>
     <string name="status_bar_temperature_hidden">Hidden</string>
     <string name="status_bar_temperature_show_scale">Shown with scale</string>
     <string name="status_bar_temperature_hide_scale">Shown without scale</string>
@@ -1140,9 +1149,16 @@
     <string name="status_bar_temperature_location_left">Show on left</string>
     <string name="status_bar_weather_color_title">Temperature color</string>
     <string name="status_bar_weather_size_title">Font size</string>
+    <string name="status_bar_weather_font_style_title">Font</string>
+    <string name="status_bar_weather_font_normal">Normal</string>
+    <string name="status_bar_weather_font_bold">Bold</string>
+    <string name="status_bar_weather_font_bold_italic">Bold Italic</string>
+    <string name="status_bar_weather_font_condensed">Condensed</string>
+    <string name="status_bar_weather_font_light">Light</string>
+    <string name="status_bar_weather_font_light_italic">Light Italic</string>
 
     <!-- SlimDim -->
-    <string name="dim_nav_buttons_category">SlimDim</string>
+    <string name="dim_nav_buttons_category"><b>SlimDim</b></string>
     <string name="dim_nav_buttons_title">Dim buttons after inactivity</string>
     <string name="dim_nav_buttons_summary">Dim navigation bar buttons after not interacting with navigation bar for a specified time</string>
     <string name="dim_nav_buttons_timeout_title">Timeout before dimming</string>
@@ -1164,11 +1180,26 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
- 
-    <!--Shake To Clear Recents Settings -->
-    <string name="shake_clean_recent">Clean recents</string>
-    <string name="shake_clean_recent_summary">Clean recent task by shake</string>
-    <string name="shake_clean_notification">Clean notifications</string>
-    <string name="shake_clean_notification_summary">Clean notification by shake</string>
+
+    <!--Time Contexual Header -->
+    <string name="notification_title">Notification panel</string>
+    <string name="status_bar_custom_header_title">Custom header image</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Chamber of secrets</string>
+    <string name="chamber_toast">The chamber of secrets has opened</string>    
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors"><b>Lockscreen Colors</b></string>
+    <string name="lockscreen_phone_icon_color">Lockscreen Bottom Left shortcut</string>
+    <string name="lockscreen_lock_icon_color">Lockscreen Lock icon</string>
+    <string name="lockscreen_camera_icon_color">Lockscreen Bottom Right shortcut</string>
+    <string name="lockscreen_indication_text_color">Lockscreen Indication text</string>
+    <string name="lockscreen_clock_color">Lockscreen Clock</string>
+    <string name="lockscreen_clock_date_color">Lockscreen Date</string>
+    <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
+    <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
+    <string name="yes">YES</string>
 
 </resources>

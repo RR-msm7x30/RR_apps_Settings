@@ -76,6 +76,7 @@
     <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
     <uses-permission android:name="android.permission.ACCESS_FINGERPRINT_SERVICE" />
     <uses-permission android:name="com.cyngn.stats.SEND_ANALYTICS" />
+    <uses-permission android:name="cyanogenmod.permission.MODIFY_PROFILES" />
 
     <permission
         android:name="cyanogenmod.permission.PROTECTED_APP"
@@ -90,7 +91,6 @@
             android:supportsRtl="true"
             android:allowBackup="false">
 
-        <uses-library android:name="org.cyanogenmod.hardware" required="false" />
         <!-- Screen color Settings Controls -->
         <activity android:name=".ScreenColorSettings" android:label="@string/screencolor"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -100,10 +100,6 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="nosensor">
         </activity>
-
-        <!-- Settings -->
-        <uses-library android:name="org.cyanogenmod.hardware"
-                android:required="false" />
 
         <activity android:name="Settings"
                 android:taskAffinity="com.android.settings"
