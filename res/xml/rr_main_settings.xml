@@ -34,6 +34,7 @@
                 android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
                 android:icon="@drawable/ic_rr_notification_panel_tint"
                 />
+
         <PreferenceScreen
                 android:id="@+id/rr_recents_settings"
                 android:title="@string/recents_settings"
@@ -73,7 +74,7 @@
                 android:title="@string/misc_settings_title"
                 android:fragment="com.android.settings.rr.MiscSettings"
                 android:icon="@drawable/ic_rr_misc_tint"
-                />               
+                />
 
 </PreferenceCategory>
 
