@@ -342,6 +342,8 @@
   <string name="notification_light_default_value">Standard</string>
   <string name="notification_light_missed_call_title">Verpassten Uruff</string>
   <string name="notification_light_voicemail_title">Mailboxopnam</string>
+  <string name="notification_light_screen_on">Liicht wann de Schierm un ass</string>
+  <string name="keywords_lights_brightness_level">LED-Hellegkeet reduzéieren</string>
   <string name="notification_ringtone_title_cm">Notifikatiounstoun</string>
   <string name="headset_connect_player_title">Musek-App starten</string>
   <string name="headset_connect_player_summary">Wa Kopfhörer verbonne ginn, gëtt Standard-Musek-App gestart</string>
@@ -679,8 +681,8 @@
   <string name="pref_force_highend_gfx_summary">Aktivéiert héich-opléisend visuell Effekter, wéi z. B. transparent Status-  an Navigatiounsläischten (Neistart néideg)</string>
   <string name="edge_gesture_service_title">Gesten-Evenementer blockéieren</string>
   <string name="edge_gesture_service_summary">Keng Beréierungsgesten déi op der Navigatiouns- oder Statusläischt ausgefouert ginn un Appe schécken</string>
-  <string name="cmlicense_title">Rechtlesch Hiweiser iwwer CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Rechtlesch Hiweiser iwwer CyanogenMod</string>
+  <string name="cmlicense_title">Rechtlech Hiweiser iwwer CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Rechtlech Hiweiser iwwer CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Musterfeeler uweisen</string>
   <string name="lockpattern_settings_enable_dots_title">Musterpunkten uweisen</string>
   <string name="unlock_quick_unlock_control_title">Séiert Entspären</string>
@@ -723,6 +725,7 @@
   <string name="qs_tile_compass">Kompass</string>
   <string name="qs_tile_lockscreen">Schiermspär</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Lautstäerktpanneau</string>
   <string name="qs_tile_screen_timeout">Schierm-Timeout</string>
   <string name="qs_tile_usb_tether">USB-Tethering</string>
   <string name="qs_tile_heads_up">Pop-Up-Notifikatiounen</string>
@@ -910,8 +913,6 @@
   <string name="fingerprint_dialog_title_rename">Fangerofdrock änneren</string>
   <string name="fingerprint_dialog_name_label">Numm vum Fangerofdrock</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Max. Fangerofdréck erreecht</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Du kanns just <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> Fangerofdréck registréieren. Läsch en existéierende Fangerofdrock.</string>
-  <string name="fingerprint_title_manage_fingerprints">Verwalte vun de Fangerofdréck <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
   <string name="manage_fingerprints_description">Mat Fangerofdréck kanns du däin Telefon séier entspären oder Fotoe maachen.</string>
   <string name="fingerprint_enrollment_introduction_title">Fann däi Sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">De Fangerofdrock-Sensor ass an der Vir- oder Récksäit vun dengem Telefon.</string>

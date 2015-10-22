@@ -230,6 +230,7 @@
   <string name="update_recovery_off_warning">ADVERTÈNCIA: Quan aquesta característica està inhabilitada, el teu sistema de recuperació instal·lat no s\'actualitzarà amb les millores del SO.\n\nFutures actualitzacions del SO podrien no instal·lar-se amb sistemes de recuperació obsolets o personalitzats.\n\nRealment vols deshabilitar aquesta característica?</string>
   <string name="mod_version">CyanogenMod versió</string>
   <string name="mod_version_default">Desconegut</string>
+  <string name="security_patch">Nivell de correcció de seguretat d\'Android</string>
   <string name="device_model">Model del dispositiu</string>
   <string name="device_name">Nom del dispositiu</string>
   <string name="build_date">Data d\'elaboració</string>
@@ -249,6 +250,7 @@
   <string name="privacy_guard_reset_text">Reiniciar permisos?</string>
   <string name="privacy_guard_help_text">En aquesta pantalla pots triar en quines aplicacions el Guarda de privacitat hauria d\'estar actiu picant simplement en elles. Les aplicacions seleccionades no podran accedir a les dades personals com els contactes, missatges o els registres de trucades. Fent una pulsació llarga en una entrada de l\'aplicació s\'obrirà la pantalla de detalls de l\'aplicació.\n\nLes aplicacions integrades per defecte no es mostren, però poden ser mostrades seleccionant l\'opció del menú respectiu.</string>
   <string name="privacy_guard_manager_show_system_apps">Mostra les aplicacions integrades</string>
+  <string name="privacy_guard_notification_title">Mostra una notificació</string>
   <string name="app_ops_btn_text">Modifica</string>
   <string name="increasing_ring_volume_option_title">Volum del to de trucada creixent</string>
   <string name="increasing_ring_min_volume_title">Volum inicial</string>
@@ -342,6 +344,9 @@
   <string name="notification_light_default_value">Predeterminat</string>
   <string name="notification_light_missed_call_title">Trucada perduda</string>
   <string name="notification_light_voicemail_title">Contestador</string>
+  <string name="notification_light_screen_on">Llums amb la pantalla encesa</string>
+  <string name="notification_light_use_multiple_leds">LEDs múltiples</string>
+  <string name="keywords_lights_brightness_level">atenua la brillantor dels leds</string>
   <string name="notification_ringtone_title_cm">To de les notificacions</string>
   <string name="headset_connect_player_title">Crida l\'aplicació de música</string>
   <string name="headset_connect_player_summary">Crida l\'aplicació de música predeterminada quan es connecten els auriculars</string>
@@ -683,6 +688,9 @@
   <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Mostra el patró erroni</string>
   <string name="lockpattern_settings_enable_dots_title">Mostra els punts del patró</string>
+  <string name="lock_directly_show_password">Mostra directament l\'entrada de contrasenya</string>
+  <string name="lock_directly_show_pattern">Mostra directament la vista del patró</string>
+  <string name="lock_directly_show_pin">Mostra directament l\'entrada del PIN</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueig ràpid</string>
   <string name="unlock_quick_unlock_control_summary">Desbloqueja automàticament quan s\'introdueixi el PIN/contrasenya correcta</string>
   <string name="unlock_scramble_pin_layout_title">Disposició aleatòria</string>
@@ -701,6 +709,7 @@
   <string name="status_bar_show_weather_summary">Mostra el temps per sobre el panell d\'ajustos ràpids</string>
   <string name="qs_category_title">Panell d\'ajustos ràpids</string>
   <string name="qs_brightness_slider_title">Mostra el deslliçador de brillantor</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Amaga les cel·les privades quan estigui bloquejat</string>
   <string name="qs_order_title">Selecciona i ordena cel·les</string>
   <string name="add_qs">Afegeix una nova cel·la</string>
   <string name="qs_action_delete">Esborra</string>
@@ -723,11 +732,13 @@
   <string name="qs_tile_compass">Brúixola</string>
   <string name="qs_tile_lockscreen">Pantalla de bloqueig</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Panell de volum</string>
   <string name="qs_tile_screen_timeout">Temps d\'espera de la pantalla</string>
   <string name="qs_tile_usb_tether">Ancoratge USB</string>
   <string name="qs_tile_heads_up">Notificacions emergents</string>
   <string name="qs_tile_ambient_display">Pantalla ambient</string>
   <string name="qs_tile_sync">Sinc</string>
+  <string name="qs_tile_battery_saver">Estalvi de bateria</string>
   <string name="qs_dynamic_tile_next_alarm">Propera alarma</string>
   <string name="qs_dynamic_tile_ime_selector">Selector de l\'IME</string>
   <string name="qs_dynamic_tile_su">Accés Superusuari</string>
@@ -832,6 +843,17 @@
   <string name="live_display_low_power_summary">Ajusta la pantalla per un consum d\'energia més baix però sense degradació</string>
   <string name="live_display_enhance_color_title">Millora els colors</string>
   <string name="live_display_enhance_color_summary">Millora la vividesa del color dels tons de la pell, paisatges i altres imatges</string>
+  <string name="live_display_color_profile_title">Perfil de color</string>
+  <string name="live_display_color_profile_standard_title">Estàndard</string>
+  <string name="live_display_color_profile_standard_summary">Colors precisos i blancs brillants</string>
+  <string name="live_display_color_profile_natural_title">Natural</string>
+  <string name="live_display_color_profile_natural_summary">Colors realistes i tons de la pell</string>
+  <string name="live_display_color_profile_dynamic_title">Dinàmic</string>
+  <string name="live_display_color_profile_dynamic_summary">Colors realçats i blancs brillants</string>
+  <string name="live_display_color_profile_cinema_title">Cinema</string>
+  <string name="live_display_color_profile_cinema_summary">Reproducció del color perfecte per a multimèdia</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+  <string name="live_display_color_profile_astronomy_summary">Vermells profunds per preservar la visió nocturna</string>
   <string name="battery_saver_threshold">Llindar d\'estalvi de bateria</string>
   <string name="battery_saver_summary">Redueix el rendiment i limita les dades en segon pla</string>
   <string name="battery_saver_summary_unavailable">No disponible durant la càrrega</string>
@@ -899,8 +921,8 @@
   <string name="fingerprint_dialog_title_rename">Edita empremta digital</string>
   <string name="fingerprint_dialog_name_label">Nom de l\'empremta digital</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">S\'ha assolit el màxim d\'empremtes digitals</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Només pots enregistrar <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> empremtes digitals. Esborra una empremta digital existent.</string>
-  <string name="fingerprint_title_manage_fingerprints">Gestiona les empremtes digitals <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">Només pots enregistrar <xliff:g id="finger" example="5">%d</xliff:g> empremtes digitals. Suprimeix una empremta digital existent.</string>
+  <string name="fingerprint_title_manage_fingerprints"><xliff:g id="finger">%d</xliff:g> de <xliff:g id="max">%d</xliff:g> empremtes digitals enregistrades</string>
   <string name="manage_fingerprints_description">Les empremtes digitals et permetran desbloquejar el telèfon ràpidament i fer fotos.</string>
   <string name="fingerprint_enrollment_introduction_title">Troba el teu sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">El sensor d\'empremtes digitals està situat a la part davantera o posterior del teu telèfon.</string>

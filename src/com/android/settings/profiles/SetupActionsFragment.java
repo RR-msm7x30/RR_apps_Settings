@@ -241,7 +241,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
         DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
                 Context.DEVICE_POLICY_SERVICE);
-        if (!dpm.requireSecureKeyguard()) {
+        if (!dpm.requireSecureKeyguard() && Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.ENABLE_DEVICE_POLICY_OVERRIDE, 1) == 0) {
             mItems.add(new LockModeItem(mProfile));
         } else {
             mItems.add(new DisabledItem(R.string.profile_lockmode_title,
@@ -896,12 +897,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                brightnessSettings.setOverride(isChecked);
                 seekBar.setEnabled(isChecked);
-
-                mProfile.setBrightness(brightnessSettings);
-                mAdapter.notifyDataSetChanged();
-                updateProfile();
             }
         });
         seekBar.setEnabled(brightnessSettings.isOverride());
@@ -913,6 +909,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             public void onClick(DialogInterface dialog, int which) {
                 int value = seekBar.getProgress();
                 brightnessSettings.setValue(value);
+                brightnessSettings.setOverride(override.isChecked());
                 mProfile.setBrightness(brightnessSettings);
                 mAdapter.notifyDataSetChanged();
                 updateProfile();
@@ -1047,7 +1044,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         final Item itemAtPosition = (Item) parent.getItemAtPosition(position);
         mSelectedItem = itemAtPosition;
-        mLastSelectedPosition = position;
+        mLastSelectedPosition = mAdapter.getPosition(itemAtPosition);
 
         if (itemAtPosition instanceof AirplaneModeItem) {
             showDialog(DIALOG_AIRPLANE_MODE);

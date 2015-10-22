@@ -43,6 +43,7 @@ import android.widget.EditText;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.widget.SeekBarPreferenceCham;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -55,10 +56,12 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
 
     private static final String PREF_ENABLE = "clock_style";
     private static final String PREF_FONT_STYLE = "font_style";
+    private static final String PREF_FONT_SIZE  = "font_size_clock";
     private static final String PREF_AM_PM_STYLE = "status_bar_am_pm";
     private static final String PREF_COLOR_PICKER = "clock_color";
     private static final String PREF_CLOCK_DATE_DISPLAY = "clock_date_display";
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
+    private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
     
@@ -72,10 +75,12 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
 
     private ListPreference mClockStyle;
     private ListPreference mFontStyle;
+    private SeekBarPreferenceCham mStatusBarDateSize;
     private ListPreference mClockAmPmStyle;
     private ColorPickerPreference mColorPicker;
     private ListPreference mClockDateDisplay;
     private ListPreference mClockDateStyle;
+    private ListPreference mClockDatePosition;
     private ListPreference mClockDateFormat;
     private SwitchPreference mStatusBarClock;
     
@@ -161,6 +166,13 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                 0)));
         mClockDateStyle.setSummary(mClockDateStyle.getEntry());
 
+        mClockDatePosition = (ListPreference) findPreference(PREF_CLOCK_DATE_POSITION);
+        mClockDatePosition.setOnPreferenceChangeListener(this);
+        mClockDatePosition.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_DATE_POSITION,
+                0)));
+        mClockDatePosition.setSummary(mClockDatePosition.getEntry());
+
         mClockDateFormat = (ListPreference) findPreference(PREF_CLOCK_DATE_FORMAT);
         mClockDateFormat.setOnPreferenceChangeListener(this);
         if (mClockDateFormat.getValue() == null) {
@@ -179,11 +191,19 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                     Settings.System.STATUSBAR_CLOCK_DATE_DISPLAY, 0) != 0;
         if (!mClockDateToggle) {
             mClockDateStyle.setEnabled(false);
+            mClockDatePosition.setEnabled(false);
             mClockDateFormat.setEnabled(false);
         }
 
         setHasOptionsMenu(true);
         mCheckPreferences = true;
+        
+        // Clock font size
+        mStatusBarDateSize = (SeekBarPreferenceCham) prefSet.findPreference(PREF_FONT_SIZE);
+        mStatusBarDateSize.setValue(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14));
+        mStatusBarDateSize.setOnPreferenceChangeListener(this);
+
         return prefSet;
     }
 
@@ -214,6 +234,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                      Settings.System.STATUSBAR_CLOCK_FONT_STYLE, val);
              mFontStyle.setSummary(mFontStyle.getEntries()[index]);
              return true;
+        } else if (preference == mStatusBarDateSize) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_FONT_SIZE, width);
+            return true;
         } else if (preference == mColorPicker) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
@@ -230,9 +255,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             mClockDateDisplay.setSummary(mClockDateDisplay.getEntries()[index]);
             if (val == 0) {
                 mClockDateStyle.setEnabled(false);
+                mClockDatePosition.setEnabled(false);
                 mClockDateFormat.setEnabled(false);
             } else {
                 mClockDateStyle.setEnabled(true);
+                mClockDatePosition.setEnabled(true);
                 mClockDateFormat.setEnabled(true);
             }
             return true;
@@ -242,6 +269,14 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_DATE_STYLE, val);
             mClockDateStyle.setSummary(mClockDateStyle.getEntries()[index]);
+            parseClockDateFormats();
+            return true;
+        } else if (preference == mClockDatePosition) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mClockDatePosition.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_DATE_POSITION, val);
+            mClockDatePosition.setSummary(mClockDatePosition.getEntries()[index]);
             parseClockDateFormats();
             return true;
         } else if (preference == mStatusBarClock) {
@@ -380,6 +415,8 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getActivity().getContentResolver(),
                                 Settings.System.STATUSBAR_CLOCK_COLOR, -2);
+                            Settings.System.putInt(getActivity().getContentResolver(),
+                                Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14);
                             getOwner().createCustomView();
                         }
                     })

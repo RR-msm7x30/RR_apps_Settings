@@ -230,6 +230,7 @@
   <string name="update_recovery_off_warning">ACHTUNG: Wenn diese Funktion deaktiviert ist, wird das installierte Recovery-System nicht gemeinsam mit dem Betriebssystems aktualisiert.\n\nZukünftige OS-Updates können möglicherweise nicht mit veralteten oder benutzerdefinierten Recovery-Versionen installieren werden.\n\nMöchten sie diese Funktion wirklich deaktivieren?</string>
   <string name="mod_version">CyanogenMod-Version</string>
   <string name="mod_version_default">Unbekannt</string>
+  <string name="security_patch">Android-Sicherheitspatch-Ebene</string>
   <string name="device_model">Gerätemodell</string>
   <string name="device_name">Gerätename</string>
   <string name="build_date">Build-Datum</string>
@@ -249,6 +250,7 @@
   <string name="privacy_guard_reset_text">Berechtigungen zurücksetzen?</string>
   <string name="privacy_guard_help_text">An dieser Stelle kann der Datenschutz für einzelne Apps durch einfache Berührung ein- und ausgeschaltet werden. Ausgewählte Apps haben keinen Zugriff auf persönliche Daten wie Kontakte, Nachrichten oder das Anrufprotokoll. Langes Drücken auf einen Eintrag öffnet die Detailanzeige für diese App.\n\nStandardmäßig werden in das System integrierte Apps nicht angezeigt. Wenn diese angezeigt werden sollen, kann dies mit der entsprechenden Menü-Option ausgewählt werden.</string>
   <string name="privacy_guard_manager_show_system_apps">Integrierte Apps anzeigen</string>
+  <string name="privacy_guard_notification_title">Benachrichtigung anzeigen</string>
   <string name="app_ops_btn_text">Ändern</string>
   <string name="increasing_ring_volume_option_title">Ansteigende Klingeltonlautstärke</string>
   <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
@@ -342,6 +344,9 @@
   <string name="notification_light_default_value">Standard</string>
   <string name="notification_light_missed_call_title">Verpasster Anruf</string>
   <string name="notification_light_voicemail_title">Sprachnachricht</string>
+  <string name="notification_light_screen_on">Bei aktivem Display</string>
+  <string name="notification_light_use_multiple_leds">Mehrere LEDs</string>
+  <string name="keywords_lights_brightness_level">LED-Helligkeit reduzieren</string>
   <string name="notification_ringtone_title_cm">Benachrichtigungston</string>
   <string name="headset_connect_player_title">Musik-App starten</string>
   <string name="headset_connect_player_summary">Beim Verbinden eines Kopfhörers die Standard-Musik-App starten</string>
@@ -683,6 +688,9 @@
   <string name="settings_cmlicense_activity_title">Rechtliche Hinweise zu CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Fehler anzeigen</string>
   <string name="lockpattern_settings_enable_dots_title">Punkte anzeigen</string>
+  <string name="lock_directly_show_password">Passwort-Abfrage direkt anzeigen</string>
+  <string name="lock_directly_show_pattern">Muster-Abfrage direkt anzeigen</string>
+  <string name="lock_directly_show_pin">PIN-Abfrage direkt anzeigen</string>
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
   <string name="unlock_quick_unlock_control_summary">Entsperren durch korrekte PIN- oder Passworteingabe</string>
   <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
@@ -701,6 +709,7 @@
   <string name="status_bar_show_weather_summary">Wetter oberhalb der Schnelleinstellungen anzeigen</string>
   <string name="qs_category_title">Schnelleinstellungen</string>
   <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Sensible Kacheln bei gesperrtem Bildschirm verstecken</string>
   <string name="qs_order_title">Kacheln auswählen und anordnen</string>
   <string name="add_qs">Neue Kachel hinzufügen</string>
   <string name="qs_action_delete">Löschen</string>
@@ -723,11 +732,13 @@
   <string name="qs_tile_compass">Kompass</string>
   <string name="qs_tile_lockscreen">Bildschirmsperre</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Lautstärke</string>
   <string name="qs_tile_screen_timeout">Bildschirm-Timeout</string>
   <string name="qs_tile_usb_tether">USB-Tethering</string>
   <string name="qs_tile_heads_up">Pop-up-Benachrichtigungen</string>
   <string name="qs_tile_ambient_display">Inaktivitätsdisplay</string>
   <string name="qs_tile_sync">Sync</string>
+  <string name="qs_tile_battery_saver">Akku-Sparmodus</string>
   <string name="qs_dynamic_tile_next_alarm">Nächster Alarm</string>
   <string name="qs_dynamic_tile_ime_selector">Eingabemethode</string>
   <string name="qs_dynamic_tile_su">Root-Zugriff</string>
@@ -764,7 +775,7 @@
   <string name="lockscreen_targets_message">Sperrbildschirm-Verknüpfungen</string>
   <string name="lockscreen_default_target">Standard</string>
   <string name="lockscreen_none_target">Keine</string>
-  <string name="lockscreen_message">Das linke oder rechte Symbol berühren, um eine Sperrbilschirm-Verknüpfung zuzuweisen.</string>
+  <string name="lockscreen_message">Das linke oder rechte Symbol berühren, um eine Sperrbildschirm-Verknüpfung zuzuweisen.</string>
   <string name="lockscreen_choose_action_title">Aktion auswählen</string>
   <string name="lockscreen_visualizer_title">Musikvisualisierung anzeigen</string>
   <string name="whisperpush_title">WhisperPush</string>
@@ -813,7 +824,7 @@
   <string name="power_usage_history_title">Akkuverbrauch</string>
   <string name="recents_show_searchbar">Suchleiste im Anwendungsverlauf</string>
   <string name="keywords_recents_show_searchbar">Anwendungsverlauf aktivieren deaktivieren anzeigen Suchleiste Suche ausblenden</string>
-  <string name="sim_ringtone_title">SIM %d Klingelton</string>
+  <string name="sim_ringtone_title">SIM %d-Klingelton</string>
   <string name="interruptions_ignore_while_media_title">Hervorheben verhindern</string>
   <string name="interruptions_ignore_while_media_summary">Medienlautstärke beim Eintreffen einer Benachrichtigung nicht reduzieren</string>
   <string name="none_is_silent_title">Alarme nie stumm schalten</string>
@@ -832,6 +843,17 @@
   <string name="live_display_low_power_summary">Anpassen der Anzeige für den niedrigsten Akkuverbrauch ohne Beeinträchtigungen</string>
   <string name="live_display_enhance_color_title">Farben verbessern</string>
   <string name="live_display_enhance_color_summary">Verbessert die Farben von Hauttönen, Landschaften und von anderen Bildern</string>
+  <string name="live_display_color_profile_title">Farbprofil</string>
+  <string name="live_display_color_profile_standard_title">Standard</string>
+  <string name="live_display_color_profile_standard_summary">Genaue Farbdarstellung und helle Weißtöne</string>
+  <string name="live_display_color_profile_natural_title">Natürlich</string>
+  <string name="live_display_color_profile_natural_summary">Realistische Farben und Hauttöne</string>
+  <string name="live_display_color_profile_dynamic_title">Dynamisch</string>
+  <string name="live_display_color_profile_dynamic_summary">Verbesserte Farben und helleres Weiß</string>
+  <string name="live_display_color_profile_cinema_title">Kino</string>
+  <string name="live_display_color_profile_cinema_summary">Ideale Farbwiedergabe für Medien</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomie</string>
+  <string name="live_display_color_profile_astronomy_summary">Tiefes Rot um die Nachtsicht zu erhalten</string>
   <string name="battery_saver_threshold">Schwellwert für Energiesparmodus</string>
   <string name="battery_saver_summary">Leistung und Hintergrunddaten verringern</string>
   <string name="battery_saver_summary_unavailable">Während des Ladevorgangs nicht verfügbar</string>
@@ -899,8 +921,8 @@
   <string name="fingerprint_dialog_title_rename">Fingerabdruck bearbeiten</string>
   <string name="fingerprint_dialog_name_label">Name des Fingerabdrucks</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Max. Fingerabdrücke erreicht</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Sie können nur <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> Fingerabdrücke registrieren. Löschen Sie einen vorhandenen Fingerabdruck.</string>
-  <string name="fingerprint_title_manage_fingerprints">Verwalten der Fingerabdrücke <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">Sie können nur <xliff:g id="finger" example="5">%d</xliff:g> Fingerabdrücke registrieren. Löschen Sie einen vorhandenen Fingerabdruck.</string>
+  <string name="fingerprint_title_manage_fingerprints"><xliff:g id="finger">%d</xliff:g> von <xliff:g id="max">%d</xliff:g> registrierten Fingerabdrücken</string>
   <string name="manage_fingerprints_description">Mit Fingerabdrücken können Sie Ihr Telefon schnell entsperren oder Fotos aufnehmen.</string>
   <string name="fingerprint_enrollment_introduction_title">Finden Sie Ihren Sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">Der Fingerabdruck-Sensor befindet sich an der Vorder- oder Rückseite Ihres Telefons.</string>
@@ -912,7 +934,7 @@
   <string name="fingerprint_enrollment_break_title">Mit dem aktuellen Abdruck fortfahren</string>
   <string name="fingerprint_enrollment_break_instructions">Machen Sie mit der Erfassung der Ränder Ihres Abdrucks weiter. Heben Sie Ihren Finger, sobald Sie eine Vibration spüren.</string>
   <string name="fingerprint_enrollment_finished_title">Fingerabdruck hinzugefügt!</string>
-  <string name="fingerprint_enrollment_finished_message">Ihr Fingerabdruck kann jetzt zum Entsperren des Bildschirms oder zum Aufnehmen von Selfies mit Ihrer Kamera verwendet werden.</string>
+  <string name="fingerprint_enrollment_finished_message">Ihr Fingerabdruck kann jetzt zum Entsperren des Bildschirms oder zum Aufnehmen von Selbstporträts mit Ihrer Kamera verwendet werden.</string>
   <string name="fingerprint_enrollment_found_it_label">Gefunden</string>
   <string name="fingerprint_enrollment_add_another_label">Weiteren hinzufügen</string>
   <string name="fingerprint_enrollment_done_label">Fertig</string>
@@ -951,10 +973,16 @@
   <string name="contributors_cloud_fragment_title">Mitwirkende</string>
   <string name="contributors_cloud_loading_message">Lade Mitwirkende\u2026</string>
   <string name="contributors_cloud_failed_message">Laden der Mitwirkenden nicht möglich</string>
+  <string name="contributor_info_menu">Info Mitwirkender</string>
   <string name="contributor_info_msg">
         <![CDATA[<b>Name:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Nickname:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
                  <b>Beiträge:</b> <xliff:g id="commits">%3$s</xliff:g><br/><br/>
                  <b>Rang:</b> <xliff:g id="rank">%4$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Info Beiträge</string>
+  <string name="contributions_info_msg">
+        <![CDATA[<b>Gesamt Mitwirkende:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Gesamt Beiträge:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Letzte Aktualisierung:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <string name="quick_settings_reset_message">Kacheln der Schnelleinstellungen zurücksetzen?</string>
 </resources>

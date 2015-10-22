@@ -16,8 +16,12 @@
 
 package com.android.settings.rr;
 
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
 import android.app.AlertDialog;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -32,6 +36,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
@@ -40,23 +45,26 @@ import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.SeekBarPreferenceCham;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
-public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "CarrierLabel";
 
-    private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
+    private static final String STATUS_BAR_CUSTOM_CARRIER = "status_bar_custom_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_CARRIER_FONT_SIZE  = "status_bar_carrier_font_size";
     private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
 
     static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
-    private SwitchPreference mStatusBarCarrier;
+    private ListPreference mStatusBarCarrier;
     private PreferenceScreen mCustomCarrierLabel;
     private String mCustomCarrierLabelText;
     private SeekBarPreferenceCham mStatusBarCarrierSize;
@@ -71,13 +79,13 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        int intColor;
         String hexColor;
 
-        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
-        mStatusBarCarrier.setChecked((Settings.System.getIntForUser(resolver,
-                Settings.System.STATUS_BAR_CARRIER,
-                0, UserHandle.USER_CURRENT) == 1));
+        mStatusBarCarrier = (ListPreference) findPreference(STATUS_BAR_CUSTOM_CARRIER);
+        int statusBarCarrier = Settings.System.getInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_CUSTOM_CARRIER, 1);
+        mStatusBarCarrier.setValue(String.valueOf(statusBarCarrier));
+        mStatusBarCarrier.setSummary(mStatusBarCarrier.getEntry());
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
 
@@ -88,21 +96,16 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
         mCarrierColorPicker = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
         mCarrierColorPicker.setOnPreferenceChangeListener(this);
-        intColor = Settings.System.getInt(getContentResolver(),
-                       Settings.System.STATUS_BAR_CARRIER_COLOR, DEFAULT_STATUS_CARRIER_COLOR);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_CARRIER_COLOR, DEFAULT_STATUS_CARRIER_COLOR);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mCarrierColorPicker.setSummary(hexColor);
         mCarrierColorPicker.setNewPreviewColor(intColor);
-        mCarrierColorPicker.setAlphaSliderEnabled(true);
 
         updateCustomLabelTextSummary();
-
     }
 
     private void updateCustomLabelTextSummary() {
-        if (mCustomCarrierLabel == null) {
-            return;
-        }
         mCustomCarrierLabelText = Settings.System.getString(
             getActivity().getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
 
@@ -124,14 +127,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
                     Settings.System.STATUS_BAR_CARRIER_COLOR, intHex);
             return true;
         } else if (preference == mStatusBarCarrier) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.STATUS_BAR_CARRIER,
-                    value ? 1 : 0, UserHandle.USER_CURRENT);
-            //send intent to have network controller update network name
-            Intent i = new Intent();
-            i.setAction(Intent.ACTION_CUSTOM_CARRIER_LABEL_CHANGED);
-            getActivity().sendBroadcast(i);
+            int statusBarCarrier = Integer.valueOf((String) newValue);
+            int index = mStatusBarCarrier.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    getContentResolver(), Settings.System.STATUS_BAR_CUSTOM_CARRIER, statusBarCarrier);
+            mStatusBarCarrier.setSummary(mStatusBarCarrier.getEntries()[index]);
             return true;
          } else if (preference == mStatusBarCarrierSize) {
             int width = ((Integer)newValue).intValue();
@@ -177,4 +177,26 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.carrier_label;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

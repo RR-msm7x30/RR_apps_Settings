@@ -2413,6 +2413,9 @@
         <activity android:name=".rr.gestureanywhere.GestureAnywhereCreateGestureActivity" />
         
         <activity android:name=".rr.About" />
+
+        <!-- SystemApp Remover -->
+        <activity android:name="com.android.settings.rr.SystemappRemover" />
                
         <!-- Resurrection Settings -->
         <activity android:name="Settings$MainSettingsActivity"
@@ -2449,7 +2452,6 @@
 		<activity
              android:name=".msm7x30.msmAbout" />
              
-
         <activity android:name=".sim.SimDialogActivity"
                 android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
                 android:label="@string/sim_settings_title"
@@ -2478,26 +2480,6 @@
                 <action android:name="cyanogenmod.intent.action.PACKAGE_PROTECTED" />
             </intent-filter>
         </receiver>
-
-        <activity android:name=".applications.ProtectedAppsActivity"
-                  android:label="@string/protected_apps"
-                  android:excludeFromRecents="true"
-                  android:configChanges="orientation|keyboardHidden|screenSize">
-
-            <intent-filter>
-                <action android:name=".applications.ProtectedAppsActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".applications.LockPatternActivity"
-                  android:label="@string/protected_apps"
-                  android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name=".applications.LockPatternActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <receiver android:name=".profiles.SetupDefaultProfileReceiver">
             <intent-filter>

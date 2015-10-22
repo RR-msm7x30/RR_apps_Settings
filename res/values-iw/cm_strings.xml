@@ -230,6 +230,7 @@
   <string name="update_recovery_off_warning">אזהרה: כשתכונה זו לא מופעלת, ה-Recovery הנוכחי לא יתעדכן עם עדכוני מערכת.\n\nעדכוני מערכת עתידיים לא יותקנו עם גרסה לא עדכנית של ה-Recovery.\n\nהאם לכבות את תכונה זו?</string>
   <string name="mod_version">גרסת CyanogenMod</string>
   <string name="mod_version_default">לא ידוע</string>
+  <string name="security_patch">רמת טלאי אבטחת אנדרואיד</string>
   <string name="device_model">דגם המכשיר</string>
   <string name="device_name">שם המכשיר</string>
   <string name="build_date">תאריך בנייה</string>
@@ -249,6 +250,7 @@
   <string name="privacy_guard_reset_text">לאפס הרשאות?</string>
   <string name="privacy_guard_help_text">בחלון זה אתה יכול לבחור עבור אילו יישומים שומר הפרטיות יפעל. הייישומים הנבחרים לא יקבלו גישה למידע הפרטי שלך כמו אנשי קשר, הודעות ויומן שיחות. לחיצה ארוכה על יישום תפתח את פרטי ההרשאות שלו.\n\nיישומים מובנים לא מוצגים כברירת מחדל, אבל יכולים להיחשף על ידי בחירת ההגדרה המתאימה.</string>
   <string name="privacy_guard_manager_show_system_apps">הצג יישומים מובנים</string>
+  <string name="privacy_guard_notification_title">הצג התראה</string>
   <string name="app_ops_btn_text">שנה</string>
   <string name="increasing_ring_volume_option_title">עוצמת צלצול מתגברת</string>
   <string name="increasing_ring_min_volume_title">עוצמה התחלתית</string>
@@ -342,6 +344,9 @@
   <string name="notification_light_default_value">ברירת מחדל</string>
   <string name="notification_light_missed_call_title">שיחה שלא נענתה</string>
   <string name="notification_light_voicemail_title">תא קולי</string>
+  <string name="notification_light_screen_on">תאורת התראה כאשר המסך דולק</string>
+  <string name="notification_light_use_multiple_leds">נוריות LED מרובות</string>
+  <string name="keywords_lights_brightness_level">עמעם בהירות נוריות</string>
   <string name="notification_ringtone_title_cm">צליל התראה</string>
   <string name="headset_connect_player_title">הפעל נגן מוזיקה</string>
   <string name="headset_connect_player_summary">הפעל את נגן המוזיקה המוגדר כברירת המחדל בעת חיבור אוזניות</string>
@@ -683,6 +688,9 @@
   <string name="settings_cmlicense_activity_title">CyanogenMod משפטי</string>
   <string name="lockpattern_settings_enable_error_path_title">הצג שגיאות דפוס</string>
   <string name="lockpattern_settings_enable_dots_title">הצג דפוס נקודות</string>
+  <string name="lock_directly_show_password">הצג ישירות את הזנת הסיסמה</string>
+  <string name="lock_directly_show_pattern">הצג ישירות את תצוגת הדפוס הנעילה</string>
+  <string name="lock_directly_show_pin">הצג ישירות את הכנסת קוד ה-PIN</string>
   <string name="unlock_quick_unlock_control_title">פתיחה מהירה</string>
   <string name="unlock_quick_unlock_control_summary">פתח אוטומטית כאשר הסיסמה/קוד מוכנס</string>
   <string name="unlock_scramble_pin_layout_title">ערבב פריסה</string>
@@ -701,6 +709,7 @@
   <string name="status_bar_show_weather_summary">הראה את מזג האוויר מעל לוח ההגדרות המהירות</string>
   <string name="qs_category_title">לוח ההגדרות המהירות</string>
   <string name="qs_brightness_slider_title">הצג מחוון בהירות</string>
+  <string name="qs_hide_tiles_with_sensitive_data">הסתר אריחים רגישים כאשר המכשיר נעול</string>
   <string name="qs_order_title">בחר ושנה את סדר האריחים</string>
   <string name="add_qs">הוסף אריח חדש</string>
   <string name="qs_action_delete">מחק</string>
@@ -723,11 +732,13 @@
   <string name="qs_tile_compass">מצפן</string>
   <string name="qs_tile_lockscreen">מסך נעילה</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">לוח עוצמות שמע</string>
   <string name="qs_tile_screen_timeout">פרק הזמן לכיבוי מסך</string>
   <string name="qs_tile_usb_tether">קשירת USB</string>
   <string name="qs_tile_heads_up">התראות קופצות</string>
   <string name="qs_tile_ambient_display">התראות ברקע</string>
   <string name="qs_tile_sync">סנכרון</string>
+  <string name="qs_tile_battery_saver">שומר סוללה</string>
   <string name="qs_dynamic_tile_next_alarm">ההתראה הבאה</string>
   <string name="qs_dynamic_tile_ime_selector">בורר שיטות קלט</string>
   <string name="qs_dynamic_tile_su">גישת שורש (Root)</string>
@@ -882,7 +893,7 @@
   <string name="factory_reset_erase_stored_content_summary">מחק מוזיקה, תמונות, סרטונים, או כל תוכן אחר המאוחסן על מכשיר זה</string>
   <string name="factory_reset_erase_stored_content_summary_forced">מחק מוזיקה, תמונות, סרטונים, או כל תוכן אחר המאוחסן על מכשיר זה.\n\n<b>לא ניתן לשמור את התוכן עקב הצפנת המכשיר.</b></string>
   <string name="factory_reset_erase_sd_card">פרמט כרטיס זיכרון</string>
-  <string name="factory_reset_erase_sd_card_summary">מחק את כל הנתונים על כרטיס ה-SD, כולל מוזיקה ותמונות</string>
+  <string name="factory_reset_erase_sd_card_summary">מחק את כל הנתונים על כרטיס הזיכרון, כולל מוזיקה ותמונות</string>
   <string name="factory_reset_warning_text_reset_now">אפס עכשיו</string>
   <string name="factory_reset_warning_text_message">כל החשבונות, היישומים (כולל נתוניהם) והגדרות המערכת שלך יוסרו ממכשיר זה. פעולה זו אינה הפיכה.</string>
   <string name="wifi_setting_countrycode_title">קוד אזור Wi-Fi</string>
@@ -910,8 +921,8 @@
   <string name="fingerprint_dialog_title_rename">ערוך טביעת אצבע</string>
   <string name="fingerprint_dialog_name_label">שם טביעת אצבע</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">הגעת למספר טביעות האצבע המרבי</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">אתה יכול להכניס לרשימה רק עד <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> טביעות אצבע. מחק טביעת אצבע קיימת.</string>
-  <string name="fingerprint_title_manage_fingerprints">נהל טביעות אצבעות <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">ניתן לרשום רק עד <xliff:g id="finger" example="5">%d</xliff:g> טביעות אצבע. מחק טביעת אצבע קיימת.</string>
+  <string name="fingerprint_title_manage_fingerprints">נרשמו <xliff:g id="finger">%d</xliff:g> מתוך <xliff:g id="max">%d</xliff:g> טביעות אצבע</string>
   <string name="manage_fingerprints_description">טביעת אצבע מאפשרת לשחרר את נעילת המכשיר ולצלם תמונות במהירות.</string>
   <string name="fingerprint_enrollment_introduction_title">מצא את החיישן שלך</string>
   <string name="fingerprint_enrollment_introduction_instructions">חיישן טביעות האצבע ממוקם בחלק הקדמי, או האחורי, של המכשיר שלך.</string>

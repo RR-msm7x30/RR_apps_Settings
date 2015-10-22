@@ -230,6 +230,7 @@
   <string name="update_recovery_off_warning">AVISO: Quando este recurso estiver desativado, seu recovery instalado não será atualizado junto com o sistema.\n\nVersões mais atuais do sistema operacional podem não instalar com um recovery antigo ou customizado.\n\nVocê realmente quer desativar este recurso?</string>
   <string name="mod_version">Versão CyanogenMod</string>
   <string name="mod_version_default">Desconhecida</string>
+  <string name="security_patch">Nível do patch de segurança do Android</string>
   <string name="device_model">Modelo do dispositivo</string>
   <string name="device_name">Nome do dispositivo</string>
   <string name="build_date">Data de compilação</string>
@@ -249,6 +250,7 @@
   <string name="privacy_guard_reset_text">Redefinir permissões?</string>
   <string name="privacy_guard_help_text">Nesta tela você pode escolher quais aplicativos a Proteção à Privacidade deve estar ativa ao simplesmente tocar neles. Os aplicativos selecionados não serão capazes de acessar seus dados pessoais, como contatos, mensagens ou registos de chamadas. Pressionando e segurando um item de aplicativo, abre a tela de detalhes do aplicativo.\n\nAplicativos do sistema não são exibidos por padrão, mas podem ser exibidos selecionando a respectiva opção no menu.</string>
   <string name="privacy_guard_manager_show_system_apps">Mostrar aplicativos de sistema</string>
+  <string name="privacy_guard_notification_title">Mostrar notificação</string>
   <string name="app_ops_btn_text">Modificar</string>
   <string name="increasing_ring_volume_option_title">Aumento gradativo do volume do toque</string>
   <string name="increasing_ring_min_volume_title">Volume inicial</string>
@@ -342,6 +344,9 @@
   <string name="notification_light_default_value">Padrão</string>
   <string name="notification_light_missed_call_title">Chamada perdida</string>
   <string name="notification_light_voicemail_title">Correio de Voz</string>
+  <string name="notification_light_screen_on">Luzes com a tela ligada</string>
+  <string name="notification_light_use_multiple_leds">LEDs múltiplos</string>
+  <string name="keywords_lights_brightness_level">escurecer o brilho do led</string>
   <string name="notification_ringtone_title_cm">Toque de notificação</string>
   <string name="headset_connect_player_title">Abrir app de música</string>
   <string name="headset_connect_player_summary">Iniciar o app de música padrão quando os fones de ouvido forem conectados</string>
@@ -683,6 +688,9 @@
   <string name="settings_cmlicense_activity_title">Licença CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Exibir erro no padrão</string>
   <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
+  <string name="lock_directly_show_password">Exibir diretamente a entrada de senha</string>
+  <string name="lock_directly_show_pattern">Exibir diretamente o padrão</string>
+  <string name="lock_directly_show_pin">Exibir diretamente a entrada PIN</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
   <string name="unlock_quick_unlock_control_summary">Não é necessário pressionar OK ao digitar PIN ou senha. Apagar conta como erro.</string>
   <string name="unlock_scramble_pin_layout_title">Embaralhar layout</string>
@@ -701,6 +709,7 @@
   <string name="status_bar_show_weather_summary">Mostrar o tempo acima do painel de Configurações Rápidas</string>
   <string name="qs_category_title">Painel de Configurações Rápidas</string>
   <string name="qs_brightness_slider_title">Mostrar o controle deslizante de brilho</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Esconder os botões sensíveis quando bloqueado</string>
   <string name="qs_order_title">Selecionar e ordenar os botões</string>
   <string name="add_qs">Adicionar novo botão</string>
   <string name="qs_action_delete">Remover</string>
@@ -723,11 +732,13 @@
   <string name="qs_tile_compass">Bússola</string>
   <string name="qs_tile_lockscreen">Tela de bloqueio</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Painel de volume</string>
   <string name="qs_tile_screen_timeout">Tempo limite de tela</string>
   <string name="qs_tile_usb_tether">Tethering USB</string>
   <string name="qs_tile_heads_up">Heads up</string>
   <string name="qs_tile_ambient_display">Tela ambiente</string>
   <string name="qs_tile_sync">Sincronização</string>
+  <string name="qs_tile_battery_saver">Economizador de bateria</string>
   <string name="qs_dynamic_tile_next_alarm">Próximo alarme</string>
   <string name="qs_dynamic_tile_ime_selector">Seletor de IME</string>
   <string name="qs_dynamic_tile_su">Acesso super usuário</string>
@@ -910,8 +921,6 @@
   <string name="fingerprint_dialog_title_rename">Editar a impressão digital</string>
   <string name="fingerprint_dialog_name_label">Nome da impressão digital</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Número máximo de impressões digitais atingido</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Você só pode registrar <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> impressões digitais. Exclua uma impressão digital existente.</string>
-  <string name="fingerprint_title_manage_fingerprints">Gerenciar impressões digitais</string>
   <string name="manage_fingerprints_description">Impressões digitais permitem que você desbloqueie rapidamente o seu telefone e tire fotos.</string>
   <string name="fingerprint_enrollment_introduction_title">Encontrar seu sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">O sensor de impressão digital está localizado na parte da frente ou para trás de seu telefone.</string>

@@ -230,6 +230,7 @@
   <string name="update_recovery_off_warning">ΠΡΟΣΟΧΗ: Όταν αυτή η λειτουργία είναι απενεργοποιημένη, η εγκατεστημένη recovery σας δεν θα ενημερώνεται με τις αναβαθμίσεις του λειτουργικού συστήματος.\n\nΕνδέχεται να μην είναι η δυνατή η εγκατάσταση μελλοντικών ενημερώσεων με ξεπερασμένες ή τροποποιημένες εκδόσεις recovery.\n\nΘέλετε πράγματι να απενεργοποιήσετε αυτήν τη λειτουργία;</string>
   <string name="mod_version">Έκδοση CyanogenMod</string>
   <string name="mod_version_default">Άγνωστη</string>
+  <string name="security_patch">Επίπεδο ενημέρωσης κώδικα ασφαλείας Android</string>
   <string name="device_model">Μοντέλο συσκευής</string>
   <string name="device_name">Όνομα συσκευής</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>
@@ -249,6 +250,7 @@
   <string name="privacy_guard_reset_text">Επαναφορά αδειών;</string>
   <string name="privacy_guard_help_text">Εδώ μπορείτε να επιλέξετε για ποιές εφαρμογές θα είναι ενεργή η Προστασία Απορρήτου απλά πιέζοντας πάνω τους. Οι επιλεγμένες εφαρμογές δεν θα μπορούν να έχουν πρόσβαση στα προσωπικά σας δεδομένα, όπως επαφές, μηνύματα ή το αρχείο κλήσεων. Πιέζοντας παρατεταμένα μια επιλογή, ανοίγει η οθόνη λεπτομερειών της εφαρμογής.\n\nΟι ενσωματωμένες εφαρμογές δεν εμφανίζονται από προεπιλογή αλλά μπορείτε να τις εμφανίσετε επιλέγοντας την σχετική ρύθμιση στο μενού.</string>
   <string name="privacy_guard_manager_show_system_apps">Εμφάνιση ενσωματωμένων εφαρμογών</string>
+  <string name="privacy_guard_notification_title">Εμφάνιση ειδοποίησης</string>
   <string name="app_ops_btn_text">Τροποποίηση</string>
   <string name="increasing_ring_volume_option_title">Αυξανόμενη ένταση κουδουνίσματος</string>
   <string name="increasing_ring_min_volume_title">Αρχική ένταση</string>
@@ -343,6 +345,7 @@
   <string name="notification_light_missed_call_title">Αναπάντητη κλήση</string>
   <string name="notification_light_voicemail_title">Μήνυμα τηλεφωνητή</string>
   <string name="notification_light_screen_on">Φωτισμός ενώ η οθόνη είναι ενεργή</string>
+  <string name="notification_light_use_multiple_leds">Πολλαπλά LED</string>
   <string name="keywords_lights_brightness_level">φωτεινότητα led</string>
   <string name="notification_ringtone_title_cm">Ήχος ειδοποίησης</string>
   <string name="headset_connect_player_title">Εκκίνηση εφαρμογής μουσικής</string>
@@ -685,6 +688,9 @@
   <string name="settings_cmlicense_activity_title">Νομικές πληροφορίες CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Εμφάνιση λάθος μοτίβου</string>
   <string name="lockpattern_settings_enable_dots_title">Εμφάνιση τελειών μοτίβου</string>
+  <string name="lock_directly_show_password">Άμεση εμφάνιση εισόδου κωδικού</string>
+  <string name="lock_directly_show_pattern">Άμεση εμφάνιση εισόδου μοτίβου</string>
+  <string name="lock_directly_show_pin">Άμεση εμφάνιση εισόδου PIN</string>
   <string name="unlock_quick_unlock_control_title">Γρήγορο ξεκλείδωμα</string>
   <string name="unlock_quick_unlock_control_summary">Αυτόματο ξεκλείδωμα όταν δωθεί το σωστό PIN ή ο σωστός κωδικός</string>
   <string name="unlock_scramble_pin_layout_title">Ανακάτεμα διάταξης</string>
@@ -703,6 +709,7 @@
   <string name="status_bar_show_weather_summary">Εμφάνιση του καιρού πάνω από τον πίνακα Γρήγορων ρυθμίσεων</string>
   <string name="qs_category_title">Πίνακας Γρήγορων ρυθμίσεων</string>
   <string name="qs_brightness_slider_title">Εμφάνιση ρυθμιστικού φωτεινότητας</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Απόκρυψη ευαίσθητων πλακιδίων όταν η συσκευή είναι κλειδωμένη</string>
   <string name="qs_order_title">Επιλέξτε και ταξινομήστε τα πλακίδια</string>
   <string name="add_qs">Προσθήκη νέου πλακιδίου</string>
   <string name="qs_action_delete">Διαγραφή</string>
@@ -731,6 +738,7 @@
   <string name="qs_tile_heads_up">Αναδυόμενες ειδοποιήσεις</string>
   <string name="qs_tile_ambient_display">Οθόνη ambient</string>
   <string name="qs_tile_sync">Συγχρονισμός</string>
+  <string name="qs_tile_battery_saver">Εξοικονόμηση μπαταρίας</string>
   <string name="qs_dynamic_tile_next_alarm">Επόμενο ξυπνητήρι</string>
   <string name="qs_dynamic_tile_ime_selector">Επιλογέας μεθόδου εισόδου</string>
   <string name="qs_dynamic_tile_su">Πρόσβαση root</string>
@@ -917,8 +925,8 @@
   <string name="fingerprint_dialog_title_rename">Επεξεργασία δακτυλικού αποτυπώματος</string>
   <string name="fingerprint_dialog_name_label">Όνομα δακτυλικού αποτυπώματος</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Μέγιστα δακτυλικά αποτυπώματα</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Μπορείτε να εγγράψετε μόνο <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> δακτυλικά αποτυπώματα. Διαγράψτε ένα υπάρχον δακτυλικό αποτύπωμα.</string>
-  <string name="fingerprint_title_manage_fingerprints">Διαχείριση αποτυπωμάτων <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">Μπορείτε να εγγράψετε μόνο <xliff:g id="finger" example="5">%d</xliff:g> δακτυλικά αποτυπώματα. Διαγράψτε ένα υπάρχον δακτυλικό αποτύπωμα.</string>
+  <string name="fingerprint_title_manage_fingerprints"><xliff:g id="finger">%d</xliff:g> από <xliff:g id="max">%d</xliff:g> δακτυλικά αποτυπώματα έχουν εγγραφεί</string>
   <string name="manage_fingerprints_description">Τα δακτυλικά αποτυπώματα σας επιτρέπουν να ξεκλειδώσετε το τηλέφωνό σας γρήγορα και να βγάλετε φωτογραφίες.</string>
   <string name="fingerprint_enrollment_introduction_title">Βρείτε τον αισθητήρα σας</string>
   <string name="fingerprint_enrollment_introduction_instructions">Ο αισθητήρας βρίσκεται στο μπροστινό ή πίσω μέρος του τηλεφώνου σας.</string>

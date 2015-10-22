@@ -130,7 +130,14 @@
                 android:fragment="com.android.settings.rr.MainSettings"
                 android:icon="@drawable/ic_rr_tools_tint"
                 />       
-
+        <!-- TRDS PitchBlack-->
+        <dashboard-tile
+                android:id="@+id/theme_settings_trds"
+                android:icon="@drawable/ic_rr_pb_tint"
+                android:fragment="com.android.settings.slim.themes.ThemeSettings"
+                android:title="@string/theme_pb_settings_title"
+                android:summary="@string/theme_pb_settings_summary_title"
+                />
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile
@@ -142,8 +149,8 @@
                 <categories android:name="cyanogenmod.intent.category.APP_THEMES" />
             </intent>
         </dashboard-tile>
-                                      
     </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"

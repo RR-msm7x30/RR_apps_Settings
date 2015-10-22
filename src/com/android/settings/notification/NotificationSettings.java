@@ -49,7 +49,6 @@ import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
@@ -263,7 +262,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                     ? com.android.internal.R.drawable.ic_audio_ring_notif_mute
                     : mRingerMode == AudioManager.RINGER_MODE_VIBRATE
                     ? com.android.internal.R.drawable.ic_audio_ring_notif_vibrate
-                    : R.drawable.ic_audio_ring_24dp);
+                    : com.android.internal.R.drawable.ic_audio_ring_notif);
         }
     }
 
@@ -340,11 +339,12 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     // === Phone & notification ringtone ===
 
     private void initRingtones(PreferenceCategory root) {
+		boolean isOwner = Utils.isUserOwner();
         mPhoneRingtonePreference = root.findPreference(KEY_PHONE_RINGTONE);
-        if (mPhoneRingtonePreference != null && !mVoiceCapable) {
+        if (mPhoneRingtonePreference != null && (!mVoiceCapable || !isOwner)) {
             root.removePreference(mPhoneRingtonePreference);
             mPhoneRingtonePreference = null;
-        }
+       }
         mNotificationRingtonePreference = root.findPreference(KEY_NOTIFICATION_RINGTONE);
         mAlarmRingtonePreference = root.findPreference(KEY_ALARM_RINGTONE);
     }
@@ -449,7 +449,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             Log.i(TAG, "Preference not found: " + KEY_VIBRATE_WHEN_RINGING);
             return;
         }
-        if (!mVoiceCapable) {
+        if (!mVoiceCapable || !Utils.isUserOwner()) {
             root.removePreference(mVibrateWhenRinging);
             mVibrateWhenRinging = null;
             return;

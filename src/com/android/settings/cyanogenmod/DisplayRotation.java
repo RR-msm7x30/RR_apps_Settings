@@ -34,7 +34,6 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
 
     private static final String KEY_ACCELEROMETER = "accelerometer";
-    private static final String KEY_LOCKSCREEN_ROTATION = "lockscreen_rotation";
     private static final String ROTATION_0_PREF = "display_rotation_0";
     private static final String ROTATION_90_PREF = "display_rotation_90";
     private static final String ROTATION_180_PREF = "display_rotation_180";
@@ -61,7 +60,6 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.display_rotation);
 
         PreferenceScreen prefSet = getPreferenceScreen();
@@ -95,17 +93,7 @@ public class DisplayRotation extends SettingsPreferenceFragment {
             mRotation180Pref.setDependency(null);
             mRotation270Pref.setDependency(null);
         }
-
-        final SwitchPreference lockScreenRotation =
-                (SwitchPreference) findPreference(KEY_LOCKSCREEN_ROTATION);
-        boolean canRotateLockscreen = getResources().getBoolean(
-                com.android.internal.R.bool.config_enableLockScreenRotation);
-
-        if (lockScreenRotation != null && !canRotateLockscreen) {
-            getPreferenceScreen().removePreference(lockScreenRotation);
-        }
-    }
-
+   }
     @Override
     public void onResume() {
         super.onResume();
